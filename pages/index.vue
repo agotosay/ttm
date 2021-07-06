@@ -222,7 +222,7 @@
             <div class="product-rating">
               <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= item.rating}"></i>
             </div>
-            <div class="product-price">19.99 &euro;</div>
+            <div class="product-price">{{item.price}} &euro;</div>
           </b-col>
         </b-row>
         <b-link href="#" class="d-block mt-3 text-center">
@@ -244,14 +244,141 @@
           REVIEWS
         </div>
         <div>
-          <VueSlickCarousel :arrows="true" :dots="true">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
+          <VueSlickCarousel v-bind="setting" :arrows="true" :dots="false">
+            <div class="user-review">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="d-flex">
+                <div>
+                  <b-avatar></b-avatar>
+                </div>
+                <div class="ml-2">
+                  <div class="product-rating">
+                    <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= 5}"></i>
+                  </div>
+                  <div class="review-name fw-900">Martin Lawrence</div>
+                  <div class="review-role">Moonquilt</div>
+                </div>
+              </div>
+            </div>
+            <div class="user-review">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="d-flex">
+                <div>
+                  <b-avatar></b-avatar>
+                </div>
+                <div class="ml-2">
+                  <div class="product-rating">
+                    <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= 5}"></i>
+                  </div>
+                  <div class="review-name fw-900">Martin Lawrence</div>
+                  <div class="review-role">Moonquilt</div>
+                </div>
+              </div>
+            </div>
+            <div class="user-review">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="d-flex">
+                <div>
+                  <b-avatar></b-avatar>
+                </div>
+                <div class="ml-2">
+                  <div class="product-rating">
+                    <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= 5}"></i>
+                  </div>
+                  <div class="review-name fw-900">Martin Lawrence</div>
+                  <div class="review-role">Moonquilt</div>
+                </div>
+              </div>
+            </div>
+            <div class="user-review">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="d-flex">
+                <div>
+                  <b-avatar></b-avatar>
+                </div>
+                <div class="ml-2">
+                  <div class="product-rating">
+                    <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= 5}"></i>
+                  </div>
+                  <div class="review-name fw-900">Martin Lawrence</div>
+                  <div class="review-role">Moonquilt</div>
+                </div>
+              </div>
+            </div>
+            <div class="user-review">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="d-flex">
+                <div>
+                  <b-avatar></b-avatar>
+                </div>
+                <div class="ml-2">
+                  <div class="product-rating">
+                    <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= 5}"></i>
+                  </div>
+                  <div class="review-name fw-900">Martin Lawrence</div>
+                  <div class="review-role">Moonquilt</div>
+                </div>
+              </div>
+            </div>
+            <div class="user-review">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="d-flex">
+                <div>
+                  <b-avatar></b-avatar>
+                </div>
+                <div class="ml-2">
+                  <div class="product-rating">
+                    <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= 5}"></i>
+                  </div>
+                  <div class="review-name fw-900">Martin Lawrence</div>
+                  <div class="review-role">Moonquilt</div>
+                </div>
+              </div>
+            </div>
           </VueSlickCarousel>
         </div>
       </b-container>
+     </section>
+
+     <!-- xbenefit -->
+     <section class="benefit">
+       <b-container>
+         <b-row>
+           <b-col cols="4" class="text-center">
+            <img
+            class="d-block img-auto img-margin"
+            height="60"
+            src="/shopping-bag.svg"
+            alt="image"
+            />
+            <div class="benefit-title mt-2">
+              FREE SHIPPING <br />ON ORDER + 150 &euro;
+            </div>
+           </b-col>
+           <b-col cols="4" class="text-center">
+            <img
+            class="d-block img-auto img-margin"
+            height="60"
+            src="/shopping-bag.svg"
+            alt="image"
+            />
+            <div class="benefit-title mt-2">
+             SECURE PAYMENT <br />WITH SSL ENCRYPTION
+            </div>
+           </b-col>
+           <b-col cols="4" class="text-center">
+            <img
+            class="d-block img-auto img-margin"
+            height="60"
+            src="/shopping-bag.svg"
+            alt="image"
+            />
+            <div class="benefit-title mt-2">
+              10 YEARS WARRANTY <br /> ON ALL ITEMS
+            </div>
+           </b-col>
+         </b-row>
+       </b-container>
      </section>
   </div>
 </template>
@@ -309,7 +436,17 @@ export default {
             price: '19.99',
             rating: 4,
           }
-        ]
+        ],
+        setting: {
+          dots: true,
+          focusOnSelect: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          touchThreshold: 5,
+          centerPadding: "20px"
+        }
       }
     },
     methods: {

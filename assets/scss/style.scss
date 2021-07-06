@@ -16,6 +16,9 @@ body{
 .ml-1{
   margin-left: 1rem;
 }
+.ml-2{
+  margin-left: 2rem;
+}
 .mt-1{
   margin-top: 1rem;
 }
@@ -177,5 +180,29 @@ a {
     margin-top: .5rem;
     font-size: 24px;
     font-weight: 300;
+  }
+}
+
+// review
+.reviews{
+  .user-review{
+    background-image: url(/review-bc.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    height: 320px;
+  }
+  .slick-initialized .slick-slide[data-v-e4caeaf8]{
+    padding: 2rem;
+  }
+}
+
+
+// benefit
+.benefit{
+  background-color: #F2F2F2;
+  .benefit-title{
+    font-size: 32px;
+    line-height: 1;
   }
 }
