@@ -210,175 +210,17 @@
           OUR PRODUCTS
         </div>
         <b-row class="mt-2">
-          <b-col cols="3">
+          <b-col cols="3" v-for="(item, index) in ourProduct" :key="index">
             <img
             class="d-block img-fluid w-100"
-            src="/product-1.jpg"
+            :src="item.image.url"
             alt="image"
             />
             <div class="product-title mb-1">
-              Travel Hammock
+              {{ item.name }}
             </div>
             <div class="product-rating">
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-            </div>
-            <div class="product-price">19.99 &euro;</div>
-          </b-col>
-          <b-col cols="3">
-            <img
-            class="d-block img-fluid w-100"
-            src="/product-2.jpg"
-            alt="image"
-            />
-            <div class="product-title mb-1">
-              Backpack Plus 25 L
-            </div>
-            <div class="product-rating">
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-            </div>
-            <div class="product-price">19.99 &euro;</div>
-          </b-col>
-          <b-col cols="3">
-            <img
-            class="d-block img-fluid w-100"
-            src="/product-3.jpg"
-            alt="image"
-            />
-            <div class="product-title mb-1">
-              Pro Hammock
-            </div>
-            <div class="product-rating">
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-            </div>
-            <div class="product-price">19.99 &euro;</div>
-          </b-col>
-          <b-col cols="3">
-            <img
-            class="d-block img-fluid w-100"
-            src="/product-4.jpg"
-            alt="image"
-            />
-            <div class="product-title mb-1">
-              Backpack Plus 10 L
-            </div>
-            <div class="product-rating">
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
-              <img
-              class="d-block"
-              height="20"
-              src="/star.svg"
-              alt="image"
-              />
+              <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= item.rating}"></i>
             </div>
             <div class="product-price">19.99 &euro;</div>
           </b-col>
@@ -416,12 +258,11 @@
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 </style>
 
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
-import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 export default {
   name: 'MyComponent',
@@ -430,7 +271,45 @@ export default {
   data() {
       return {
         slide: 0,
-        sliding: null
+        sliding: null,
+        ourProduct: [
+          {
+            id: 1,
+            name: 'Travel Hammocks',
+            image: {
+              url: '/product-1.jpg'
+            },
+            price: '19.99',
+            rating: 5,
+          },
+          {
+            id: 2,
+            name: 'Backpack Plus 25 L',
+            image: {
+              url: '/product-2.jpg'
+            },
+            price: '19.99',
+            rating: 2,
+          },
+          {
+            id: 3,
+            name: 'Pro Hammock',
+            image: {
+              url: '/product-3.jpg'
+            },
+            price: '19.99',
+            rating: 3,
+          },
+          {
+            id: 4,
+            name: 'Backpack Plus 10 L',
+            image: {
+              url: '/product-4.jpg'
+            },
+            price: '19.99',
+            rating: 4,
+          }
+        ]
       }
     },
     methods: {
