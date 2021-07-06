@@ -1,0 +1,181 @@
+body{
+  font-family: 'Alegreya Sans', sans-serif;
+  color: #042742;
+  text-shadow: none !important;
+}
+.btn-primary{
+  background-color: #FFC844;
+  color: #042742;
+  border-color: transparent;
+  &:hover{
+    background-color: #FFC844;
+    color: #042742;
+    border-color: transparent;
+  }
+}
+.ml-1{
+  margin-left: 1rem;
+}
+.mt-1{
+  margin-top: 1rem;
+}
+.mb-1{
+  margin-bottom: 1rem;
+}
+.mt-2{
+  margin-top: 2rem !important;
+}
+.mt-3{
+  margin-top: 3rem !important;
+}
+.mr-0{
+  margin-right: 0 !important;
+}
+.ml-0{
+  margin-left: 0 !important;
+}
+.pr-0{
+  padding-right: 0 !important;
+}
+.pl-0{
+  padding-left: 0 !important;
+}
+.img-auto{
+  object-fit: cover;
+}
+.img-margin{
+  margin: 0 auto;
+}
+.title{
+  font-size: 40px;
+  font-weight: 900;
+}
+section{
+  padding: 60px 0;
+}
+p{
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+  color: #042742;
+  &:hover{
+    text-decoration: none;
+    color: #042742;
+  }
+}
+.fw-400{
+  font-weight: 400;
+}
+.fw-900{
+  font-weight: 900;
+}
+
+// top navbar
+.top-bar{
+  background-color: #A8C6DF;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    background-color: transparent;
+  }
+  .nav-pills .nav-link{
+    border-radius: 0;
+    padding: 0
+  }
+  a{
+    &.nav-link{
+      color: white;
+      font-size: .8rem;
+    }
+    &.dropdown-toggle{
+      &::after{
+        margin-left: 10px;
+      }
+    }
+  }
+  li{
+    &.nav-item{
+      width: 80px;
+    }
+  }
+}
+
+// navbar
+.navbar{
+  &.navbar-light{
+    &.bg-light{
+      background-color: white !important;
+      box-shadow: 0px 7px 16px -4px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 2;
+    }
+  }
+ 
+  .navbar-collapse{
+    .nav-item{
+      a{
+        font-size: .8rem;
+      }
+    }
+    .navbar-nav{
+      li{
+        &:last-child{
+          margin-left: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+// Carousel
+.carousel{
+  .slide-wording{
+    bottom: 80px;
+    h1{
+      text-shadow: none;
+      &:nth-child(1){
+        font-size: 40px;
+        font-weight: 500;
+      }
+      &:nth-child(2){
+        font-size: 60px;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+// Store
+.find-store{
+  .left-content{
+    background-color: #FFC844;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content{
+      font-size: 60px;
+    }
+  }
+}
+
+// product
+.our-product{
+  .product-title{
+    font-size: 24px;
+    font-weight: 900;
+  }
+  .product-rating{
+    display: flex;
+    img + img{
+      margin-left: 6px;
+    }
+  }
+  .product-price{
+    margin-top: .5rem;
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
