@@ -1,0 +1,143 @@
+<template>
+  <section class="footer">
+    <b-container>
+      <b-row>
+      <b-col class="6">
+        <img
+        class="d-block img-auto"
+        height="20"
+        src="/white-logo.svg"
+        alt="image"
+        />
+      </b-col>
+      <b-col class="6">
+        <b-row>
+          <b-col cols="5">
+            <div class="stay">STAY CONNECTED</div>
+            <small>Sign up for news event offers</small>
+          </b-col>
+          <b-col cols="7" class="pl-1 d-flex align-items-center">
+            <b-form-input
+              id="search-1"
+              class="form-subscribe"
+              type="text"
+              placeholder="enter email here"
+            ></b-form-input>
+            <b-link href="#" class="f-white ml-1">Subscribe</b-link>
+          </b-col>
+        </b-row>
+        <hr class="hr-white"/>
+      </b-col>
+      </b-row>
+      <b-row>
+        <b-col cols="6">
+          <p>Jalan Batu Sangian VI No.10 Kuta Utara, Bali 80361 INDONESIA <br /><br />Phone: +62 361 419 288</p>
+          <div class="sosmed mt-2">
+            <img
+            class="d-block img-auto"
+            height="24"
+            src="/IG.png"
+            alt="image"
+            />
+            <img
+            class="d-block img-auto"
+            height="24"
+            src="/FB.png"
+            alt="image"
+            />
+            <img
+            class="d-block img-auto"
+            height="24"
+            src="/Youtube.png"
+            alt="image"
+            />
+            <img
+            class="d-block img-auto"
+            height="24"
+            src="/LinkedIn.png"
+            alt="image"
+            />
+          </div>
+        </b-col>
+        <b-col cols="2">
+          <div class="title-link">
+            TTTM
+          </div>
+          <ul class="list-link">
+            <li>
+              <b-link href="#">About Us</b-link>
+            </li>
+            <li>
+              <b-link href="#">TTTM History</b-link>
+            </li>
+            <li>
+              <b-link href="#">Customize &amp; Shop</b-link>
+            </li>
+            <li>
+              <b-link href="#">Join The Tribe</b-link>
+            </li>
+            <li>
+              <b-link href="#">Blog</b-link>
+            </li>
+          </ul>
+        </b-col>
+        <b-col cols="2">
+          <div class="title-link">
+            INFO
+          </div>
+          <ul class="list-link">
+            <li>
+              <b-link href="#">FAQ</b-link>
+            </li>
+            <li>
+              <b-link href="#">Privacy Policy</b-link>
+            </li>
+            <li>
+              <b-link href="#">Download</b-link>
+            </li>
+            <li>
+              <b-link href="#">Warranty</b-link>
+            </li>
+            <li>
+              <b-link href="#">TTTM Affiliate Program</b-link>
+            </li>
+            <li>
+              <b-link href="#">GDPR Privacy Policy</b-link>
+            </li>
+          </ul>
+        </b-col>
+        <b-col cols="2">
+          <div class="title-link">
+            SERVICE
+          </div>
+          <ul class="list-link">
+            <li>
+              <b-link href="#">My Account</b-link>
+            </li>
+            <li>
+              <b-link href="#">Shopping Cart</b-link>
+            </li>
+            <li>
+              <b-link href="#">Tracking Order</b-link>
+            </li>
+            <li>
+              <b-link href="#">Contact Us</b-link>
+            </li>
+          </ul>
+        </b-col>
+      </b-row>
+      <b-row class="mt-2">
+        <b-col cols="6">
+          <div class="copyright">&copy; 2021 Ticket To The Moon. All Rights Reserved. Design &amp; Development by Hi Folks Agency</div>
+        </b-col>
+        <b-col cols="6">
+          <img
+          class="d-block img-fluid"
+          src="/payment.svg"
+          alt="image"
+          />
+        </b-col>
+      </b-row>
+    </b-container>
+  </section>
+</template>
