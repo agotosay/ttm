@@ -397,25 +397,46 @@
    <section>
       <b-container class="gallery">
         <div class="title text-center mb-2">
-          Gallery
+          DOWNLOAD
         </div>
-        <VueSlickCarousel v-bind="gallerys" :arrows="true" :dots="false">
-          <img
-          class="img-fluid w-100"
-          src="/image 31.png"
-          alt="image"
-          />
-          <img
-          class="img-fluid w-100"
-          src="/image 31.png"
-          alt="image"
-          />
-          <img
-          class="img-fluid w-100"
-          src="/image 31.png"
-          alt="image"
-          />
-        </VueSlickCarousel>
+        <b-row>
+          <b-col cols="6" class="mb-2">
+            <div class="download">
+              <img
+              class="d-block img-fluid w-100"
+              src="/image 2.jpg"
+              alt="image"
+              />
+              <b-button variant="primary" class="w-100 d-flex align-items-center justify-content-center mt-2">
+                B2B Catalogue 2021
+              </b-button>
+            </div>
+          </b-col>
+          <b-col cols="6" class="mb-2">
+            <div class="download">
+              <img
+              class="d-block img-fluid w-100"
+              src="/image 3.jpg"
+              alt="image"
+              />
+              <b-button variant="primary" class="w-100 d-flex align-items-center justify-content-center mt-2">
+                Guideline Book
+              </b-button>
+            </div>
+          </b-col>
+          <b-col cols="6" class="mb-2">
+            <div class="download">
+              <img
+              class="d-block img-fluid w-100"
+              src="/image 4.jpg"
+              alt="image"
+              />
+              <b-button variant="primary" class="w-100 d-flex align-items-center justify-content-center mt-2">
+                Ticket To The Moon Foundation
+              </b-button>
+            </div>
+          </b-col>
+        </b-row>
       </b-container>
    </section>
 
@@ -430,14 +451,12 @@
 </style>
 
 <script>
-import VueSlickCarousel from 'vue-slick-carousel'
 import TopNavbar from'/components/top-navbar'
 import Footer from'/components/footer'
 
 export default {
   name: 'MyComponent',
   components: { 
-    VueSlickCarousel,
     TopNavbar,
     Footer
   },
@@ -447,12 +466,6 @@ export default {
         slide: 0,
         sliding: null,
         isHidden: false,
-        gallerys: {
-          centerMode: true,
-          centerPadding: '60px',
-          slidesToShow: 1,
-          arrows: true,
-        }
       }
     },
     methods: {

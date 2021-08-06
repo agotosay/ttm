@@ -65,19 +65,19 @@
           </div>
           <ul class="list-link">
             <li>
-              <b-link href="#">About Us</b-link>
+              <b-link @click="$router.push('/about-us')">About Us</b-link>
             </li>
             <li>
-              <b-link href="#">TTTM History</b-link>
+              <b-link>TTTM History</b-link>
             </li>
             <li>
-              <b-link href="#">Customize &amp; Shop</b-link>
+              <b-link>Customize &amp; Shop</b-link>
             </li>
             <li>
-              <b-link href="#">Join The Tribe</b-link>
+              <b-link>Join The Tribe</b-link>
             </li>
             <li>
-              <b-link href="#">Blog</b-link>
+              <b-link @click="$router.push('/blog')">Blog</b-link>
             </li>
           </ul>
         </b-col>
@@ -87,22 +87,22 @@
           </div>
           <ul class="list-link">
             <li>
-              <b-link href="#">FAQ</b-link>
+              <b-link >FAQ</b-link>
             </li>
             <li>
-              <b-link href="#">Privacy Policy</b-link>
+              <b-link >Privacy Policy</b-link>
             </li>
             <li>
-              <b-link href="#">Download</b-link>
+              <b-link @click="$router.push('/download')">Download</b-link>
             </li>
             <li>
-              <b-link href="#">Warranty</b-link>
+              <b-link  @click="$router.push('/warranty')">Warranty</b-link>
             </li>
             <li>
-              <b-link href="#">TTTM Affiliate Program</b-link>
+              <b-link >TTTM Affiliate Program</b-link>
             </li>
             <li>
-              <b-link href="#">GDPR Privacy Policy</b-link>
+              <b-link  @click="$router.push('/gdpr-privacy-policy')">GDPR Privacy Policy</b-link>
             </li>
           </ul>
         </b-col>
