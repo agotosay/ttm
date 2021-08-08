@@ -74,7 +74,7 @@
               <b-link>Customize &amp; Shop</b-link>
             </li>
             <li>
-              <b-link>Join The Tribe</b-link>
+              <b-link @click="$router.push('/join-tribe')">Join The Tribe</b-link>
             </li>
             <li>
               <b-link @click="$router.push('/foundation')">TTTM Foundation</b-link>

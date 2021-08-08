@@ -413,6 +413,8 @@
         <div class="step">1998</div>
         <div class="step">1997</div>
         <div class="step">1996</div>
+        <div class="step">1995</div>
+        <div class="step">1994</div>
       </div>
     </section>
 

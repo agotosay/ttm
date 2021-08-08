@@ -1072,7 +1072,7 @@ a {
   display: flex;
   align-items: center;
   overflow-y: auto;
-  height: 100px;
+  height: 200px;
   &::before{
     content: '';
     border-bottom: 2px solid #8098AB;
@@ -1084,7 +1084,11 @@ a {
     top: -36px;
     left: 50%;
     transform: translateX(-50%);
+    cursor: pointer;
     &.acitve{
+      top: -60px;
+      position: relative;
+      cursor: unset;
       &::before{
         position: absolute;
         content: '';
@@ -1092,9 +1096,20 @@ a {
         width: 48px;
         height: 48px;
         border-radius: 50px;
-        top: 24px;
-        left: 50%;
+        top: 50px;
+        left: 53%;
         transform: translateX(-50%);
+        z-index: 2;
+      }
+      &::after{
+        position: absolute;
+        content: '';
+        background-color: #042742;
+        width: 2px;
+        height: 40px;
+        left: 50%;
+        top: 24px;
+        z-index: 1;
       }
     }
     &+.step{
@@ -1110,6 +1125,13 @@ a {
       top: 34px;
       left: 50%;
       transform: translateX(-50%);
+    }
+    &::after{
+      content: '';
+      border-bottom: 2px solid #8098AB;
+      position: absolute;
+      width: 10rem;
+      bottom: -25px;
     }
   }
 }
