@@ -19,12 +19,13 @@
           <label class="d-block text-center mt-2">Login as</label>
           <b-form-group class="d-flex justify-content-center">
             <div class="d-flex w-100 mb-2">
-              <b-form-radio name="some-radios" value="A">Option A</b-form-radio>
-              <b-form-radio name="some-radios" value="B">Option B</b-form-radio>
+              <b-form-radio name="some-radios" value="A">Customer</b-form-radio>
+              <b-form-radio name="some-radios" value="B">Ambassador</b-form-radio>
             </div>
           </b-form-group>
           <b-form-group>
             <b-form-input
+              class="rounded-radius"
               id="input-1"
               type="email"
               placeholder="Enter email"
@@ -33,16 +34,20 @@
               placeholder="Password"
               type="password"
               id="text-password"
-              class="mt-1"></b-form-input>
+              class="mt-1 rounded-radius"></b-form-input>
           </b-form-group>
-          <div class="button-login">
-            <b-button variant="primary" class="d-block">Login</b-button>
-            <b-button variant="secondary" class="d-block mt-1">register</b-button>
-          </div>
-          <div class="forgot">
-            <b-link>Forgot Password?</b-link>
-            <b-link>Signup</b-link>
-          </div>
+          <b-row>
+            <b-col cols="8" offset="2">
+              <div class="button-login">
+                <b-button variant="primary" class="d-block">Login</b-button>
+                <b-button variant="primary2" class="d-block mt-1">register</b-button>
+              </div>
+              <div class="forgot">
+                <b-link>Forgot Password?</b-link>
+                <b-link>Signup</b-link>
+              </div>
+            </b-col>
+          </b-row>
         </div>
       </b-col>
     </b-row>

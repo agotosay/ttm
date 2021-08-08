@@ -398,62 +398,78 @@
       <b-container>
         <div class="title mb-2">Send a message</div>
         <b-row>
-          <b-col cols="5">
+          <b-col cols="4">
             <b-form-group>
               <b-form-input
                 id="name"
                 type="text"
                 placeholder="First name"
-                class="mb-1"
+                class="mb-1 rounded-radius"
               ></b-form-input>
               <b-form-input
                 id="name"
                 type="text"
                 placeholder="Last name"
-                class="mb-1"
+                class="mb-1 rounded-radius"
               ></b-form-input>
-              <b-form-select v-model="selected" :options="options" class="mb-1"></b-form-select>
+              <b-form-select v-model="selected" :options="options" class="mb-1 rounded-radius"></b-form-select>
               <b-form-textarea
-                class="mb-1"
+                class="mb-1 rounded-radius"
                 id="textarea"
                 v-model="text"
                 placeholder="Your message"
                 rows="6"
                 max-rows="9"
               ></b-form-textarea>
+              <div class='file mb-1'>
+                <label for='input-file'>
+                  <span class="material-icons">Upload attachment</span>
+                </label>
+                <input id='input-file' type='file' />
+              </div>
+              <b-form-checkbox
+                id="checkbox-1"
+                v-model="status"
+                name="checkbox-1"
+                value="accepted"
+                unchecked-value="not_accepted"
+              >
+                By Checking This, You Agree With Out <b-link class="text-blue">GDPR Privacy Policy</b-link>
+              </b-form-checkbox>
               <b-button variant="primary d-block w-100" class="mt-1">
                 SUBMIT
               </b-button>
             </b-form-group>
           </b-col>
-          <b-col cols="7" class="pl-2">
+          <b-col cols="1"></b-col>
+          <b-col cols="7">
             <div class="info-contact">
               <div class="title text-yellow mb-2">GET IN TOUCH</div>
               <p>Jalan Batu Sangian VI No.10 Kuta Utara, Bali 80361 INDONESIA</p>
               <p>Phone: +62 361 419 288</p>
               <div class="sosmed mt-2 d-flex align-items-center">
                 <img
-                class="d-block img-auto mr-2"
+                class="d-block img-auto mr-1"
                 height="24"
-                src="/s-instagram.svg"
+                src="/instagram.svg"
                 alt="image"
                 />
                 <img
-                class="d-block img-auto mr-2"
+                class="d-block img-auto mr-1"
                 height="24"
-                src="/s-facebook.svg"
+                src="/facebook.svg"
                 alt="image"
                 />
                 <img
-                class="d-block img-auto mr-2"
+                class="d-block img-auto mr-1"
                 height="24"
-                src="/s-youtube.svg"
+                src="/youtube.svg"
                 alt="image"
                 />
                 <img
-                class="d-block img-auto mr-2"
+                class="d-block img-auto mr-1"
                 height="24"
-                src="/s-linkedin.svg"
+                src="/linkedin.svg"
                 alt="image"
                 />
               </div>

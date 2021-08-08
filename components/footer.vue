@@ -77,7 +77,7 @@
               <b-link>Join The Tribe</b-link>
             </li>
             <li>
-              <b-link @click="$router.push('/blog')">Blog</b-link>
+              <b-link @click="$router.push('/foundation')">TTTM Foundation</b-link>
             </li>
           </ul>
         </b-col>
@@ -87,7 +87,7 @@
           </div>
           <ul class="list-link">
             <li>
-              <b-link >FAQ</b-link>
+              <b-link @click="$router.push('/faq')">FAQ</b-link>
             </li>
             <li>
               <b-link >Privacy Policy</b-link>
@@ -99,7 +99,7 @@
               <b-link  @click="$router.push('/warranty')">Warranty</b-link>
             </li>
             <li>
-              <b-link >TTTM Affiliate Program</b-link>
+              <b-link @click="$router.push('/affiliate')">TTTM Affiliate Program</b-link>
             </li>
             <li>
               <b-link  @click="$router.push('/gdpr-privacy-policy')">GDPR Privacy Policy</b-link>
@@ -118,10 +118,10 @@
               <b-link href="#">Shopping Cart</b-link>
             </li>
             <li>
-              <b-link href="#">Tracking Order</b-link>
+              <b-link @click="$router.push('/tracking-order')">Tracking Order</b-link>
             </li>
             <li>
-              <b-link href="#">Contact Us</b-link>
+              <b-link @click="$router.push('/contact-us')">Contact Us</b-link>
             </li>
           </ul>
         </b-col>

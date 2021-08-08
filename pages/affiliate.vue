@@ -396,37 +396,95 @@
     <!-- info -->
     <div class="static-info">
       <img
-      class="d-block img-fluid w-100"
+      class="d-block w-100 img-auto"
       height="300"
       src="/img-3.png"
       alt="image"
       />
       <b-container class="box-desc">
-        <div class="title mb-2">BLOG</div>
-        <p>TICKET TO THE MOON</p>
-        <p>Ticket To The Moon is the original manufacturer of the camping hammock, based in Bali since 1996. As an ethical company, we love to think that we are more like some kind of tribe rather than just a business: not only do we develop and create innovative and useful products, but we also promote different ways of life.</p>
-        <p>We are manufacturers of feel-good products for dreamers worldwide!</p>
-        <p>PROVIDING SAFE, COMFORTABLE, HIGH QUALITY PRODUCTS</p>
-        <p>Because we are the original inventors and manufacturers of the camping hammock, we give you the very best products and include the features you desire. The whole TTTM parachute product range is hand-made by a team of skilled craftsmen in our very own factory in Bali from the highest quality of nylon parachute fabric, locally sourced. Every one of our products is tested under extreme conditions, and passes strict quality control tests before it leaves our factory. The 10-year manufacturer’s warranty covers any defects in workmanship and materials on all Ticket To The Moon products. </p>
-        <p>The signature range of TTTM hammocks is durable, elastic, breathable, anti-mildew, and skin-friendly (OEKO-TEX® Standard 100). The hammocks are available in five sizes and thousands of color combinations, and each comes with an attached pouch for easy traveling.</p>
-        <p>Join The Hammock Tribe!</p>
-        <p>LIGHTWEIGHT, COMPACT &amp; DURABLE</p>
-        <p>The TTTM camping hammock is delivered in its own compact pouch, making it ideal as a travel bed, and perfect for taking a nap or just chilling. It makes for a marvelous playground too…</p>
-        <p>The original TTTM set up system using stainless hooks and nautical ropes remains the easiest and safest available on the market. Another convenient way to set up your hammock uses high-grade carabiners & tree-friendly straps. Over the years, TTTM has developed a complete range of hammock, hammock accessories like The Tarp, The Mosquito Net 360° and The Carabiner, and a number of other lifestyle products such as the Moon Chair, the Beach Blanket, the Pocket Frisbee and our famous Eco-Friendly Bags. The high quality material and hand finish make all TTTM products suitable for an adventurer’s trip or for daily use.</p>
-        <p>We like to make your life simpler!</p>
-        <p>TICKET TO THE MOON &amp; CORPORATE SOCIAL RESPONSIBILITY</p>
-        <p>It is important to us to offer original products that you will enjoy using, but we also aim to raise awareness of larger global challenges such as sustainability and fair trade production issues, while respecting local social structures and the Indonesian culture.</p>
-        <p>At TTTM, there is absolutely no child labor. Our honest, humane, fair trade corporate values mean all staff enjoy proper working conditions with social security, a pension, and a basic salary that is far higher than the minimum salary. They only work five and a half 8-hour days per week, setting our company apart from most others and bonding workers into a unique social community. Since TTTM’s establishment in 1996, nobody has ever left the company despite attempts by copycats to lure them away.</p>
-        <p>Please have a look inside the factory and headquarter of Bali, Indonesia.</p>
-        <p>MINIMIZING OUR CORPORATE FOOTPRINT</p>
-        <p>By using local materials and investing in innovative recycling methods, we aim to have a minimal impact on the environment. Any spare fabric left over after our unique products have been cut is turned into new merchandise like eco-friendly bags and backpacks. Our ongoing urge to minimize waste engendered the motto:  “No. No plastic bags, please!”</p>
-        <p>We Care, Nothing is Left to Waste! </p>
-        <p>TTTM FOUNDATION </p>
-        <p>The Ticket To The Moon Foundation was established by notary deed in 2009. Our main purpose is to support the Sumbanese Kodi tribe in East Indonesia. We have developed health, educational, cultural and development aid programs, and to date we have successfully helped the local community with building new infrastructure and education facilities, malaria prevention programs, and access to clean water. </p>
-        <p>We offer our business partners and other interested parties the same opportunity to help these remarkable people as part of corporate responsibility programs and donations. Ticket To The Moon is proud to have been part of this initiative since the beginning, and continues to contribute a significant portion of its net earnings to the Foundation.</p>
-        <p>For more informatiom, click on ‘TTTM Foundation’.</p>
-        <p>Keep your feet off the ground!!</p>
-        <p>Charly – Founder of TICKETTOTHEMOON</p>
+        <div class="title mb-2">TTTM AFFILIATE PROGRAM</div>
+        <p>Interested in becoming one of our ambassadors and represent the Tribe?</p>
+        <p>If you are a traveler, blogger, social media influencer or adventurer who likes to connect with people and share your outdoor adventures, bring your TICKETTOTHEMOON product and your enthusiasm: you may be the right person to be part of the TICKETTOTHEMOON affiliate program.</p>
+        <p>By being a TICKETTOTHEMOON ambassador, you will receive a promotional code that you can share. Customers who buy on our website with your code will get 10% off their order! What about you? As soon as the total amount of orders made with your code exceeds 250€, you have the choice: Spend the amount earned on our website or receive a bank transfer from us. If you use this amount to purchase new TICKETTOTHEMOON products on our site, your amount to be spent will be equal to 20% of the total purchase of your community. If you choose the bank transfer, it will be equal to 10% of the total purchases. </p>
+        <p>Become an ambassador by filling out the form below: why are you the ideal person, the one we are looking for? Qualified candidates will be contacted by members of our tribe and you will have the privilege of receiving a discount code that you can pass on to your followers. It will allow you to increase your rewards as people use it.</p>
+        <b-row class="mt-2">
+          <b-col cols="6">
+            <div class="fw-600 mb-2">PERSONAL DETAILS :</div>
+            <b-form class="mb-1">
+              <label>First name :</label>
+              <b-form-input type="text" id="first-name" placeholder="First name" class="rounded-radius"/>
+            </b-form>
+            <b-form class="mb-1">
+              <label>Last name :</label>
+              <b-form-input type="text" id="last-name" placeholder="Last name" class="rounded-radius"/>
+            </b-form>
+            <b-form class="mb-1">
+              <label>Email :</label>
+              <b-form-input type="email" id="for-email" placeholder="Email" class="rounded-radius"/>
+            </b-form>
+            <b-form class="mb-1">
+              <label>Phone :</label>
+              <b-form-input type="text" id="for-phone" placeholder="Phone" class="rounded-radius"/>
+            </b-form>
+            <b-row>
+              <b-col cols="3">
+                <b-form class="mb-1">
+                  <label>Age :</label>
+                  <b-form-input type="number" id="for-phone" placeholder="Age" class="rounded-radius"/>
+                </b-form>
+              </b-col>
+              <b-col cols="5">
+                <b-form class="mb-1">
+                  <label>Nationality :</label>
+                  <b-form-input type="number" id="for-phone" placeholder="Nationality" class="rounded-radius"/>
+                </b-form>
+              </b-col>
+              <b-col cols="4">
+                <b-form-group class="d-flex justify-content-between">
+                  <label>Sex :</label>
+                  <div class="d-flex w-100 mt-0h">
+                    <b-form-radio name="some-radios" value="A" class="mr-1">Male</b-form-radio>
+                    <b-form-radio name="some-radios" value="B">Female</b-form-radio>
+                  </div>
+                </b-form-group>
+              </b-col>
+            </b-row>
+          </b-col>
+          <b-col cols="6">
+            <div class="fw-600 mb-2">Occupation / Field of Interest :</div>
+            <b-form-group class="d-flex justify-content-between">
+              <label>Occupation / Field of Interest :</label>
+              <div class="d-flex w-100 mt-0h">
+                <b-form-radio name="some-radios" value="A" class="mr-1">Blogger</b-form-radio>
+                <b-form-radio name="some-radios" value="B" class="mr-1">Influencer</b-form-radio>
+                <b-form-radio name="some-radios" value="C" class="mr-1">Traveller</b-form-radio>
+                <b-form-radio name="some-radios" value="D" class="mr-1">Adventurer</b-form-radio>
+              </div>
+            </b-form-group>
+            <b-form class="mb-1">
+              <label>Personal Description :</label>
+              <b-form-textarea
+                id="textarea"
+                v-model="text"
+                placeholder="Tell us why we should choose you as our ambassador ?"
+                rows="6"
+                max-rows="9"
+            ></b-form-textarea>
+            </b-form>
+            <b-form-checkbox
+              id="checkbox-1"
+              v-model="status"
+              name="checkbox-1"
+              value="accepted"
+              unchecked-value="not_accepted"
+            >
+              By Checking This, You Agree With Out <b-link class="text-blue">GDPR Privacy Policy</b-link>
+            </b-form-checkbox>
+            <b-button variant="primary d-block" class="mt-1">
+              SUBMIT
+            </b-button>
+          </b-col>
+        </b-row>
       </b-container>
     </div>
 

@@ -396,7 +396,6 @@
     <!-- info -->
     <div class="static-info">
       <!-- carousel -->
-      <!-- carousel -->
       <div class="position-relative">
         <b-carousel
           id="carousel-1"
@@ -428,7 +427,7 @@
                         <p>I was blown away by the tiny packing size and the very thin and light material. It certainly lightest hammock I have ever come across. The material feels like very fine silk.</p>
                     </b-col>
                   </b-row>
-                  <b-button variant="primary" class="mt-2">
+                  <b-button variant="primary" class="mt-2 w-100">
                     SHOP NOW
                     <img 
                       src="/arrow-right.svg" 

@@ -396,7 +396,7 @@
     <!-- info -->
     <div class="static-info">
       <img
-      class="d-block img-fluid w-100"
+      class="d-block w-100 img-auto"
       height="300"
       src="/img-3.png"
       alt="image"
