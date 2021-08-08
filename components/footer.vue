@@ -68,7 +68,7 @@
               <b-link @click="$router.push('/about-us')">About Us</b-link>
             </li>
             <li>
-              <b-link>TTTM History</b-link>
+              <b-link @click="$router.push('/ttm-history')">TTTM History</b-link>
             </li>
             <li>
               <b-link>Customize &amp; Shop</b-link>
@@ -90,7 +90,7 @@
               <b-link @click="$router.push('/faq')">FAQ</b-link>
             </li>
             <li>
-              <b-link >Privacy Policy</b-link>
+              <b-link @click="$router.push('/privacy-policy')">Privacy Policy</b-link>
             </li>
             <li>
               <b-link @click="$router.push('/download')">Download</b-link>

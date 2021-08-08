@@ -415,14 +415,14 @@
       <b-row class="mt-2">
         <b-col cols="5">
           <div class="faq-category mt-2">
-            <div class="category active" v-b-toggle.collapse-1>PRODUCT QUESTIONS</div>
-            <div class="category"  v-b-toggle.collapse-2>INTERNATIONAL SHIPPING QUESTIONS</div>
-            <div class="category">ORDER MANAGEMENT QUESTIONS</div>
+            <div class="category active" v-on:click="category('Kategori1')">PRODUCT QUESTIONS</div>
+            <div class="category"  v-on:click="category('Kategori2')">INTERNATIONAL SHIPPING QUESTIONS</div>
+            <div class="category" v-on:click="category('Kategori3')">ORDER MANAGEMENT QUESTIONS</div>
           </div>
         </b-col>
         <b-col cols="7">
           <!-- desc accordion -->
-          <div class="accordion faq">
+          <div class="accordion faq" id="menu-kategori1">
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
                 <b-button block v-b-toggle.accordion-1 variant="info">Why a Ticket to the Moon Hammock?</b-button>
@@ -589,9 +589,11 @@ export default {
   },
 
   data() {
-      return {
-        isHidden: false
-      }
+    return {
+      isHidden: false,
     }
+  },
+  methods: {
+  }
 }
 </script>

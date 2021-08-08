@@ -395,64 +395,46 @@
 
     <!-- info -->
     <div class="static-info">
-      <img
-      class="d-block w-100 img-auto"
-      height="300"
-      src="/img-3.png"
-      alt="image"
-      />
-      <b-container class="box-desc">
-        <div class="title mb-2">GDPR PRIVAY POLICY</div>
-        <div class="subtitle mb-1">DEFINITIONS</div>
-        <ul class="pl-1 definitions">
-          <li>
-            TICKET TO THE MOON Trademark<br />
-            PT. Ayunan Bulan International<br />
-            Jalan Batu Sangian VI No.10, 80361 Bali, Indonesia
-          </li>
-          <li>
-            GDPR<br />
-            General Data Protection Regulation Act.
-          </li>
-          <li>
-            Data Controller<br />
-            Data controller means the natural or legal person who(oether alone or jointhly or in common with other persons) determines the purposes for which and the manner in which any personal information are, or are to be, processed.
-          </li>
-          <li>
-            Data Processor<br />
-            Data Processor means any natural or legal person who processes the data on behalf of the Data Controller.
-          </li>
-          <li>
-            Data Subject<br/>
-            Data Subject is any living individual who is using our Service and is the subject of Personal Data.
-          </li>
-        </ul>
-        <div class="mt-3">
-          <b-row>
-            <b-col cols="6">
-              <ul class="pl-1 left-tab">
-                <li>Principles for processing personal data</li>
-                <li>What personal data we collcet and process</li>
-                <li>How we use the personal data</li>
-                <li>Legal basis for collecting and processing personal data</li>
-                <li>Retention of personal data</li>
-              </ul>
-            </b-col>
-            <b-col cols="6">
-              <div class="fw-500 mb-1">Our priciples for processing personal data are:</div>
-              <ul class="pl-1">
-                <li>Fairness and lawfulness.</li>
-                <li>When we process personal data, the individual rights of the Data Subjects must be protected.</li>
-                <li>All personal data must be collected and processed in a legal and fair manner.<br /> Restricted to a specific purpose.</li>
-                <li>The Personal data of Data Subject must be processed only for specific purposes.<br /> Transparency.</li>
-                <li>The Data Subject must be informed of how his/her data is being collected, processed and used.</li>
-              </ul>
-            </b-col>
-          </b-row>
-        </div>
-      </b-container>
+      <div class="position-relative">
+        <img
+        class="d-block w-100 img-auto"
+        height="500"
+        src="/image 40.jpg"
+        alt="image"
+        />
+      </div>
     </div>
 
+    <section class="pad-side">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="title">Privacy Policy</div>
+      </div>
+      <b-row class="mt-2">
+        <b-col cols="5">
+          <div class="faq-category mt-2">
+            <div class="category active">INFORMATION COLLECTION</div>
+            <div class="category">INFORMATION PROTECTION</div>
+            <div class="category">COOKIES</div>
+            <div class="category">INFORMATION DISCLOSURE TO OUTSIDE PARTIES</div>
+          </div>
+        </b-col>
+        <b-col cols="7">
+          <!-- desc accordion -->
+          <div class="accordion faq" id="menu-kategori1">
+            <p>We (PT. Ayunan Bulan International) collect information when you register on our website. We ask for your name, email address and shipping/billing information. You may, however, visit our website anonymously.</p>
+            <p>The information we collect from you may be used:</p>
+            <ul class="pl-1">
+              <li>to personalize your experience in order to better answer your needs</li>
+              <li>to improve our website from the feedback you give us</li>
+              <li>to improve customer service</li>
+              <li>to process transactions, but your information will not be sold, traded, rented, given to any other third party other than for the purpose of delivering your purchase</li>
+              <li>to send emails: the email address you provide for order processing, may be used to send you information and updates on your order</li>
+              <li>to carry out a survey, a contest, a promotion.</li>
+            </ul>
+          </div>
+        </b-col>
+      </b-row>
+    </section>
     <!-- footer -->
     <Footer />
   </div>
@@ -464,23 +446,22 @@
 </style>
 
 <script>
-import VueSlickCarousel from 'vue-slick-carousel'
 import TopNavbar from'/components/top-navbar'
 import Footer from'/components/footer'
 
 export default {
   name: 'MyComponent',
   components: { 
-    VueSlickCarousel,
     TopNavbar,
     Footer
   },
 
   data() {
-      return {
-        slide: 0,
-        sliding: null,
-        isHidden: false
-      }
+    return {
+      isHidden: false,
     }
+  },
+  methods: {
+  }
 }
+</script>
