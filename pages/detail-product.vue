@@ -10,49 +10,51 @@
       <b-container>
         <b-row>
           <b-col cols="5" class="detail-product">
-            <img
-            class="d-block img-fluid w-100 pic"
-            src="/Image 20.jpg"
-            alt="image"
-            />
-            <div class="action">
+            <div class="sticky" style="position: sticky; top: 20px;">
               <img
-              src="/upload.svg"
-              alt="image"
-              height="20"
+                class="d-block img-fluid w-100 pic"
+                src="/Image 20.jpg"
+                alt="image"
               />
-              <img
-              src="/download.svg"
-              alt="image"
-              height="20"
-              />
-              <img
-              src="/rotate.svg"
-              alt="image"
-              height="20"
-              />
-            </div>
-            <div class="thumbnail">
-              <img
-              class="d-block img-fluid w-100"
-              src="/thumb1.png"
-              alt="image"
-              />
-              <img
-              class="d-block img-fluid w-100"
-              src="/thumb2.png"
-              alt="image"
-              />
-              <img
-              class="d-block img-fluid w-100"
-              src="/thumb3.png"
-              alt="image"
-              />
-              <img
-              class="d-block img-fluid w-100"
-              src="/thumb4.png"
-              alt="image"
-              />
+              <div class="action">
+                <img
+                src="/upload.svg"
+                alt="image"
+                height="20"
+                />
+                <img
+                src="/download.svg"
+                alt="image"
+                height="20"
+                />
+                <img
+                src="/rotate.svg"
+                alt="image"
+                height="20"
+                />
+              </div>
+              <div class="thumbnail">
+                <img
+                class="d-block img-fluid w-100"
+                src="/thumb1.png"
+                alt="image"
+                />
+                <img
+                class="d-block img-fluid w-100"
+                src="/thumb2.png"
+                alt="image"
+                />
+                <img
+                class="d-block img-fluid w-100"
+                src="/thumb3.png"
+                alt="image"
+                />
+                <img
+                class="d-block img-fluid w-100"
+                src="/thumb4.png"
+                alt="image"
+                />
+              </div>
             </div>
           </b-col>
           <b-col cols="7" class="spec-product">
