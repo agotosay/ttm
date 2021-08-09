@@ -1,31 +1,79 @@
 <template>
-  <div class="position-relative">
+  <div class="position-relative top-bar">
     <b-navbar toggleable="lg" type="light" variant="light">
-      <b-navbar-brand @click="$router.push('/')" class="logo">
-        <img
-        class="d-block img-margin"
-        src="/black-logo.png"
-        height="20"
-        alt="image"
-        />
-      </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-      <b-collapse id="nav-collapse" is-nav>
+      <b-collapse id="nav-collapse" class="justify-content-between" is-nav>
         <!-- Right aligned nav items -->
-        <b-navbar-nav class="ml-auto">
-          <b-nav-item href="#" v-on:click="isHidden = !isHidden">PRODUCTS</b-nav-item>
-          <b-nav-item href="#">SHOP</b-nav-item>
-          <b-nav-item href="#">BUNDLES</b-nav-item>
-          <b-nav-item href="#">ABOUT US</b-nav-item>
-          <b-nav-item href="#">GALLERY</b-nav-item>
-          <b-nav-item href="#">CONTACT</b-nav-item>
-          <b-nav-item to="/signIn">
-            <b-img src="../static/shopping-bag.svg" fluid alt="" width="14"></b-img>
+        <div class="input-group search">
+          <div class="input-group-prepend">
+            <img
+            class="ml-1"
+            src="/loupe.svg"
+            height="14"
+            alt="image"
+            />
+          </div>
+          <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <b-navbar-nav>
+          <b-nav-item class="link-icon" href="#" v-on:click="isHidden = !isHidden">
+            PRODUCTS
+            <img
+            class="ml-1"
+            src="/arrow-down.svg"
+            height="10"
+            alt="image"
+            />
           </b-nav-item>
+          <b-nav-item href="#" @click="$router.push('/bundles')">BUNDLES</b-nav-item>
+          <b-nav-item href="#" @click="$router.push('/about-us')">ABOUT US</b-nav-item>
+          <b-nav-item href="#" @click="$router.push('/gallery')">GALLERY</b-nav-item>
+          <b-nav-item href="#" class="ml-0" @click="$router.push('/contact-us')">CONTACT</b-nav-item>
 
         </b-navbar-nav>
+        <b-nav pills>
+          <b-nav-item-dropdown
+            id="my-nav-dropdown"
+            text="EN"
+            toggle-class="nav-link-custom"
+            right
+          >
+            <b-dropdown-item>One</b-dropdown-item>
+            <b-dropdown-item>Two</b-dropdown-item>
+            <b-dropdown-divider></b-dropdown-divider>
+            <b-dropdown-item>Three</b-dropdown-item>
+          </b-nav-item-dropdown>
+          <b-nav-item-dropdown
+            id="my-nav-dropdown"
+            text="EUR"
+            toggle-class="nav-link-custom"
+            right
+          >
+            <b-dropdown-item>One</b-dropdown-item>
+            <b-dropdown-item>Two</b-dropdown-item>
+            <b-dropdown-divider></b-dropdown-divider>
+            <b-dropdown-item>Three</b-dropdown-item>
+          </b-nav-item-dropdown>
+          <b-nav-item class="user">
+            <img
+            class="d-block img-margin"
+            height="14"
+            src="/cart.png"
+            alt="image"
+            />
+          </b-nav-item>
+          <b-nav-item class="user" @click="$router.push('/signIn')">
+            <img
+            class="d-block img-margin"
+            height="14"
+            src="/user.svg"
+            alt="image"
+            />
+          </b-nav-item>
+        </b-nav>
       </b-collapse>
     </b-navbar>
+
     <div class="mega-menu" v-if="isHidden">
       <b-container>
         <b-row>
@@ -339,5 +387,14 @@
       </b-container>
     </div>
   </div>
- 
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      isHidden: false
+    }
+  }
+}
+</script>

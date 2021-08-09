@@ -440,12 +440,14 @@
 <script>
 import TopNavbar from'/components/top-navbar'
 import Footer from'/components/footer'
+import Navbar from'/components/navbar'
 
 export default {
   name: 'MyComponent',
   components: {
     TopNavbar,
-    Footer
+    Footer,
+    Navbar
   },
 
   data() {
