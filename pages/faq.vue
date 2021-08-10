@@ -12,7 +12,7 @@
         <img
         class="d-block w-100 img-auto"
         height="500"
-        src="/image 40.jpg"
+        src="/image-40.jpg"
         alt="image"
         />
       </div>

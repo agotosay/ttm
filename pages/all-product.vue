@@ -25,7 +25,7 @@
           <b-col cols="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
-            src="/image 19.png"
+            src="/image-19.png"
             alt="image"
             height="218"
             />
@@ -147,7 +147,7 @@
           <b-col cols="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
-            src="/image 32.png"
+            src="/image-32.png"
             alt="image"
             height="218"
             />
@@ -169,7 +169,7 @@
           <b-col cols="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
-            src="/image 33.png"
+            src="/image-33.png"
             alt="image"
             height="218"
             />
@@ -191,7 +191,7 @@
           <b-col cols="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
-            src="/image 34.png"
+            src="/image-34.png"
             alt="image"
             height="218"
             />
@@ -213,7 +213,7 @@
           <b-col cols="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
-            src="/image 35.png"
+            src="/image-35.png"
             alt="image"
             height="218"
             />
@@ -235,7 +235,7 @@
           <b-col cols="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
-            src="/image 36.png"
+            src="/image-36.png"
             alt="image"
             height="218"
             />
@@ -257,7 +257,7 @@
           <b-col cols="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
-            src="/image 37.png"
+            src="/image-37.png"
             alt="image"
             height="218"
             />
@@ -279,7 +279,7 @@
           <b-col cols="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
-            src="/image 38.png"
+            src="/image-38.png"
             alt="image"
             height="218"
             />

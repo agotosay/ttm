@@ -17,7 +17,7 @@
             <div class="download">
               <img
               class="d-block img-fluid w-100"
-              src="/image 2.jpg"
+              src="/image-2.jpg"
               alt="image"
               />
               <b-button variant="primary" class="w-100 d-flex align-items-center justify-content-center mt-2">
@@ -29,7 +29,7 @@
             <div class="download">
               <img
               class="d-block img-fluid w-100"
-              src="/image 3.jpg"
+              src="/image-3.jpg"
               alt="image"
               />
               <b-button variant="primary" class="w-100 d-flex align-items-center justify-content-center mt-2">
@@ -41,7 +41,7 @@
             <div class="download">
               <img
               class="d-block img-fluid w-100"
-              src="/image 4.jpg"
+              src="/image-4.jpg"
               alt="image"
               />
               <b-button variant="primary" class="w-100 d-flex align-items-center justify-content-center mt-2">

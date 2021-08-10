@@ -281,7 +281,7 @@
             </div>
             <img
             class="d-block img-fluid w-100 img-tribe"
-            src="/image 17.png"
+            src="/image-17.png"
             alt="image"
             /> 
           </b-col>
@@ -289,31 +289,31 @@
             <div class="d-flex">
               <img
               class="d-block img-fluid w-100"
-              src="/image 12.png"
+              src="/image-12.png"
               alt="image"
               />  
               <img
               class="d-block img-fluid w-100"
-              src="/image 13.png"
+              src="/image-13.png"
               alt="image"
               />  
             </div>
             <div>
               <img
               class="d-block img-fluid w-100"
-              src="/image 14.png"
+              src="/image-14.png"
               alt="image"
               />  
             </div>
             <div class="d-flex">
               <img
               class="d-block img-fluid w-100"
-              src="/image 15.png"
+              src="/image-15.png"
               alt="image"
               />  
               <img
               class="d-block img-fluid w-100"
-              src="/image 16.png"
+              src="/image-16.png"
               alt="image"
               />  
             </div>

@@ -13,7 +13,7 @@
             <div class="sticky" style="position: sticky; top: 70px;">
               <img
                 class="d-block img-fluid w-100 pic"
-                src="/Image 20.jpg"
+                src="/Image-20.jpg"
                 alt="image"
               />
               <div class="action">
@@ -126,7 +126,7 @@
               <div class="title">SLEEVE</div>
               <img
               class="d-block img-fluid w-100 pic"
-              src="/Image 26.jpg"
+              src="/Image-26.jpg"
               alt="image"
               />
               <div class="btn w-100 d-flex align-items-center justify-content-center mt-2" @click="sleeveSelect" :class="onSleeveSelect !== 'active' ? 'btn-thirdy' : 'btn-primary'">
@@ -167,7 +167,7 @@
                   <div class="title">HOOK</div>
                   <img
                   class="d-block img-fluid w-100 accessories"
-                  src="/Image 27.png"
+                  src="/Image-27.png"
                   alt="image"
                   />
                   <b-button :variant="selectedAcc1 === 0 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc1(0)">
@@ -180,7 +180,7 @@
                   <div class="title">CARABINER</div>
                   <img
                   class="d-block img-fluid w-100 accessories"
-                  src="/Image 28.png"
+                  src="/Image-28.png"
                   alt="image"
                   />
                   <b-button :variant="selectedAcc1 === 1 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc1(1)">
@@ -197,7 +197,7 @@
                   <div class="title">NAUTICAL ROPE</div>
                   <img
                   class="d-block img-fluid w-100 accessories"
-                  src="/Image 29.png"
+                  src="/Image-29.png"
                   alt="image"
                   />
                   <b-button :variant="selectedAcc2 === 0 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc2(0)">
@@ -210,7 +210,7 @@
                   <div class="title">MOONSTRAP</div>
                   <img
                   class="d-block img-fluid w-100 accessories"
-                  src="/Image 30.png"
+                  src="/Image-30.png"
                   alt="image"
                   />
                   <b-button :variant="selectedAcc2=== 1 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc2(1)">

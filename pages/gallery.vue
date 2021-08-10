@@ -15,17 +15,17 @@
         <VueSlickCarousel v-bind="gallerys" :arrows="true" :dots="false">
           <img
           class="img-fluid w-100"
-          src="/image 31.png"
+          src="/image-31.png"
           alt="image"
           />
           <img
           class="img-fluid w-100"
-          src="/image 31.png"
+          src="/image-31.png"
           alt="image"
           />
           <img
           class="img-fluid w-100"
-          src="/image 31.png"
+          src="/image-31.png"
           alt="image"
           />
         </VueSlickCarousel>

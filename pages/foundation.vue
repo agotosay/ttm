@@ -17,7 +17,7 @@
         <img
         class="d-block w-100 img-auto"
         height="500"
-        src="/image 39.jpg"
+        src="/image-39.jpg"
         alt="image"
         />
         <div class="foundation-pos">
@@ -127,31 +127,31 @@
             <div class="d-flex">
               <img
               class="d-block img-fluid w-100"
-              src="/image 12.png"
+              src="/image-12.png"
               alt="image"
               />  
               <img
               class="d-block img-fluid w-100"
-              src="/image 13.png"
+              src="/image-13.png"
               alt="image"
               />  
             </div>
             <div>
               <img
               class="d-block img-fluid w-100"
-              src="/image 14.png"
+              src="/image-14.png"
               alt="image"
               />  
             </div>
             <div class="d-flex">
               <img
               class="d-block img-fluid w-100"
-              src="/image 15.png"
+              src="/image-15.png"
               alt="image"
               />  
               <img
               class="d-block img-fluid w-100"
-              src="/image 16.png"
+              src="/image-16.png"
               alt="image"
               />  
             </div>

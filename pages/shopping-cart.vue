@@ -27,7 +27,7 @@
               <td>
                 <img
                 class="d-block img-fluid"
-                src="/Image 41.jpg"
+                src="/Image-41.jpg"
                 alt="image"
                 />
               </td>
