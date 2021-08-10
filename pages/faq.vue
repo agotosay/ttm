@@ -26,8 +26,8 @@
         </div>
       </div>
       <b-row class="mt-2">
-        <b-col cols="5">
-          <div class="faq-category mt-2" v-for="(item, index) in categoryFAQ" :key="index">
+        <b-col cols="5" class="mt-2">
+          <div class="faq-category" v-for="(item, index) in categoryFAQ" :key="index">
             <div class="category" :class="{'active' : index === selectedFAQ}" @click="onSelectFAQ(index)">{{item.name}}</div>
           </div>
         </b-col>
@@ -176,10 +176,138 @@
             </div>
           </div>
           <div class="accordion faq" v-if="selectedFAQ === 1 ">
-            asdasdasdasdas
+            <div no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-15 variant="info">Is my order subject to import duties and other fees?</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-15" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </b-card-body>
+              </b-collapse>
+            </div>
+            <div no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-16 variant="info">Is it safe to buy TTTM products online using a credit card?</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-16" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </b-card-body>
+              </b-collapse>
+            </div>
+            <div no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-17 variant="info">Do you ship Everywhere?</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-17" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </b-card-body>
+              </b-collapse>
+            </div>
+            <div no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-18 variant="info">How much do shipping and customs charges for my order cost?</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-18" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </b-card-body>
+              </b-collapse>
+            </div>
+            <div no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-19 variant="info">How do I Track my order?</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-19" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </b-card-body>
+              </b-collapse>
+            </div>
+            <div no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-20 variant="info">What payment options?</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-20" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </b-card-body>
+              </b-collapse>
+            </div>
+            <div no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-21 variant="info">Can I pay using PayPal?</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-21" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </b-card-body>
+              </b-collapse>
+            </div>
+            <div no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-22 variant="info">When will my order be shipped?</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-22" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </b-card-body>
+              </b-collapse>
+            </div>
           </div>
           <div class="accordion faq" v-if="selectedFAQ === 2 ">
-            bsbsbsbsbslkhjfdsakhdkjahskjh
+            <div no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-23 variant="info">How do I create an account?</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-23" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </b-card-body>
+              </b-collapse>
+            </div>
+            <div no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-24 variant="info">Has my order been shipped yet?</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-24" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </b-card-body>
+              </b-collapse>
+            </div>
+            <div no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-25 variant="info">How do I change quantities or items of my order?</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-25" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </b-card-body>
+              </b-collapse>
+            </div>
+            <div no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-26 variant="info">How do I track my order?</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-26" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </b-card-body>
+              </b-collapse>
+            </div>
+            <div no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-27 variant="info">How Do I Return or Exchange an Order?</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-27" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </b-card-body>
+              </b-collapse>
+            </div>
           </div>
         </b-col>
       </b-row>

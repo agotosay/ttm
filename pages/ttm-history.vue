@@ -56,7 +56,6 @@ export default {
   methods : {
     onSelectedStep (index) {
       this.selectedStep = index
-      console.log(this.selectedStep)
     }
   }
 }

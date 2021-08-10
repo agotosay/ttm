@@ -10,7 +10,7 @@
       <b-container>
         <b-row>
           <b-col cols="5" class="detail-product">
-            <div class="sticky" style="position: sticky; top: 20px;">
+            <div class="sticky" style="position: sticky; top: 70px;">
               <img
                 class="d-block img-fluid w-100 pic"
                 src="/Image 20.jpg"
@@ -73,7 +73,7 @@
             <!-- main color -->
             <b-card class="text-center mb-1">
               <div class="title">MAIN COLOR</div>
-              <div class="color">
+              <div class="color" @click="mainColor = !mainColor">
                 <div class="selected-color orange"></div>
                 <img
                 class="ml-1 d-block"
@@ -82,11 +82,23 @@
                 alt="image"
                 />
               </div>
+              <!-- toggle color -->
+              <div class="main-color" v-if="mainColor">
+                <div class="color orange"></div>
+                <div class="color jade"></div>
+                <div class="color old-purple"></div>
+                <div class="color pink"></div>
+                <div class="color green"></div>
+                <div class="color blue"></div>
+                <div class="color yellow"></div>
+                <div class="color white"></div>
+                <div class="color black"></div>
+              </div>
             </b-card>
             <!-- second color -->
             <b-card class="text-center mb-1">
               <div class="title">SECOND COLOR</div>
-              <div class="color">
+              <div class="color" @click="secondColor = !secondColor">
                 <div class="selected-color dark-brown"></div>
                 <img
                 class="ml-1 d-block"
@@ -94,6 +106,19 @@
                 height="16"
                 alt="image"
                 />
+              </div>
+              <!-- toggle color -->
+              <!-- toggle color -->
+              <div class="main-color" v-if="secondColor">
+                <div class="color dark-brown"></div>
+                <div class="color jade"></div>
+                <div class="color old-purple"></div>
+                <div class="color pink"></div>
+                <div class="color green"></div>
+                <div class="color blue"></div>
+                <div class="color yellow"></div>
+                <div class="color white"></div>
+                <div class="color black"></div>
               </div>
             </b-card>
             <!-- sleeve-->
@@ -104,14 +129,14 @@
               src="/Image 26.jpg"
               alt="image"
               />
-              <b-button variant="primary" class="w-100 d-flex align-items-center justify-content-center mt-2">
+              <div class="btn w-100 d-flex align-items-center justify-content-center mt-2" @click="sleeveSelect" :class="onSleeveSelect !== 'active' ? 'btn-thirdy' : 'btn-primary'">
                 SELECTED
-              </b-button>
+              </div>
             </b-card>
             <!-- sleeve color -->
             <b-card class="text-center mb-1">
               <div class="title">SLEEVE COLOR</div>
-              <div class="color">
+              <div class="color" @click="sleeveColor = !sleeveColor">
                 <div class="selected-color dark-brown"></div>
                 <img
                 class="ml-1 d-block"
@@ -119,6 +144,19 @@
                 height="16"
                 alt="image"
                 />
+              </div>
+              <!-- toggle color -->
+              <!-- toggle color -->
+              <div class="main-color" v-if="sleeveColor">
+                <div class="color dark-brown"></div>
+                <div class="color jade"></div>
+                <div class="color old-purple"></div>
+                <div class="color pink"></div>
+                <div class="color green"></div>
+                <div class="color blue"></div>
+                <div class="color yellow"></div>
+                <div class="color white"></div>
+                <div class="color black"></div>
               </div>
             </b-card>
             <!-- accessories 1 -->
@@ -132,20 +170,20 @@
                   src="/Image 27.png"
                   alt="image"
                   />
-                  <b-button variant="primary" class="w-100 d-flex align-items-center justify-content-center mt-2">
+                  <b-button :variant="selectedAcc1 === 0 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc1(0)">
                     SELECTED
                   </b-button>
                 </b-card>
               </b-col>
               <b-col cols="6">
                 <b-card class="text-center mb-1">
-                  <div class="title">HOOK</div>
+                  <div class="title">CARABINER</div>
                   <img
                   class="d-block img-fluid w-100 accessories"
                   src="/Image 28.png"
                   alt="image"
                   />
-                  <b-button variant="thirdy" class="w-100 d-flex align-items-center justify-content-center mt-2">
+                  <b-button :variant="selectedAcc1 === 1 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc1(1)">
                     SELECTED
                   </b-button>
                 </b-card>
@@ -162,7 +200,7 @@
                   src="/Image 29.png"
                   alt="image"
                   />
-                  <b-button variant="thirdy" class="w-100 d-flex align-items-center justify-content-center mt-2">
+                  <b-button :variant="selectedAcc2 === 0 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc2(0)">
                     SELECTED
                   </b-button> 
                 </b-card>
@@ -175,7 +213,7 @@
                   src="/Image 30.png"
                   alt="image"
                   />
-                  <b-button variant="thirdy" class="w-100 d-flex align-items-center justify-content-center mt-2">
+                  <b-button :variant="selectedAcc2=== 1 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc2(1)">
                     SELECTED
                   </b-button>
                 </b-card>
@@ -454,36 +492,50 @@ export default {
     VueSlickCarousel,
     TopNavbar,
     Footer,
-    Navbar
+    Navbar,
   },
 
   data() {
-      return {
-        slide: 0,
-        sliding: null,
-        isHidden: false,
-        sizeSelected: '',
-        sizeOption: [
-          {
-            name: 'COMPACT (320 × 155cm / 10’5” × 4’11”)',
-            price: '-10 €'
-          },
-          {
-            name: 'COMPACT (320 × 155cm / 10’5” × 4’11”)',
-            price: '-10 €'
-          },
-          {
-            name: 'COMPACT (320 × 155cm / 10’5” × 4’11”)',
-            price: '-10 €'
-          }
-        ]
-      }
-    },
-    methods: {
-      onSelectSize (index) {
-        this.sizeSelected = index
-        console.log(this.sizeSelected)
-      }
+    return {
+      slide: 0,
+      sliding: null,
+      isHidden: false,
+      sizeSelected: '',
+      sizeOption: [
+        {
+          name: 'COMPACT (320 × 155cm / 10’5” × 4’11”)',
+          price: '-10 €'
+        },
+        {
+          name: 'COMPACT (320 × 155cm / 10’5” × 4’11”)',
+          price: '-10 €'
+        },
+        {
+          name: 'COMPACT (320 × 155cm / 10’5” × 4’11”)',
+          price: '-10 €'
+        }
+      ],
+      mainColor: false,
+      secondColor: false,
+      sleeveColor: false,
+      onSleeveSelect: '',
+      selectedAcc1: '',
+      selectedAcc2: ''
     }
+  },
+  methods: {
+    onSelectSize (index) {
+      this.sizeSelected = index
+    },
+    sleeveSelect() {
+      this.onSleeveSelect = this.onSleeveSelect === 'active' ? '' : 'active'
+    },
+    onSelectAcc1(index) {
+      this.selectedAcc1 = index
+    },
+    onSelectAcc2(index) {
+      this.selectedAcc2 = index
+    }
+  }
 }
 </script>

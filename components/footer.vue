@@ -115,7 +115,7 @@
               <b-link href="#">My Account</b-link>
             </li>
             <li>
-              <b-link href="#">Shopping Cart</b-link>
+              <b-link @click="$router.push('/shopping-cart')">Shopping Cart</b-link>
             </li>
             <li>
               <b-link @click="$router.push('/tracking-order')">Tracking Order</b-link>

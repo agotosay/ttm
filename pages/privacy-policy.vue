@@ -23,17 +23,14 @@
         <div class="title">Privacy Policy</div>
       </div>
       <b-row class="mt-2">
-        <b-col cols="5">
-          <div class="faq-category mt-2">
-            <div class="category active">INFORMATION COLLECTION</div>
-            <div class="category">INFORMATION PROTECTION</div>
-            <div class="category">COOKIES</div>
-            <div class="category">INFORMATION DISCLOSURE TO OUTSIDE PARTIES</div>
+        <b-col cols="5" class="mt-2">
+          <div class="faq-category" v-for="(item, index) in categoryFAQ" :key="index">
+            <div class="category" :class="{'active' : index === selectedFAQ}" @click="onSelectFAQ(index)">{{item.name}}</div>
           </div>
         </b-col>
         <b-col cols="7">
           <!-- desc accordion -->
-          <div class="accordion faq" id="menu-kategori1">
+          <div class="accordion faq" v-if="selectedFAQ === 0">
             <p>We (PT. Ayunan Bulan International) collect information when you register on our website. We ask for your name, email address and shipping/billing information. You may, however, visit our website anonymously.</p>
             <p>The information we collect from you may be used:</p>
             <ul class="pl-1">
@@ -44,6 +41,15 @@
               <li>to send emails: the email address you provide for order processing, may be used to send you information and updates on your order</li>
               <li>to carry out a survey, a contest, a promotion.</li>
             </ul>
+          </div>
+          <div class="accordion faq" v-if="selectedFAQ === 1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="accordion faq" v-if="selectedFAQ === 2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="accordion faq" v-if="selectedFAQ === 3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </b-col>
       </b-row>
@@ -74,9 +80,27 @@ export default {
   data() {
     return {
       isHidden: false,
+      categoryFAQ: [
+        {
+          name: 'INFORMATION COLLECTION'
+        },
+        {
+          name: 'INFORMATION PROTECTION'
+        },
+        {
+          name: 'COOKIES'
+        },
+        {
+          name: 'INFORMATION DISCLOSURE TO OUTSIDE PARTIES'
+        }
+      ],
+      selectedFAQ: 0
     }
   },
   methods: {
+    onSelectFAQ (index) {
+      this.selectedFAQ = index
+    }
   }
 }
 </script>

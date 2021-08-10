@@ -1,5 +1,5 @@
 <template>
-  <div class="position-relative top-bar">
+  <div class="top-bar sticky">
     <b-navbar toggleable="lg" type="light" variant="light">
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" class="justify-content-between" is-nav>
@@ -54,7 +54,7 @@
             <b-dropdown-divider></b-dropdown-divider>
             <b-dropdown-item>Three</b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item class="user">
+          <b-nav-item class="user" @click="$router.push('/shopping-cart')">
             <img
             class="d-block img-margin"
             height="14"

@@ -24,6 +24,12 @@ body{
     color: #042742 !important;
     border-color: transparent !important;
   }
+  &:focus{
+    background-color: #FFC844 !important;
+    color: #042742 !important;
+    border-color: transparent !important;
+    box-shadow: none;
+  }
 }
 .btn-primary2{
   background-color: #003057;
@@ -71,12 +77,18 @@ body{
   &:hover{
     background-color: #fff;
     color: #042742;
-    border-color: transparent;
+    border-color: #FFC844;
   }
   &:active{
     background-color: #fff !important;
     color: #042742 !important;
-    border-color: transparent !important;
+    border-color: #FFC844 !important;
+  }
+  &:focus{
+    background-color: #fff !important;
+    color: #042742 !important;
+    border-color: #FFC844 !important;
+    box-shadow: none;
   }
 }
 .ml-1{
@@ -148,6 +160,9 @@ body{
 .text-blue{
   color: #4D8BC0 !important;
 }
+.text-red{
+  color: #FF0000 !important;
+}
 .title{
   font-size: 40px;
   text-transform: uppercase; 
@@ -165,6 +180,16 @@ p{
 }
 ul{
   line-height: 2rem;
+  &.two-list{
+    columns: 130px 2;
+    column-gap: 40px;
+    &.no-symbol{
+      list-style: none;
+    }
+    li{
+      margin-bottom: 20px;
+    }
+  }
 }
 a {
   text-decoration: none;
@@ -202,6 +227,11 @@ a {
   .nav-pills .nav-link{
     border-radius: 0;
     padding: 0
+  }
+  &.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 99;
   }
   a{
     font-weight: 400;
@@ -780,7 +810,7 @@ a {
       cursor: pointer;
       .selected-color{
         height: 30px;
-        width: 100%;
+        width: 92%;
         border-radius: 50px;
         &.orange{
           background-color: #F85A28;
@@ -1132,6 +1162,72 @@ a {
       position: absolute;
       width: 10rem;
       bottom: -25px;
+    }
+  }
+}
+.main-color{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: -2rem;
+  .color{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+     margin-left: 2rem;
+    &+.color{
+      margin-left: 2rem;
+    }
+    &.orange{
+      background-color: #F85A28;
+    }
+    &.jade{
+      background-color: #3D7456;
+    }
+    &.old-purple{
+      background-color: #322A66;
+    }
+    &.pink{
+      background-color: #E554B4;
+    }
+    &.green{
+      background-color: #A6D383;
+    }
+    &.blue{
+      background-color: #53DBED;
+    }
+    &.yellow{
+      background-color: #FFC844;
+    }
+    &.white{
+      background-color: #FFFFFF;
+      border: 1px solid #333;
+    }
+    &.black{
+      background-color: #000000;
+    }
+    &.dark-brown{
+      background-color: #5D504F;
+    }
+  }
+}
+.quantity{
+  &.counter{
+    span{
+      font-size: 1.25rem;
+      &:nth-child(1){
+        cursor: pointer;
+        padding: 0 1rem;
+      }
+      &:nth-child(2){
+        padding: 1rem;
+      }
+      &:nth-child(3){
+        cursor: pointer;
+        padding: 0 1rem;
+      }
     }
   }
 }
