@@ -299,7 +299,6 @@
               <b-form-textarea
                 class="mt-1"
                 id="textarea"
-                v-model="text"
                 placeholder="Enter your review here"
                 rows="6"
                 max-rows="9"

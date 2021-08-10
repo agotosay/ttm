@@ -103,6 +103,9 @@ body{
 .mt-1{
   margin-top: 1rem !important;
 }
+.mb-0h{
+  margin-bottom: .5rem !important;
+}
 .mb-1{
   margin-bottom: 1rem !important;
 }
@@ -138,6 +141,9 @@ body{
 }
 .pr-1{
   padding-right: 1rem !important;
+}
+.pr-2{
+  padding-right: 2rem !important;
 }
 .pl-0{
   padding-left: 0 !important;
@@ -217,6 +223,24 @@ a {
 }
 .w-100{
   width: 100%;
+}
+.fs-3{
+  font-size: 3rem !important;
+}
+.fs-2h{
+  font-size: 2.5rem !important;
+}
+.fs-2{
+  font-size: 2rem !important;
+}
+.fs-1h{
+  font-size: 1.5rem !important;
+}
+.fs-1{
+  font-size: 1rem !important;
+}
+.text-uppercase{
+  text-transform: uppercase;
 }
 
 // top navbar

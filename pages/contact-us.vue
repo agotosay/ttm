@@ -29,7 +29,6 @@
               <b-form-textarea
                 class="mb-1 rounded-radius"
                 id="textarea"
-                v-model="text"
                 placeholder="Your message"
                 rows="6"
                 max-rows="9"
@@ -42,7 +41,6 @@
               </div>
               <b-form-checkbox
                 id="checkbox-1"
-                v-model="status"
                 name="checkbox-1"
                 value="accepted"
                 unchecked-value="not_accepted"

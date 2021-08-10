@@ -78,7 +78,6 @@
               <label>Personal Description :</label>
               <b-form-textarea
                 id="textarea"
-                v-model="text"
                 placeholder="Tell us why we should choose you as our ambassador ?"
                 rows="6"
                 max-rows="9"
@@ -86,7 +85,6 @@
             </b-form>
             <b-form-checkbox
               id="checkbox-1"
-              v-model="status"
               name="checkbox-1"
               value="accepted"
               unchecked-value="not_accepted"
