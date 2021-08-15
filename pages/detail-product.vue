@@ -471,6 +471,43 @@
       </b-container>
     </section>
 
+    <div class="price-total">
+      <b-container>
+        <b-row>
+          <b-col cols="9">
+            <div class="additional">
+              <div class="sub-price">40.99 <span>&euro;</span></div>
+              <div class="info-add">ORIGINAL HAMMOCK</div>
+            </div>
+            <div class="additional">
+              <div class="sub-price">+ 10.99 <span>&euro;</span></div>
+              <div class="info-add">UV SLEEVE</div>
+            </div>
+            <div class="additional">
+              <div class="sub-price">+ 10.99 <span>&euro;</span></div>
+              <div class="info-add">CARABINER</div>
+            </div>
+            <div class="additional">
+              <div class="sub-price">+ 10.99 <span>&euro;</span></div>
+              <div class="info-add">MOONSTRAP</div>
+            </div>
+          </b-col>
+          <b-col cols="3" class="text-right d-grid">
+            <div class="price">
+              80.99 <span>&euro;</span>
+            </div>
+            <b-button variant="primary" class="w-100 d-flex align-items-center justify-content-center" @click="$router.push('/detail-product')">
+              ADD TO CART 
+              <img 
+              src="/arrow-right.svg" 
+              width="6"
+              alt="image" 
+              class="ml-1" />
+            </b-button>
+          </b-col>
+        </b-row>
+      </b-container>
+    </div>
     <!-- footer -->
     <Footer />
   </div>

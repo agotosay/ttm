@@ -201,6 +201,9 @@ body{
 .pointer{
   cursor: pointer;
 }
+.d-grid{
+  display: grid;
+}
 section{
   padding: 60px 0;
   &.pad-side{
@@ -850,6 +853,28 @@ a {
       width: calc(100%/4) !important;
       object-fit: cover;
     }
+  }
+}
+.price-total{
+  padding: 2rem 0;
+  background-color: #E1EBF1;
+  position: sticky;
+  bottom: 0;
+  .btn{
+    align-self: flex-end;
+  }
+  .additional{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 50%);
+    &.additional{
+      margin-top: .5rem;
+    }
+  }
+  .price{
+    font-size: 32px;
+    font-weight: 800;
   }
 }
 .spec-product{
