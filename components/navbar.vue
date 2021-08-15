@@ -60,7 +60,7 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
-            <li class="nav-item cart">
+            <li class="nav-item cart pointer" @click="$router.push('/shopping-cart')">
               <div class="counter">2</div>
               <img
               class="d-block img-margin ml-1 mr-1"
@@ -69,7 +69,7 @@
               alt="image"
               />
             </li>
-            <li class="nav-item user">
+            <li class="nav-item user pointer" @click="$router.push('/signIn')">
               <img
               class="d-block img-margin"
               height="14"

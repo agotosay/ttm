@@ -106,7 +106,7 @@
                 <i class="fas fa-star text-warning"></i>
               </div>
               <div class="product-price">40.99 &euro;</div>
-              <b-button variant="primary" class="w-100 d-flex align-items-center justify-content-center mt-2 rounded-radius" @click="$router.push('/detail-product')">
+              <b-button variant="primary" class="w-100 d-flex align-items-center justify-content-center mt-2 rounded-radius" @click="$router.push('/simple-detail-product')">
                 SHOP NOW
                 <img 
                 src="/arrow-right.svg" 
@@ -315,8 +315,6 @@ export default {
 
   data() {
       return {
-        slide: 0,
-        sliding: null,
         isHidden: false,
         isHidden1: false
       }

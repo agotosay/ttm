@@ -14,7 +14,6 @@
           id="carousel-1"
           v-model="slide"
           :interval="4000"
-          controls
           indicators
           background="#ababab"
           img-width="1024"
@@ -40,7 +39,37 @@
                         <p>I was blown away by the tiny packing size and the very thin and light material. It certainly lightest hammock I have ever come across. The material feels like very fine silk.</p>
                     </b-col>
                   </b-row>
-                  <b-button variant="primary" class="mt-2 w-100">
+                  <b-button variant="primary" class="mt-2">
+                    SHOP NOW
+                    <img 
+                      src="/arrow-right.svg" 
+                      width="6"
+                      alt="image" 
+                      class="ml-1" />
+                  </b-button>
+                </div>
+              </b-container>
+              </div>
+            </template>
+          </b-carousel-slide>
+          <b-carousel-slide>
+            <template #img>
+              <div class="slide-banner position-relative">
+                <img
+                  class="d-block w-100 img-auto"
+                  height="700"
+                  src="/banner1.jpg"
+                  alt="image"
+                />
+              <b-container>
+                <div class="slide-wording position-absolute text-center mt-2">
+                  <h1>INTRODUCING: <span class="fw-900">THE PRO HAMMOCK</span></h1>
+                  <b-row>
+                    <b-col cols="10" offset="1">
+                        <p>I was blown away by the tiny packing size and the very thin and light material. It certainly lightest hammock I have ever come across. The material feels like very fine silk.</p>
+                    </b-col>
+                  </b-row>
+                  <b-button variant="primary" class="mt-2">
                     SHOP NOW
                     <img 
                       src="/arrow-right.svg" 
@@ -68,7 +97,7 @@
               <div class="info bc-yellow text-center mb-2">
                 <div class="title">Lightest Hammock <br />BUNDLE</div>
                 <p class="mb-1">I was blown away by the tiny packing size and the very thin and light material. It certainly lightest hammock I have ever come across.</p>
-                <b-button variant="secondary" class="mt-1 w-100">
+                <b-button variant="secondary" class="mt-1 w-100 rounded-radius">
                   SEE BUNDLE
                   <img 
                     src="/arrow-right.svg" 
@@ -82,7 +111,7 @@
               <div class="info backpacks text-center mb-2">
                 <div class="title">Hammock <br />Tent Set</div>
                 <p class="mb-1">I was blown away by the tiny packing size and the very thin and light material. It certainly lightest hammock I have ever come across.</p>
-                <b-button variant="secondary" class="mt-1 w-100">
+                <b-button variant="secondary" class="mt-1 w-100 rounded-radius">
                   SEE TENT SET
                   <img 
                     src="/arrow-right.svg" 

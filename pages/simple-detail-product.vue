@@ -59,166 +59,23 @@
           </b-col>
           <b-col cols="7" class="spec-product">
             <div class="title text-center">
-              CUSTOMIZE YOUR <br />
-              <span class="fw-900">travel hammock</span>
+              moonstraps
             </div>
-            <!-- size -->
-            <b-card class="size text-center mb-1 mt-2">
-              <div class="title">SIZE</div>
-              <div class="option" :class="{'active' : index === sizeSelected}" v-for="(item, index) in sizeOption" :key="index" @click="onSelectSize(index)">
-                <div>{{item.name}}</div>
-                <div>{{item.price}}</div>
-              </div>
-            </b-card>
+            <div class="product-price">27.95<span>&euro;</span></div>
+            <div class="text-center mt-1">
+              <b-button variant="primary" class="d-flex align-items-center justify-content-center img-margin">
+                ADD TO CART 
+                <img 
+                src="/arrow-right.svg" 
+                width="6"
+                alt="image" 
+                class="ml-1" />
+              </b-button>
+            </div>
             <!-- main color -->
-            <b-card class="text-center mb-1">
-              <div class="title">MAIN COLOR</div>
-              <div class="color" @click="mainColor = !mainColor">
-                <div class="selected-color orange"></div>
-                <img
-                class="ml-1 d-block"
-                src="/arrow-down.svg"
-                height="16"
-                alt="image"
-                />
-              </div>
-              <!-- toggle color -->
-              <div class="main-color" v-if="mainColor">
-                <div class="color orange"></div>
-                <div class="color jade"></div>
-                <div class="color old-purple"></div>
-                <div class="color pink"></div>
-                <div class="color green"></div>
-                <div class="color blue"></div>
-                <div class="color yellow"></div>
-                <div class="color white"></div>
-                <div class="color black"></div>
-              </div>
+            <b-card class="text-center mb-1 mt-3">
+              <p>Ticket to the Moon´s Moon Straps, the daisy-chain suspension solution that combines tree-friendly properties, small packing size, higher durability and higher load.</p>
             </b-card>
-            <!-- second color -->
-            <b-card class="text-center mb-1">
-              <div class="title">SECOND COLOR</div>
-              <div class="color" @click="secondColor = !secondColor">
-                <div class="selected-color dark-brown"></div>
-                <img
-                class="ml-1 d-block"
-                src="/arrow-down.svg"
-                height="16"
-                alt="image"
-                />
-              </div>
-              <!-- toggle color -->
-              <!-- toggle color -->
-              <div class="main-color" v-if="secondColor">
-                <div class="color dark-brown"></div>
-                <div class="color jade"></div>
-                <div class="color old-purple"></div>
-                <div class="color pink"></div>
-                <div class="color green"></div>
-                <div class="color blue"></div>
-                <div class="color yellow"></div>
-                <div class="color white"></div>
-                <div class="color black"></div>
-              </div>
-            </b-card>
-            <!-- sleeve-->
-            <b-card class="text-center mb-1">
-              <div class="title">SLEEVE</div>
-              <img
-              class="d-block img-fluid w-100 pic"
-              src="/image-26.jpg"
-              alt="image"
-              />
-              <div class="btn w-100 d-flex align-items-center justify-content-center mt-2" @click="sleeveSelect" :class="onSleeveSelect !== 'active' ? 'btn-thirdy' : 'btn-primary'">
-                SELECTED
-              </div>
-            </b-card>
-            <!-- sleeve color -->
-            <b-card class="text-center mb-1">
-              <div class="title">SLEEVE COLOR</div>
-              <div class="color" @click="sleeveColor = !sleeveColor">
-                <div class="selected-color dark-brown"></div>
-                <img
-                class="ml-1 d-block"
-                src="/arrow-down.svg"
-                height="16"
-                alt="image"
-                />
-              </div>
-              <!-- toggle color -->
-              <!-- toggle color -->
-              <div class="main-color" v-if="sleeveColor">
-                <div class="color dark-brown"></div>
-                <div class="color jade"></div>
-                <div class="color old-purple"></div>
-                <div class="color pink"></div>
-                <div class="color green"></div>
-                <div class="color blue"></div>
-                <div class="color yellow"></div>
-                <div class="color white"></div>
-                <div class="color black"></div>
-              </div>
-            </b-card>
-            <!-- accessories 1 -->
-            <div class="detail-title">accessories 1</div>
-            <b-row>
-              <b-col cols="6">
-                <b-card class="text-center mb-1">
-                  <div class="title">HOOK</div>
-                  <img
-                  class="d-block img-fluid w-100 accessories"
-                  src="/image-27.png"
-                  alt="image"
-                  />
-                  <b-button :variant="selectedAcc1 === 0 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc1(0)">
-                    SELECTED
-                  </b-button>
-                </b-card>
-              </b-col>
-              <b-col cols="6">
-                <b-card class="text-center mb-1">
-                  <div class="title">CARABINER</div>
-                  <img
-                  class="d-block img-fluid w-100 accessories"
-                  src="/image-28.png"
-                  alt="image"
-                  />
-                  <b-button :variant="selectedAcc1 === 1 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc1(1)">
-                    SELECTED
-                  </b-button>
-                </b-card>
-              </b-col>
-            </b-row>
-             <!-- accessories 2 -->
-            <div class="detail-title">accessories 2</div>
-            <b-row>
-              <b-col cols="6">
-                <b-card class="text-center mb-1">
-                  <div class="title">NAUTICAL ROPE</div>
-                  <img
-                  class="d-block img-fluid w-100 accessories"
-                  src="/image-29.png"
-                  alt="image"
-                  />
-                  <b-button :variant="selectedAcc2 === 0 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc2(0)">
-                    SELECTED
-                  </b-button> 
-                </b-card>
-              </b-col>
-              <b-col cols="6">
-                <b-card class="text-center mb-1">
-                  <div class="title">MOONSTRAP</div>
-                  <img
-                  class="d-block img-fluid w-100 accessories"
-                  src="/image-30.png"
-                  alt="image"
-                  />
-                  <b-button :variant="selectedAcc2=== 1 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc2(1)">
-                    SELECTED
-                  </b-button>
-                </b-card>
-              </b-col>
-            </b-row>
             <!-- desc accordion -->
             <div class="accordion" role="tablist">
               <div no-body class="mb-1">
@@ -230,12 +87,12 @@
                     alt="image"
                     height="12"
                     />
-                    Ultralight hammocks, handmade for adventures
+                    The most flexible suspension solution: reliable under all circumstances
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
                   <b-card-body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Moon Straps can individually support loads up to 300kg, making them reliable tools in demanding situations. They’re excellent compliments to all sizes of hammocks in order to accommodate multiple users. Each strap is highly durable and keeps the bark of the tree safe. The textured strap is even compatible with smoother surfaces, such as metallic poles. 
                   </b-card-body>
                 </b-collapse>
               </div>
@@ -248,12 +105,35 @@
                     alt="image"
                     height="12"
                     />
-                    Comfort and strength are our promise
+                   SPECS
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
                   <b-card-body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <b-row>
+                      <b-col cols="6">
+                        Dimensions: 
+                      </b-col>
+                      <b-col cols="6">2cm x 260cm x 2cm (0.8in x 8.5ft x 0.8in)</b-col>
+                    </b-row>
+                    <b-row>
+                      <b-col cols="6">
+                        Maximum static load:
+                      </b-col>
+                      <b-col cols="6">300kg (660lbs)</b-col>
+                    </b-row>
+                    <b-row>
+                      <b-col cols="6">
+                        Net weight:
+                      </b-col>
+                      <b-col cols="6">216g (7.6oz)</b-col>
+                    </b-row>
+                    <b-row>
+                      <b-col cols="6">
+                        Material:
+                      </b-col>
+                      <b-col cols="6">100% polyester</b-col>
+                    </b-row>
                   </b-card-body>
                 </b-collapse>
               </div>
@@ -266,12 +146,13 @@
                     alt="image"
                     height="12"
                     />
-                    easy to use
+                    Includes
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
                   <b-card-body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <p>2 × MOONSTRAPS </p>
+                    <p>Handy carruing poch</p>
                   </b-card-body>
                 </b-collapse>
               </div>
@@ -284,46 +165,10 @@
                     alt="image"
                     height="12"
                     />
-                    specs
+                    Features
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
-                  <b-card-body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </b-card-body>
-                </b-collapse>
-              </div>
-              <div no-body class="mb-1">
-                <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button block v-b-toggle.accordion-5 variant="info">
-                    <img
-                    class="mr-2"
-                    src="/plus.png"
-                    alt="image"
-                    height="12"
-                    />
-                    Choose your accessories
-                  </b-button>
-                </b-card-header>
-                <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
-                  <b-card-body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </b-card-body>
-                </b-collapse>
-              </div>
-              <div no-body class="mb-1">
-                <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button block v-b-toggle.accordion-6 variant="info">
-                    <img
-                    class="mr-2"
-                    src="/plus.png"
-                    alt="image"
-                    height="12"
-                    />
-                    A Commitment to Global Betterment
-                  </b-button>
-                </b-card-header>
-                <b-collapse id="accordion-6" accordion="my-accordion" role="tabpanel">
                   <b-card-body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                   </b-card-body>
@@ -471,43 +316,6 @@
       </b-container>
     </section>
 
-    <div class="price-total">
-      <b-container>
-        <b-row>
-          <b-col cols="9">
-            <div class="additional">
-              <div class="sub-price">40.99 <span>&euro;</span></div>
-              <div class="info-add">ORIGINAL HAMMOCK</div>
-            </div>
-            <div class="additional">
-              <div class="sub-price">+ 10.99 <span>&euro;</span></div>
-              <div class="info-add">UV SLEEVE</div>
-            </div>
-            <div class="additional">
-              <div class="sub-price">+ 10.99 <span>&euro;</span></div>
-              <div class="info-add">CARABINER</div>
-            </div>
-            <div class="additional">
-              <div class="sub-price">+ 10.99 <span>&euro;</span></div>
-              <div class="info-add">MOONSTRAP</div>
-            </div>
-          </b-col>
-          <b-col cols="3" class="text-right d-grid">
-            <div class="price">
-              80.99 <span>&euro;</span>
-            </div>
-            <b-button variant="primary" class="w-100 d-flex align-items-center justify-content-center">
-              ADD TO CART 
-              <img 
-              src="/arrow-right.svg" 
-              width="6"
-              alt="image" 
-              class="ml-1" />
-            </b-button>
-          </b-col>
-        </b-row>
-      </b-container>
-    </div>
     <!-- footer -->
     <Footer />
   </div>
