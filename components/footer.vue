@@ -2,7 +2,7 @@
   <section class="footer">
     <b-container>
       <b-row>
-      <b-col class="6">
+      <b-col cols="5">
         <img
         class="d-block img-auto"
         height="20"
@@ -10,11 +10,14 @@
         alt="image"
         />
       </b-col>
-      <b-col class="6">
+      <b-col cols="7">
         <b-row>
           <b-col cols="5">
-            <div class="stay">STAY CONNECTED</div>
-            <small>Sign up for news event offers</small>
+            <img
+            class="d-block img-fluid"
+            src="/stay-connected.svg"
+            alt="image"
+            />
           </b-col>
           <b-col cols="7" class="pl-1 d-flex align-items-center">
             <b-form-input
@@ -23,15 +26,14 @@
               type="text"
               placeholder="enter email here"
             ></b-form-input>
-            <b-link href="#" class="f-white ml-1">Subscribe</b-link>
+            <b-button variant="primary" class="radius-corner ml-1">SUBSCRIBE</b-button>
           </b-col>
         </b-row>
-        <hr class="hr-white"/>
       </b-col>
       </b-row>
-      <b-row>
-        <b-col cols="6">
-          <p>Jalan Batu Sangian VI No.10 Kuta Utara, Bali 80361 INDONESIA <br /><br />Phone: +62 361 419 288</p>
+      <b-row class="mt-2">
+        <b-col cols="5">
+          <p>Jalan Batu Sangian VI No.10 Kuta Utara,<br /> Bali 80361 INDONESIA <br /><br />Phone: +62 361 419 288</p>
           <div class="sosmed mt-2">
             <img
             class="d-block img-auto"

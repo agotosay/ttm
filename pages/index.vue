@@ -12,7 +12,6 @@
         id="carousel-1"
         v-model="slide"
         :interval="4000"
-        controls
         indicators
         background="#ababab"
         img-width="1024"
@@ -22,6 +21,36 @@
       >
         <!-- Text slides with image -->
         <b-carousel-slide>
+          <template #img>
+            <div class="slide-banner position-relative">
+              <img
+                class="d-block w-100 img-auto"
+                height="700"
+                src="/banner1.jpg"
+                alt="image"
+              />
+            <b-container>
+              <div class="slide-wording position-absolute text-center mt-2">
+                <h1>INTRODUCING: <span class="fw-900">THE PRO HAMMOCK</span></h1>
+                <b-row>
+                  <b-col cols="10" offset="1">
+                      <p>I was blown away by the tiny packing size and the very thin and light material. It certainly lightest hammock I have ever come across. The material feels like very fine silk.</p>
+                  </b-col>
+                </b-row>
+                <b-button variant="primary" class="mt-2">
+                  SHOP NOW
+                  <img 
+                    src="/arrow-right.svg" 
+                    width="6"
+                    alt="image" 
+                    class="ml-1" />
+                </b-button>
+              </div>
+            </b-container>
+            </div>
+          </template>
+        </b-carousel-slide>
+       <b-carousel-slide>
           <template #img>
             <div class="slide-banner position-relative">
               <img
@@ -89,25 +118,35 @@
         <div class="title text-center">
           OUR PRODUCTS
         </div>
-        <VueSlickCarousel v-bind="products" :arrows="true" :dots="false">
-          <div class="our-products" v-for="(item, index) in ourProduct" :key="index">
+        <VueSlickCarousel v-bind="products" :arrows="false" :dots="true">
+          <div class="our-products pointer" v-for="(item, index) in ourProduct" :key="index"  @click="$router.push('/all-product')">
             <img
             class="d-block img-fluid w-100"
             :src="item.image.url"
             alt="image"
             />
-            <div class="product-title mb-1" @click="$router.push('/all-product')">
+            <div class="product-title mb-1">
               {{ item.name }}
             </div>
             <div class="product-rating">
               <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= item.rating}"></i>
             </div>
             <div class="product-price">{{item.price}} &euro;</div>
-            <b-button variant="thirdy" class="w-100 d-flex align-items-center justify-content-center mt-2">
+            <b-button variant="thirdy" class="w-100 radius-corner d-flex align-items-center justify-content-center mt-2">
             VIEW DETAILS
             </b-button>
           </div>
         </VueSlickCarousel>
+        <div class="text-center mt-2">
+          <b-button variant="primary" class="mt-2" @click="$router.push('/all-product')">
+          VIEW ALL PRODUCTS
+          <img 
+            src="/arrow-right.svg" 
+            width="6"
+            alt="image" 
+            class="ml-1" />
+          </b-button>
+        </div>
       </b-container>
     </section>
 
@@ -404,7 +443,7 @@ export default {
           centerMode: true,
           centerPadding: '60px',
           slidesToShow: 3,
-          arrows: true,
+          autoplay: false,
         },
         reviews: {
           centerMode: true,
