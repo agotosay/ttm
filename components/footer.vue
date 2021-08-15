@@ -26,7 +26,7 @@
               type="text"
               placeholder="enter email here"
             ></b-form-input>
-            <b-button variant="primary" class="radius-corner ml-1">SUBSCRIBE</b-button>
+            <b-button variant="primary" class="rounded-radius ml-1">SUBSCRIBE</b-button>
           </b-col>
         </b-row>
       </b-col>

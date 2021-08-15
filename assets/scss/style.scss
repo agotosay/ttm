@@ -14,7 +14,7 @@ body{
   border-radius: 12px;
   padding-left: 2rem;
   padding-right: 2rem;
-  &.radius-corner{
+  &.rounded-radius{
     border-radius: 50px;
   }
   &:hover{
@@ -41,7 +41,7 @@ body{
   border-radius: 12px;
   padding-left: 2rem;
   padding-right: 2rem;
-  &.radius-corner{
+  &.rounded-radius{
     border-radius: 50px;
   }
   &:hover{
@@ -54,6 +54,12 @@ body{
     color: #fff !important;
     border-color: transparent !important;
   }
+  &:focus{
+    background-color: #003057 !important;
+    color: #fff !important;
+    border-color: transparent !important;
+    box-shadow: none;
+  }
 }
 .btn-secondary{
   background-color: #fff;
@@ -62,7 +68,7 @@ body{
   border-radius: 12px;
   padding-left: 2rem;
   padding-right: 2rem;
-  &.radius-corner{
+  &.rounded-radius{
     border-radius: 50px;
   }
   &:hover{
@@ -75,6 +81,12 @@ body{
     color: #042742 !important;
     border-color: transparent !important;
   }
+  &:focus{
+    background-color: #fff !important;
+    color: #042742 !important;
+    border-color: transparent !important;
+    box-shadow: none;
+  }
 }
 .btn-thirdy{
   background-color: #fff;
@@ -83,7 +95,7 @@ body{
   border-radius: 12px;
   padding-left: 2rem;
   padding-right: 2rem;
-  &.radius-corner{
+  &.rounded-radius{
     border-radius: 50px;
   }
   &:hover{
@@ -835,6 +847,8 @@ a {
     margin-top: 2rem;
     img{
       cursor: pointer;
+      width: calc(100%/4) !important;
+      object-fit: cover;
     }
   }
 }

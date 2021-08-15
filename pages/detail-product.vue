@@ -35,22 +35,22 @@
               </div>
               <div class="thumbnail">
                 <img
-                class="d-block img-fluid w-100"
+                class="d-block img-fluid"
                 src="/thumb1.png"
                 alt="image"
                 />
                 <img
-                class="d-block img-fluid w-100"
+                class="d-block img-fluid"
                 src="/thumb2.png"
                 alt="image"
                 />
                 <img
-                class="d-block img-fluid w-100"
+                class="d-block img-fluid"
                 src="/thumb3.png"
                 alt="image"
                 />
                 <img
-                class="d-block img-fluid w-100"
+                class="d-block img-fluid"
                 src="/thumb4.png"
                 alt="image"
                 />
@@ -377,20 +377,21 @@
                     id="name"
                     type="text"
                     placeholder="Full name"
+                    class="rounded-radius"
                   ></b-form-input>
                   <b-form-input
                     placeholder="Email"
                     type="email"
                     id="password"
-                    class="mt-1"></b-form-input>
+                    class="mt-1 rounded-radius"></b-form-input>
                   <b-form-textarea
-                    class="mt-1"
+                    class="mt-1 rounded-radius"
                     id="textarea"
                     placeholder="Enter your review here"
                     rows="6"
                     max-rows="9"
                   ></b-form-textarea>
-                  <b-button variant="primary d-block w-100" class="mt-1">
+                  <b-button variant="primary d-block w-100 radius-corner" class="mt-1">
                     SUBMIT
                   </b-button>
                 </b-form-group>
@@ -416,7 +417,7 @@
                     <i class="fas fa-star text-warning"></i>
                   </div>
                   <div class="product-price">40.99 &euro;</div>
-                  <b-button variant="thirdy" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="$router.push('/detail-product')">
+                  <b-button variant="thirdy" class="w-100 d-flex align-items-center justify-content-center mt-2 radius-corner" @click="$router.push('/detail-product')">
                     VIEW DETAIL
                     <img 
                     src="/arrow-right.svg" 
@@ -444,7 +445,7 @@
                     <i class="fas fa-star text-warning"></i>
                   </div>
                   <div class="product-price">40.99 &euro;</div>
-                  <b-button variant="thirdy" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="$router.push('/detail-product')">
+                  <b-button variant="thirdy" class="w-100 d-flex align-items-center justify-content-center mt-2 radius-corner" @click="$router.push('/detail-product')">
                     VIEW DETAIL
                     <img 
                     src="/arrow-right.svg" 

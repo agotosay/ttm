@@ -132,7 +132,7 @@
               <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= item.rating}"></i>
             </div>
             <div class="product-price">{{item.price}} &euro;</div>
-            <b-button variant="thirdy" class="w-100 radius-corner d-flex align-items-center justify-content-center mt-2">
+            <b-button variant="thirdy" class="w-100 rounded-radius d-flex align-items-center justify-content-center mt-2">
             VIEW DETAILS
             </b-button>
           </div>
