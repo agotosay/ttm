@@ -115,6 +115,9 @@ body{
     box-shadow: none;
   }
 }
+.ml-0h{
+  margin-left: .5rem !important;
+}
 .ml-1{
   margin-left: 1rem !important;
 }
@@ -283,6 +286,10 @@ a {
     border-radius: 0;
     padding: 0
   }
+  .middle{
+    position: relative;
+    left: 24px;
+  }
   .navbar-right{
     padding-right: 4rem;
   }
@@ -302,7 +309,7 @@ a {
   a{
     font-weight: 400;
     &.nav-link{
-      font-size: .8rem;
+      font-size: 1rem;
     }
     &.dropdown-toggle{
       &::after{
@@ -312,7 +319,6 @@ a {
   }
   li{
     &.nav-item{
-      width: 80px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -340,7 +346,7 @@ a {
   .navbar-collapse{
     .nav-item{
       a{
-        font-size: .8rem;
+        font-size: 1rem;
       }
     }
     .navbar-nav{
@@ -752,7 +758,7 @@ a {
 }
 .input-group{
   &.search{
-    width: 25%;
+    width: auto;
     position: relative;
     .input-group-prepend{
       position: absolute;

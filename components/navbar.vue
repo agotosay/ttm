@@ -15,8 +15,8 @@
           </div>
           <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
         </div>
-        <b-navbar-nav>
-          <b-nav-item class="link-icon" href="#" v-on:click="isHidden = !isHidden">
+        <b-navbar-nav class="middle">
+          <b-nav-item class="link-icon" href="#" @click="isHidden = !isHidden">
             PRODUCTS
             <img
             class="ml-1"
@@ -31,7 +31,54 @@
           <b-nav-item href="#" class="ml-0" @click="$router.push('/contact-us')">CONTACT</b-nav-item>
 
         </b-navbar-nav>
-        <b-nav pills class="navbar-right">
+        <div class="navbar-right">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" role="button" data-bs-toggle="dropdown" aria-expanded="false" @click="dropDown">
+                <img
+                src="/en.png"
+                height="16"
+                alt="image"
+                />
+                <span class="ml-0h">EN</span>
+              </a>
+              <ul class="dropdown-menu" :class="{'show': showDropdown}">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" id="asd2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>EUR</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <img
+              class="d-block img-margin ml-1 mr-1"
+              height="14"
+              src="/cart.png"
+              alt="image"
+              />
+            </li>
+            <li class="nav-item user">
+              <img
+              class="d-block img-margin"
+              height="14"
+              src="/user.svg"
+              alt="image"
+              />
+            </li>
+          </ul>
+        </div>
+        <!-- <b-nav pills class="navbar-right">
           <b-nav-item-dropdown
             id="my-nav-dropdown"
             text="EN"
@@ -70,7 +117,7 @@
             alt="image"
             />
           </b-nav-item>
-        </b-nav>
+        </b-nav> -->
       </b-collapse>
     </b-navbar>
 
@@ -393,7 +440,13 @@
 export default {
   data () {
     return {
-      isHidden: false
+      isHidden: false,
+      showDropdown: false
+    }
+  },
+  methods: {
+    dropDown() {
+      this.showDropdown = !this.showDropdown
     }
   }
 }
