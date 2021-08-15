@@ -60,7 +60,8 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item cart">
+              <div class="counter">2</div>
               <img
               class="d-block img-margin ml-1 mr-1"
               height="14"
