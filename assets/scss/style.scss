@@ -769,6 +769,7 @@ a {
     height: 220px;
     position: relative;
     z-index: 2;
+    display: grid;
     &.hammock{
       background-color: #FFC844;
     }
