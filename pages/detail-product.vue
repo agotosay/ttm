@@ -496,7 +496,7 @@
             <div class="price">
               80.99 <span>&euro;</span>
             </div>
-            <b-button variant="primary" class="w-100 d-flex align-items-center justify-content-center">
+            <b-button variant="primary" class="w-100 d-flex align-items-center justify-content-center" @click="modalShow = !modalShow">
               ADD TO CART 
               <img 
               src="/arrow-right.svg" 
@@ -508,6 +508,156 @@
         </b-row>
       </b-container>
     </div>
+
+    <!-- modal add to cart -->
+    <b-modal id="modal-center" hide-footer centered title="ADDED TO CART" v-model="modalShow" size="xl">
+      <hr>
+      <div class="modal-cart d-flex align-items-center justify-between">
+        <div class="pic">
+          <img
+          class="d-block"
+          src="/image-41.jpg"
+          alt="image"
+          />
+        </div>
+        <div class="desc ml-1">
+          <span class="fw-500">TRAVEL HAMMOCK Size: </span> Compact - 320x155cm / 10’5”x4’11” Compact - 320x155cm / 10’5”x4’11” 
+        </div>
+        <b-button variant="primary" class="d-flex align-items-center justify-content-center radius-corner" @click="$router.push('/detail-product')">
+          SEE THE CART
+          <img 
+          src="/arrow-right.svg" 
+          width="6"
+          alt="image" 
+          class="ml-1" />
+        </b-button>
+      </div>
+      <hr>
+      <b-row class="mt-2">
+        <b-col cols="3">
+          <div class="our-products">
+            <img
+            class="d-block img-fluid w-100"
+            src="/product-1.jpg"
+            alt="image"
+            />
+            <div class="product-title mb-1">
+              TRAVEL HAMMOCK
+            </div>
+            <div class="product-rating">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+            <div class="product-price">40.99 &euro;</div>
+            <b-button variant="thirdy" class="w-100 d-flex align-items-center justify-content-center mt-1 radius-corner" @click="$router.push('/detail-product')">
+              VIEW DETAIL
+              <img 
+              src="/arrow-right.svg" 
+              width="6"
+              alt="image" 
+              class="ml-1" />
+            </b-button>
+          </div>
+        </b-col>
+        <b-col cols="3">
+          <div class="our-products">
+            <img
+            class="d-block img-fluid w-100"
+            src="/product-1.jpg"
+            alt="image"
+            />
+            <div class="product-title mb-1">
+              TRAVEL HAMMOCK
+            </div>
+            <div class="product-rating">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+            <div class="product-price">40.99 &euro;</div>
+            <b-button variant="thirdy" class="w-100 d-flex align-items-center justify-content-center mt-1 radius-corner" @click="$router.push('/detail-product')">
+              VIEW DETAIL
+              <img 
+              src="/arrow-right.svg" 
+              width="6"
+              alt="image" 
+              class="ml-1" />
+            </b-button>
+          </div>
+        </b-col>
+        <b-col cols="3">
+          <div class="our-products">
+            <img
+            class="d-block img-fluid w-100"
+            src="/product-1.jpg"
+            alt="image"
+            />
+            <div class="product-title mb-1">
+              TRAVEL HAMMOCK
+            </div>
+            <div class="product-rating">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+            <div class="product-price">40.99 &euro;</div>
+            <b-button variant="thirdy" class="w-100 d-flex align-items-center justify-content-center mt-1 radius-corner" @click="$router.push('/detail-product')">
+              VIEW DETAIL
+              <img 
+              src="/arrow-right.svg" 
+              width="6"
+              alt="image" 
+              class="ml-1" />
+            </b-button>
+          </div>
+        </b-col>
+        <b-col cols="3">
+          <div class="our-products">
+            <img
+            class="d-block img-fluid w-100"
+            src="/product-1.jpg"
+            alt="image"
+            />
+            <div class="product-title mb-1">
+              TRAVEL HAMMOCK
+            </div>
+            <div class="product-rating">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+            <div class="product-price">40.99 &euro;</div>
+            <b-button variant="thirdy" class="w-100 d-flex align-items-center justify-content-center mt-1 radius-corner" @click="$router.push('/detail-product')">
+              VIEW DETAIL
+              <img 
+              src="/arrow-right.svg" 
+              width="6"
+              alt="image" 
+              class="ml-1" />
+            </b-button>
+          </div>
+        </b-col>
+      </b-row>
+      <div class="text-center">
+        <b-button variant="primary" class="mt-3 mb-1 radius-corner">
+          VIEW ALL PRODUCTS
+          <img 
+          src="/arrow-right.svg" 
+          width="6"
+          alt="image" 
+          class="ml-1" />
+        </b-button>
+      </div>
+    </b-modal>
     <!-- footer -->
     <Footer />
   </div>
@@ -539,6 +689,7 @@ export default {
       sliding: null,
       isHidden: false,
       sizeSelected: '',
+      modalShow: false,
       sizeOption: [
         {
           name: 'COMPACT (320 × 155cm / 10’5” × 4’11”)',

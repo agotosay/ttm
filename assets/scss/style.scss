@@ -287,7 +287,9 @@ a {
 .label-transpatent{
   color: transparent;
 }
-
+.justify-between{
+  justify-content: space-between;
+}
 // top navbar
 .top-bar{
   position: relative;
@@ -1007,7 +1009,7 @@ a {
   margin-bottom: 1rem;
 }
 .our-products{
-  padding: 2rem;
+  padding: 1.25rem;
   box-shadow: 0px 7px 16px -4px rgba(0, 0, 0, .3);
   border-radius: 40px;
 }
@@ -1417,5 +1419,28 @@ a {
         opacity: .5 !important;
       }
     }
+  }
+}
+.modal-cart{
+  .pic{
+    img{
+      height: 90px;
+      object-fit: cover;
+    }
+  }
+  .desc{
+    max-width: 70%;
+  }
+}
+.modal-header{
+  display: block !important;
+  border-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  .close{
+    display: none;
+  }
+  .modal-title{
+    font-size: 2rem !important;
+    text-align: center !important;
   }
 }
