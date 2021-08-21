@@ -213,6 +213,15 @@ section{
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  &.cart-detail{
+    padding: 0;
+    .bc-grey{
+      background-color: #EBEBEB;
+    }
+    .cols{
+      padding: 60px 3rem;
+    }
+  }
 }
 p{
   font-weight: 400;
@@ -274,6 +283,9 @@ a {
 }
 .text-uppercase{
   text-transform: uppercase;
+}
+.label-transpatent{
+  color: transparent;
 }
 
 // top navbar
