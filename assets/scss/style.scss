@@ -421,6 +421,10 @@ a {
   padding: 1rem 1rem 1rem 2rem;
   text-align: left;
   line-height: 20px;
+  &.for-product{
+    top: 4%;
+    bottom: unset;
+  }
 }
 
 // mega-menu
@@ -1442,5 +1446,12 @@ a {
   .modal-title{
     font-size: 2rem !important;
     text-align: center !important;
+  }
+}
+.card{
+  &.card-pad{
+    .card-body{
+      padding: 2rem;
+    }
   }
 }
