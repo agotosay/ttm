@@ -776,6 +776,7 @@
         </b-button>
       </div>
     </b-modal>
+    
     <!-- footer -->
     <Footer />
   </div>
