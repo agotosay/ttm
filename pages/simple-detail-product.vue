@@ -449,7 +449,7 @@
         <div class="desc ml-1">
           <span class="fw-500">TRAVEL HAMMOCK Size: </span> Compact - 320x155cm / 10’5”x4’11” Compact - 320x155cm / 10’5”x4’11” 
         </div>
-        <b-button variant="primary" class="d-flex align-items-center justify-content-center radius-corner" @click="$router.push('/detail-product')">
+        <b-button variant="primary" class="d-flex align-items-center justify-content-center radius-corner" @click="$router.push('/shopping-cart')">
           SEE THE CART
           <img 
           src="/arrow-right.svg" 
