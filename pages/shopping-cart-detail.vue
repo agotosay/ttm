@@ -181,7 +181,7 @@
                 <b-col cols="12">
                   <b-form class="mb-1">
                     <label>Name on Card:</label>
-                    <b-form-input type="number" id="card-name" class="rounded-radius"/>
+                    <b-form-input type="text" id="card-name" class="rounded-radius"/>
                   </b-form>
                 </b-col>
                 <b-col cols="3">
