@@ -207,6 +207,9 @@ body{
 .d-grid{
   display: grid;
 }
+.bc-transparent{
+  background-color: transparent;
+}
 section{
   padding: 60px 0;
   &.pad-side{
@@ -304,6 +307,9 @@ a {
     position: relative;
     left: 24px;
   }
+  .navbar{
+    padding: 0 1rem !important;
+  }
   .navbar-right{
     padding-right: 4rem;
   }
@@ -335,7 +341,7 @@ a {
     position: absolute;
     right: 0;
     border-radius: 16px 0 0 16px;
-    padding: 1.55rem 1.5rem 1.55rem 1.5rem;
+    padding: 17px 1.5rem;
     bottom: 0;
   }
   a{
@@ -378,7 +384,12 @@ a {
   .navbar-collapse{
     .nav-item{
       a{
-        font-size: 1rem;
+        font-size: .9rem;
+        color: #003057;
+        &:hover{
+          color: #003057;
+          font-weight: 500;
+        }
       }
     }
     .navbar-nav{
@@ -485,24 +496,32 @@ a {
     }
   }
   .our-products{
-    padding: 1rem;
+    padding: 1.5rem;
     box-shadow: 0px 7px 16px -4px rgba(0, 0, 0, .3);
-    border-radius: 8px;
+    border-radius: 40px;
   }
   .product-title{
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
+    margin-left: 10px;
+    font-weight: 500;
   }
   .product-rating{
     display: flex;
+    margin-left: 10px;
     img + img{
       margin-left: 6px;
     }
   }
+  .img-card-product{
+    height: 180px;
+    object-fit: cover;
+  }
   .product-price{
     margin-top: .5rem;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
+    margin-left: 10px;
   }
 }
 
@@ -517,10 +536,13 @@ a {
     }
   }
   .user-review{
-    padding: 1rem;
+    padding: 2.5rem;
     background-color: #fff;
     box-shadow: 0px 7px 16px -4px rgba(0, 0, 0, .3);
-    border-radius: 8px;
+    border-radius: 40px;
+    p{
+      color: #6C6C6C;
+    }
   }
 }
 
@@ -760,10 +782,10 @@ a {
         background-color: #FCD672;
       }
       &.right{
-        right: 15px;
+        right: 0;
       }
       &.left{
-        left: 15px;
+        left: 0;
       }
       .title{
         line-height: 2.2rem;
@@ -807,6 +829,7 @@ a {
       padding-left: 40px;
       border-radius: 20px !important;
       border-color: #A2C7E2;
+      height: 30px;
     }
   }
 }
@@ -872,6 +895,29 @@ a {
     padding: 2rem;
     box-shadow: 0px 7px 16px -4px rgba(0, 0, 0, .3);
     border-radius: 40px;
+    .img-card-product{
+      height: 180px;
+      object-fit: cover;
+    }
+    .product-title{
+      font-size: 20px;
+      cursor: pointer;
+      margin-left: 10px;
+      font-weight: 500;
+    }
+    .product-rating{
+      display: flex;
+      margin-left: 10px;
+      img + img{
+        margin-left: 6px;
+      }
+    }
+    .product-price{
+      margin-top: .5rem;
+      font-size: 20px;
+      font-weight: 300;
+      margin-left: 10px;
+    }
   }
 }
 .detail-product{
@@ -892,7 +938,7 @@ a {
     margin-top: 2rem;
     img{
       cursor: pointer;
-      width: calc(100%/4) !important;
+      width: calc(100%/6) !important;
       object-fit: cover;
     }
   }
@@ -916,7 +962,7 @@ a {
   }
   .price{
     font-size: 32px;
-    font-weight: 800;
+    font-weight: 500;
   }
 }
 .spec-product{
@@ -970,8 +1016,9 @@ a {
       }
     }
     .accessories{
-      height: 150px;
+      height: 100px;
       object-fit: contain;
+      margin-top: 1rem;
     }
   }
   .accordion{
@@ -986,6 +1033,7 @@ a {
       color: #00305A;
       display: flex;
       align-items: center;
+      text-align: center;
       text-transform: uppercase;
       &:active{
         background-color: transparent;
@@ -1016,6 +1064,29 @@ a {
   padding: 1.25rem;
   box-shadow: 0px 7px 16px -4px rgba(0, 0, 0, .3);
   border-radius: 40px;
+  .img-card-product{
+    height: 180px;
+    object-fit: cover;
+  }
+  .product-title{
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: 500;
+  }
+  .product-rating{
+    display: flex;
+    margin-left: 10px;
+    img + img{
+      margin-left: 6px;
+    }
+  }
+  .product-price{
+    margin-top: .5rem;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 10px;
+  }
 }
 .bundles{
   .info{
@@ -1072,11 +1143,11 @@ a {
 .rounded-radius{
   &.form-control{
     border: 1px solid #042742;
-    border-radius: 20px;
+    border-radius: 12px;
   }
   &.custom-select{
     border: 1px solid #042742;
-    border-radius: 20px;
+    border-radius: 12px;
   }
 }
 .variants > div:last-of-type {
@@ -1213,7 +1284,7 @@ a {
       background-color: transparent;
       border-color: transparent;
       color: #00305A;
-      font-weight: 600;
+      font-weight: 500;
       display: flex;
       align-items: center;
       text-transform: uppercase;
@@ -1234,7 +1305,6 @@ a {
 }
 .faq-category{
   .category{
-    border-bottom: 1px solid #E2E2E2;
     padding: 1rem;
     cursor: pointer;
     &+.category{
@@ -1243,6 +1313,7 @@ a {
     &.active{
       background-color: #00305A;
       color: #fff;
+      border-radius: 20px;
     }
   }
 }

@@ -35,7 +35,7 @@
           <b-col cols="6 mb-2">
             <div class="our-products">
               <img
-              class="d-block img-fluid w-100"
+              class="d-block img-fluid w-100 img-card-product"
               src="/product-1.jpg"
               alt="image"
               />
@@ -63,7 +63,7 @@
           <b-col cols="6 mb-2">
             <div class="our-products">
               <img
-              class="d-block img-fluid w-100"
+              class="d-block img-fluid w-100 img-card-product"
               src="/product-1.jpg"
               alt="image"
               />
@@ -91,7 +91,7 @@
           <b-col cols="6 mb-2">
             <div class="our-products">
               <img
-              class="d-block img-fluid w-100"
+              class="d-block img-fluid w-100 img-card-product"
               src="/product-1.jpg"
               alt="image"
               />
@@ -117,16 +117,15 @@
             </div>
           </b-col>
           <b-col cols="6 mb-2">
-            <div class="our-products">
-              <div class="text-center fw-900">SEE OTHER PRODUCT</div>
-              <b-button variant="primary" class="w-100 d-flex align-items-center justify-content-center mt-2 rounded-radius" @click="$router.push('/detail-product')">
-                VIEW MORE
-                <img 
-                src="/arrow-right.svg" 
-                width="6"
-                alt="image" 
-                class="ml-1" />
-              </b-button>
+            <div class="text-center">
+              <b-link @click="$router.push('/detail-product')">
+              See Hammock Details
+              <img 
+              src="/arrow-right.svg" 
+              width="6"
+              alt="image" 
+              class="ml-1" />
+              </b-link>
             </div>
           </b-col>
         </b-row>

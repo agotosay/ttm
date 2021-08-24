@@ -10,7 +10,7 @@
     <section class="position-relative">
       <b-container>
         <b-row>
-          <b-col cols="5" class="detail-product">
+          <b-col cols="7" class="detail-product">
             <div class="sticky" style="position: sticky; top: 70px;">
               <img
                 class="d-block img-fluid w-100 pic"
@@ -55,10 +55,20 @@
                 src="/thumb4.png"
                 alt="image"
                 />
+                <img
+                class="d-block img-fluid"
+                src="/thumb3.png"
+                alt="image"
+                />
+                <img
+                class="d-block img-fluid"
+                src="/thumb4.png"
+                alt="image"
+                />
               </div>
             </div>
           </b-col>
-          <b-col cols="7" class="spec-product">
+          <b-col cols="5" class="spec-product">
             <div class="title text-center">
               CUSTOMIZE YOUR <br />
               <span class="fw-900">travel hammock</span>
@@ -220,7 +230,7 @@
             </b-row>
             <!-- desc accordion -->
             <div class="accordion" role="tablist">
-              <div no-body class="mb-1">
+              <div no-body>
                 <b-card-header header-tag="header" class="p-1" role="tab">
                   <b-button block v-b-toggle.accordion-1 variant="info">
                     <img
@@ -229,7 +239,7 @@
                     alt="image"
                     height="12"
                     />
-                    Ultralight hammocks, handmade for adventures
+                    <span class="text-left">Ultralight hammocks, handmade for adventures</span>
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
@@ -238,7 +248,7 @@
                   </b-card-body>
                 </b-collapse>
               </div>
-              <div no-body class="mb-1">
+              <div no-body>
                 <b-card-header header-tag="header" class="p-1" role="tab">
                   <b-button block v-b-toggle.accordion-2 variant="info">
                     <img
@@ -247,7 +257,7 @@
                     alt="image"
                     height="12"
                     />
-                    Comfort and strength are our promise
+                    <span class="text-left">Comfort and strength are our promise</span>
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
@@ -256,7 +266,7 @@
                   </b-card-body>
                 </b-collapse>
               </div>
-              <div no-body class="mb-1">
+              <div no-body>
                 <b-card-header header-tag="header" class="p-1" role="tab">
                   <b-button block v-b-toggle.accordion-3 variant="info">
                     <img
@@ -265,7 +275,7 @@
                     alt="image"
                     height="12"
                     />
-                    easy to use
+                    <span class="text-left">easy to use</span>
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
@@ -274,7 +284,7 @@
                   </b-card-body>
                 </b-collapse>
               </div>
-              <div no-body class="mb-1">
+              <div no-body>
                 <b-card-header header-tag="header" class="p-1" role="tab">
                   <b-button block v-b-toggle.accordion-4 variant="info">
                     <img
@@ -283,7 +293,7 @@
                     alt="image"
                     height="12"
                     />
-                    specs
+                    <span class="text-left">specs</span>
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
@@ -292,7 +302,7 @@
                   </b-card-body>
                 </b-collapse>
               </div>
-              <div no-body class="mb-1">
+              <div no-body>
                 <b-card-header header-tag="header" class="p-1" role="tab">
                   <b-button block v-b-toggle.accordion-5 variant="info">
                     <img
@@ -301,7 +311,7 @@
                     alt="image"
                     height="12"
                     />
-                    Choose your accessories
+                    <span class="text-left">Choose your accessories</span>
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
@@ -310,7 +320,7 @@
                   </b-card-body>
                 </b-collapse>
               </div>
-              <div no-body class="mb-1">
+              <div no-body>
                 <b-card-header header-tag="header" class="p-1" role="tab">
                   <b-button block v-b-toggle.accordion-6 variant="info">
                     <img
@@ -319,7 +329,7 @@
                     alt="image"
                     height="12"
                     />
-                    A Commitment to Global Betterment
+                    <span class="text-left">A Commitment to Global Betterment</span>
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-6" accordion="my-accordion" role="tabpanel">
@@ -349,9 +359,6 @@
               <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. The material feels like very fine silk, thin as glad wrap. However, it does not feel sweaty and does not seem to be noisy. For its minimalistic design it is very spacious and comfortable, for daily use where weight is no issue, my original TTTM hammock will still be my first choice though. I am curious to test the durability over time. At this point I would be super cautious around prickly plants in order not to have it ripped. Certainly a good choice when every gram counts.</p>
               <div class="d-flex">
                 <div>
-                  <b-avatar></b-avatar>
-                </div>
-                <div class="ml-2">
                   <div class="review-name mb-1">Martin Lawrence</div>
                   <div class="product-rating">
                     <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= 5}"></i>
@@ -365,9 +372,6 @@
               <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. The material feels like very fine silk, thin as glad wrap. However, it does not feel sweaty and does not seem to be noisy. For its minimalistic design it is very spacious.</p>
               <div class="d-flex">
                 <div>
-                  <b-avatar></b-avatar>
-                </div>
-                <div class="ml-1">
                   <div class="review-name mb-1">Martin Lawrence</div>
                   <div class="product-rating">
                     <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= 5}"></i>
@@ -381,9 +385,6 @@
               <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. The material feels like very fine silk, thin as glad wrap. However, it does not feel sweaty and does not seem to be noisy. For its minimalistic design it is very spacious. I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. The material feels like very fine silk, thin as glad wrap.</p>
               <div class="d-flex">
                 <div>
-                  <b-avatar></b-avatar>
-                </div>
-                <div class="ml-1">
                   <div class="review-name mb-1">Martin Lawrence</div>
                   <div class="product-rating">
                     <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= 5}"></i>
@@ -397,9 +398,6 @@
               <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. The material feels like very fine silk, thin as glad wrap. However, it does not feel sweaty and does not seem to be noisy. For its minimalistic design it is very spacious and comfortable, for daily use where weight is no issue, my original TTTM hammock will still be my first choice though. I am curious to test the durability over time. At this point I would be super cautious around prickly plants in order not to have it ripped. Certainly a good choice when every gram counts. I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. The material feels like very fine silk, thin as glad wrap. However, it does not feel sweaty and does not seem to be noisy. For its minimalistic design it is very spacious and comfortable.</p>
               <div class="d-flex">
                 <div>
-                  <b-avatar></b-avatar>
-                </div>
-                <div class="ml-1">
                   <div class="review-name mb-1">Martin Lawrence</div>
                   <div class="product-rating">
                     <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= 5}"></i>
@@ -466,7 +464,7 @@
         <b-col cols="3">
           <div class="our-products">
             <img
-            class="d-block img-fluid w-100"
+            class="d-block img-fluid w-100 img-card-product"
             src="/product-1.jpg"
             alt="image"
             />
@@ -494,7 +492,7 @@
         <b-col cols="3">
           <div class="our-products">
             <img
-            class="d-block img-fluid w-100"
+            class="d-block img-fluid w-100 img-card-product"
             src="/product-1.jpg"
             alt="image"
             />
@@ -522,7 +520,7 @@
         <b-col cols="3">
           <div class="our-products">
             <img
-            class="d-block img-fluid w-100"
+            class="d-block img-fluid w-100 img-card-product"
             src="/product-1.jpg"
             alt="image"
             />
@@ -550,7 +548,7 @@
         <b-col cols="3">
           <div class="our-products">
             <img
-            class="d-block img-fluid w-100"
+            class="d-block img-fluid w-100 img-card-product"
             src="/product-1.jpg"
             alt="image"
             />

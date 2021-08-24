@@ -88,8 +88,8 @@
 
     <!-- img separator -->
     <section>
-      <b-container class="position-relative">
-        <div class="img-separator with-info">
+      <b-container>
+        <div class="img-separator with-info position-relative">
           <div class="info right bc-yellow">
             <div class="title">TRAVEL <br />HAMMOCKS</div>
             <p class="mb-1">I was blown away by the tiny packing size and the very thin and light material. It certainly lightest hammock I have ever come across.</p>
@@ -121,7 +121,7 @@
         <VueSlickCarousel v-bind="products" :arrows="false" :dots="true">
           <div class="our-products pointer" v-for="(item, index) in ourProduct" :key="index"  @click="$router.push('/all-product')">
             <img
-            class="d-block img-fluid w-100"
+            class="d-block img-fluid w-100 img-card-product"
             :src="item.image.url"
             alt="image"
             />
@@ -132,7 +132,7 @@
               <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= item.rating}"></i>
             </div>
             <div class="product-price">{{item.price}} &euro;</div>
-            <b-button variant="thirdy" class="w-100 rounded-radius d-flex align-items-center justify-content-center mt-2">
+            <b-button variant="thirdy" class="w-100 d-flex align-items-center justify-content-center mt-2">
             VIEW DETAILS
             </b-button>
           </div>
@@ -152,8 +152,8 @@
 
     <!-- img separator -->
     <section>
-      <b-container class="position-relative">
-        <div class="img-separator with-info">
+      <b-container>
+        <div class="img-separator with-info position-relative">
           <div class="info left bc-blue">
             <div class="title">MORE THAN <br />HAMMOCKS</div>
             <p class="mb-1 text-center">Building better living for the people through</p>
@@ -233,9 +233,6 @@
               <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. The material feels like very fine silk, thin as glad wrap. However, it does not feel sweaty and does not seem to be noisy. For its minimalistic design it is very spacious and comfortable, for daily use where weight is no issue, my original TTTM hammock will still be my first choice though. I am curious to test the durability over time. At this point I would be super cautious around prickly plants in order not to have it ripped. Certainly a good choice when every gram counts.</p>
               <div class="d-flex">
                 <div>
-                  <b-avatar></b-avatar>
-                </div>
-                <div class="ml-2">
                   <div class="review-name mb-1">Martin Lawrence</div>
                   <div class="product-rating">
                     <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= 5}"></i>
@@ -249,9 +246,6 @@
               <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. The material feels like very fine silk, thin as glad wrap. However, it does not feel sweaty and does not seem to be noisy. For its minimalistic design it is very spacious.</p>
               <div class="d-flex">
                 <div>
-                  <b-avatar></b-avatar>
-                </div>
-                <div class="ml-1">
                   <div class="review-name mb-1">Martin Lawrence</div>
                   <div class="product-rating">
                     <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= 5}"></i>
@@ -265,9 +259,6 @@
               <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. The material feels like very fine silk, thin as glad wrap. However, it does not feel sweaty and does not seem to be noisy. For its minimalistic design it is very spacious. I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. The material feels like very fine silk, thin as glad wrap.</p>
               <div class="d-flex">
                 <div>
-                  <b-avatar></b-avatar>
-                </div>
-                <div class="ml-1">
                   <div class="review-name mb-1">Martin Lawrence</div>
                   <div class="product-rating">
                     <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= 5}"></i>
@@ -281,9 +272,6 @@
               <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. The material feels like very fine silk, thin as glad wrap. However, it does not feel sweaty and does not seem to be noisy. For its minimalistic design it is very spacious and comfortable, for daily use where weight is no issue, my original TTTM hammock will still be my first choice though. I am curious to test the durability over time. At this point I would be super cautious around prickly plants in order not to have it ripped. Certainly a good choice when every gram counts. I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. The material feels like very fine silk, thin as glad wrap. However, it does not feel sweaty and does not seem to be noisy. For its minimalistic design it is very spacious and comfortable.</p>
               <div class="d-flex">
                 <div>
-                  <b-avatar></b-avatar>
-                </div>
-                <div class="ml-1">
                   <div class="review-name mb-1">Martin Lawrence</div>
                   <div class="product-rating">
                     <i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= 5}"></i>

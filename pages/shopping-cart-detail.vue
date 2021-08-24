@@ -219,14 +219,14 @@
           <div class="subtitle fs-1h mb-1">Promotion Code / Voucher</div>
           <hr />
           <div class="d-flex align-items-center">
-            <input id="search-1" type="text" placeholder="enter code" class="form-subscribe form-control rounded-radius">
+            <input id="search-1" type="text" placeholder="enter code" class="form-subscribe form-control rounded-radius bc-transparent">
             <b-button variant="primary" class="ml-1">APPLY</b-button>
           </div>
           <div class="subtitle fs-1h mb-1 mt-2">Order Note</div>
           <hr />
           <b-form-textarea
             id="textarea"
-            class="rounded-radius"
+            class="rounded-radius bc-transparent"
             placeholder="Additional note for your order"
             rows="6"
             max-rows="9"

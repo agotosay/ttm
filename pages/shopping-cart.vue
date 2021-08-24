@@ -68,29 +68,7 @@
             PROCED TO CHECKOUT
           </b-button>
         </div>
-        <b-row class="mt-3">
-          <b-col cols="4">
-            <div class="subtitle fw-600 mb-2">Accepted Payment Methods :</div>
-            <img
-              class="d-block img-fluid w-100"
-              src="/logo-payment.png"
-              alt="image"
-            />
-          </b-col>
-          <b-col cols="2"></b-col>
-          <b-col cols="6">
-            <div class="subtitle fw-600 mb-2 d-flex align-items-center justify-content-between">
-              <span>Need Help Regarding Payment ?</span>
-              <b-link class="text-red" @click="$router.push('/faq')">Go To Faq Page ›</b-link>
-            </div>
-            <ul class="two-list no-symbol">
-              <li><b-link>Do I Qualify For Free Delivery ?</b-link></li>
-              <li><b-link>Is Vat Included In My Total ?</b-link></li>
-              <li><b-link>Is My Order Secured ?</b-link></li>
-              <li><b-link>What Are My Payment Options ?</b-link></li>
-            </ul>
-          </b-col>
-        </b-row>
+        
       </b-container>
     </section>
 

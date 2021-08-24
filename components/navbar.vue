@@ -19,7 +19,7 @@
           <b-nav-item class="link-icon" href="#" @click="isHidden = !isHidden">
             PRODUCTS
             <img
-            class="ml-1"
+            class="ml-0h mr-0h"
             src="/arrow-down.svg"
             height="10"
             alt="image"
@@ -133,8 +133,8 @@
                   Travel Hammock
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-travel-hammock.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -144,8 +144,8 @@
                   Lightest Hammock
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-lightest-hammock.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -155,8 +155,8 @@
                   Pro Hammock
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-pro-hammock.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -171,8 +171,8 @@
                   Moon Chair
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-moon-chair.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -182,8 +182,8 @@
                   Mini Moon Chair
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-mini-moon-chair.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -198,8 +198,8 @@
                   Mini Backpack 15 L
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-mini-backpack-15L.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -209,8 +209,8 @@
                   Backpack Plus 25 L
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-backpack-plus-25L.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -225,8 +225,8 @@
                   Eco Bags
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-eco-bags.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -243,8 +243,8 @@
                   UV-Proof Hammock Sleeve
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-uv-proof-hammock-sleeve.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -254,8 +254,8 @@
                   Convertiblebug Net 360º
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-convertible-bug-net.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -265,8 +265,8 @@
                   Moonquilt
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-moonquilt.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -276,19 +276,19 @@
                   Moontrap
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-moontarp.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
               </li>
               <li>
                 <b-link>
-                  Fuul Moon Traap
+                  Fuul Moon Trap
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-fullmoon-tarp.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -298,8 +298,8 @@
                   Lightest Trap
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-lightest-tarp.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -314,8 +314,8 @@
                   Moon Straps
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-moon-strap.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -325,8 +325,8 @@
                   Lightest Strap
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-lightest-strap.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -336,8 +336,8 @@
                   Nautical Rope Kit
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-naughtical-rope-kit.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -352,8 +352,8 @@
                   Carabiner 10 KN
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/carabiner-10kn.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -363,8 +363,8 @@
                   Carabiner 22 KN
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/carabiner-22kn.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -374,8 +374,8 @@
                   HAMMOCK ANCHOR KIT
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-hammock-anchor-kit.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -385,8 +385,8 @@
                   RIDGELINE KIT
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-ridgeline-kit.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -401,8 +401,8 @@
                   POCKET FRISBEE
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-pocket-frisbee.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -412,8 +412,8 @@
                   BEACH BLANKET
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-beach-blanket.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
@@ -423,8 +423,8 @@
                   SLACKLINE
                   <img
                   class="ml-1"
-                  src="/icon-hammock.svg"
-                  height="12"
+                  src="/menu-icon/icon-slackline.png"
+                  height="28"
                   alt="image"
                   />
                 </b-link>
