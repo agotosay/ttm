@@ -50,7 +50,7 @@
             </div>
           </template>
         </b-carousel-slide>
-       <b-carousel-slide>
+        <b-carousel-slide>
           <template #img>
             <div class="slide-banner position-relative">
               <img

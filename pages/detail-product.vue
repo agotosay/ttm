@@ -180,7 +180,7 @@
                   alt="image"
                   />
                   <b-button :variant="selectedAcc1 === 0 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc1(0)">
-                    SELECTED
+                    {{ selectedAcc1 === 0 ? 'SELECTED' : 'SELECT'}}
                   </b-button>
                 </b-card>
               </b-col>
@@ -193,7 +193,7 @@
                   alt="image"
                   />
                   <b-button :variant="selectedAcc1 === 1 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc1(1)">
-                    SELECTED
+                    {{ selectedAcc1 === 1 ? 'SELECTED' : 'SELECT'}}
                   </b-button>
                 </b-card>
               </b-col>
@@ -210,7 +210,7 @@
                   alt="image"
                   />
                   <b-button :variant="selectedAcc2 === 0 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc2(0)">
-                    SELECTED
+                    {{ selectedAcc2 === 0 ? 'SELECTED' : 'SELECT'}}
                   </b-button> 
                 </b-card>
               </b-col>
@@ -223,7 +223,7 @@
                   alt="image"
                   />
                   <b-button :variant="selectedAcc2=== 1 ? 'primary' : 'thirdy'" class="w-100 d-flex align-items-center justify-content-center mt-2" @click="onSelectAcc2(1)">
-                    SELECTED
+                    {{ selectedAcc2 === 1 ? 'SELECTED' : 'SELECT'}}
                   </b-button>
                 </b-card>
               </b-col>

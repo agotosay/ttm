@@ -10,6 +10,13 @@ body{
 @font-face {
   font-family: 'Ideal Sans';
   font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('~/assets/fonts/IdealSans-Light-Pro.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Ideal Sans';
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url('~/assets/fonts/IdealSans-Medium-Pro.otf') format('truetype');
@@ -241,7 +248,7 @@ section{
   }
 }
 p{
-  font-weight: 400;
+  font-weight: 300;
 }
 ul{
   line-height: 2rem;
@@ -259,11 +266,14 @@ ul{
 a {
   text-decoration: none;
   color: #042742;
-  font-weight: 400;
+  font-weight: 300;
   &:hover{
     text-decoration: none;
     color: #042742;
   }
+}
+.fw-300{
+  font-weight: 300;
 }
 .fw-400{
   font-weight: 400;
@@ -273,6 +283,9 @@ a {
 }
 .fw-600{
   font-weight: 600;
+}
+.fw-700{
+  font-weight: 700;
 }
 .fw-900{
   font-weight: 900;
@@ -359,7 +372,7 @@ a {
     bottom: 0;
   }
   a{
-    font-weight: 400;
+    font-weight: 300;
     &.nav-link{
       font-size: 1rem;
     }
@@ -402,7 +415,7 @@ a {
         color: #003057;
         &:hover{
           color: #003057;
-          font-weight: 500;
+          font-weight: 400;
         }
       }
     }
@@ -426,11 +439,11 @@ a {
       text-shadow: none;
       &:nth-child(1){
         font-size: 40px;
-        font-weight: 500;
+        font-weight: 400;
       }
       &:nth-child(2){
         font-size: 60px;
-        font-weight: 900;
+        font-weight: 700;
       }
     }
   }
@@ -462,7 +475,7 @@ a {
   .title{
     font-size: 20px;
     margin-bottom: .75rem;
-    font-weight: 500;
+    font-weight: 400;
   }
   ul{
     list-style: none;
@@ -518,7 +531,7 @@ a {
     font-size: 20px;
     cursor: pointer;
     margin-left: 10px;
-    font-weight: 500;
+    font-weight: 400;
   }
   .product-rating{
     display: flex;
@@ -549,6 +562,9 @@ a {
       padding: 0;
     }
   }
+  .review-role{
+    font-weight: 300;
+  }
   .user-review{
     padding: 2.5rem;
     background-color: #fff;
@@ -569,7 +585,7 @@ a {
   .benefit-title{
     font-size: 20px;
     line-height: 1;
-    font-weight: 600;
+    font-weight: 700;
   }
   .benefit-subtitle{
     font-size: 20px;
@@ -582,7 +598,7 @@ a {
   color: white;
   .stay{
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 400;
   }
   .form-subscribe{
     border-radius: 50px;
@@ -594,7 +610,7 @@ a {
     }
   }
   .title-link{
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: .5rem;
   }
   ul{
@@ -653,7 +669,7 @@ a {
 .box-product{
   padding: 0.5rem 1rem;
   .title{
-    font-weight: 500;
+    font-weight: 400;
   }
   .img-product{
     max-height: 350px;
@@ -672,7 +688,7 @@ a {
     // margin-top: 3rem;
     .title{
       font-size: 1.5rem;
-      font-weight: 500;
+      font-weight: 400;
     }
   }
 }
@@ -708,7 +724,7 @@ a {
     li{
       text-align: center;
       font-size: 1.5rem;
-      font-weight: 500;
+      font-weight: 400;
       border-bottom: 1px solid #f0efef;
       padding: 1rem;
     }
@@ -727,7 +743,14 @@ a {
   // padding-left: 3rem;
   .title{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
+  }
+  textarea{
+    overflow:hidden;
+    scrollbar-color: transparent transparent;
+    &::-moz-scrollbar{
+      display: none;
+    }
   }
   // &::before{
   //   content: '';
@@ -758,7 +781,7 @@ a {
   }
   .subtitle{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
   }
   .definitions{
     li{
@@ -770,7 +793,7 @@ a {
   }
   .left-tab{
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 400;
     list-style: decimal;
     li{
       cursor: pointer;
@@ -917,7 +940,7 @@ a {
       font-size: 20px;
       cursor: pointer;
       margin-left: 10px;
-      font-weight: 500;
+      font-weight: 400;
     }
     .product-rating{
       display: flex;
@@ -976,7 +999,7 @@ a {
   }
   .price{
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 400;
   }
 }
 .spec-product{
@@ -984,7 +1007,7 @@ a {
   .product-price{
     margin-top: .5rem;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
   }
   .card{
@@ -1086,7 +1109,7 @@ a {
     font-size: 20px;
     cursor: pointer;
     margin-left: 10px;
-    font-weight: 500;
+    font-weight: 400;
   }
   .product-rating{
     display: flex;
@@ -1174,7 +1197,9 @@ a {
 .file > input[type='file'] {
   display: none
 }
-
+.form-control{
+  font-weight: 300 !important;
+}
 .file > label {
   font-size: 1rem;
   font-weight: 300;
@@ -1215,7 +1240,7 @@ a {
     width: 200px;
     text-transform: uppercase;
     margin-bottom: 0;
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 .btn-tracking{
@@ -1258,7 +1283,7 @@ a {
       content: counter(chapter) '';
       counter-increment: chapter;
       padding-right: 1rem;
-      font-weight: 600;
+      font-weight: 700;
       position: absolute;
       left: 14px;
     }
@@ -1292,16 +1317,19 @@ a {
   &.faq{
     .card-header{
       background-color: transparent;
-      border-bottom: 0;
+      padding-bottom: 1rem !important;
     }
     .btn-info{
       background-color: transparent;
       border-color: transparent;
       color: #00305A;
-      font-weight: 500;
+      font-weight: 400;
       display: flex;
       align-items: center;
       text-transform: uppercase;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: left;
       &:active{
         background-color: transparent;
         border-color: transparent;

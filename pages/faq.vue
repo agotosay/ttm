@@ -27,16 +27,23 @@
       </div>
       <b-row class="mt-2">
         <b-col cols="5" class="mt-2">
-          <div class="faq-category" v-for="(item, index) in categoryFAQ" :key="index">
-            <div class="category" :class="{'active' : index === selectedFAQ}" @click="onSelectFAQ(index)">{{item.name}}</div>
+          <div class="faq-category">
+            <div class="title fs-1h fw-300">Product <br><span class="fw-400">Question</span></div>
           </div>
         </b-col>
         <b-col cols="7">
           <!-- desc accordion -->
-          <div class="accordion faq" v-if="selectedFAQ === 0 ">
+          <div class="accordion faq">
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-1 variant="info">Why a Ticket to the Moon Hammock?</b-button>
+                <b-button block v-b-toggle.accordion-1 variant="info" class="d-flex justify-between">
+                  Why a Ticket to the Moon Hammock?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -46,7 +53,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-2 variant="info">Do I need a Suspension System for my TTTM Hammock?</b-button>
+                <b-button block v-b-toggle.accordion-2 variant="info" class="d-flex justify-between">
+                  Do I need a Suspension System for my TTTM Hammock?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -56,7 +70,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-3 variant="info">What is the Weight Limit for TTTM Products?</b-button>
+                <b-button block v-b-toggle.accordion-3 variant="info" class="d-flex justify-between">
+                  What is the Weight Limit for TTTM Products?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -66,7 +87,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-4 variant="info">How many People fit in a TTTM Hammock?</b-button>
+                <b-button block v-b-toggle.accordion-4 variant="info" class="d-flex justify-between">
+                  How many People fit in a TTTM Hammock?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -76,7 +104,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-5 variant="info">Do you offer Warranty on your products?</b-button>
+                <b-button block v-b-toggle.accordion-5 variant="info" class="d-flex justify-between">
+                  Do you offer Warranty on your products?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -86,7 +121,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-6 variant="info">Can I repair my hammock?</b-button>
+                <b-button block v-b-toggle.accordion-6 variant="info" class="d-flex justify-between">
+                  Can I Make Love in a TTTM Hammock?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-6" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -96,7 +138,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-7 variant="info">Can I Make Love in a TTTM Hammock?</b-button>
+                <b-button block v-b-toggle.accordion-7 variant="info" class="d-flex justify-between">
+                  Are TTTM Hammocks Breathable?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-7" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -106,7 +155,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-8 variant="info">Are TTTM Hammocks Breathable?</b-button>
+                <b-button block v-b-toggle.accordion-8 variant="info" class="d-flex justify-between">
+                  How Do You Get in and Out a TTTM Hammock?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-8" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -116,7 +172,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-9 variant="info">How Do You Get in and Out a TTTM Hammock?</b-button>
+                <b-button block v-b-toggle.accordion-9 variant="info" class="d-flex justify-between">
+                  Why is there no Spreader Bar?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-9" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -126,7 +189,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-10 variant="info">Why is there no Spreader Bar?</b-button>
+                <b-button block v-b-toggle.accordion-10 variant="info" class="d-flex justify-between">
+                  What is the Point of Using the Hook?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-10" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -136,7 +206,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-11 variant="info">What is the Point of Using the Hook?</b-button>
+                <b-button block v-b-toggle.accordion-11 variant="info" class="d-flex justify-between">
+                  How much Space do I need to Hang my Hammock?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-11" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -146,7 +223,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-12 variant="info">How much Space do I need to Hang my Hammock?</b-button>
+                <b-button block v-b-toggle.accordion-12 variant="info" class="d-flex justify-between">
+                  Can I use a standard Hammock Frame for my TTTM?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-12" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -156,7 +240,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-13 variant="info">Can I use a standard Hammock Frame for my TTTM?</b-button>
+                <b-button block v-b-toggle.accordion-13 variant="info" class="d-flex justify-between">
+                  Does The Ticket To The Moon Mosquito Net 360° work with all TTTM Hammocks?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-13" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -166,7 +257,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-14 variant="info">Does The Ticket To The Moon Mosquito Net 360° work with all TTTM Hammocks?</b-button>
+                <b-button block v-b-toggle.accordion-14 variant="info" class="d-flex justify-between">
+                  How do I wash my TTTM Hammock?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-14" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -175,12 +273,29 @@
               </b-collapse>
             </div>
           </div>
-          <div class="accordion faq" v-if="selectedFAQ === 1 ">
+        </b-col>
+      </b-row>
+      <b-row class="mt-2">
+        <b-col cols="5" class="mt-2">
+          <div class="faq-category">
+            <div class="title fs-1h fw-300">Product <br><span class="fw-400">Question</span></div>
+          </div>
+        </b-col>
+        <b-col cols="7">
+          <!-- desc accordion -->
+          <div class="accordion faq">
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-15 variant="info">Is my order subject to import duties and other fees?</b-button>
+                <b-button block v-b-toggle.accordion-1 variant="info" class="d-flex justify-between">
+                  Is my order subject to import duties and other fees?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
-              <b-collapse id="accordion-15" accordion="my-accordion" role="tabpanel">
+              <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </b-card-body>
@@ -188,9 +303,16 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-16 variant="info">Is it safe to buy TTTM products online using a credit card?</b-button>
+                <b-button block v-b-toggle.accordion-2 variant="info" class="d-flex justify-between">
+                  Is it safe to buy TTTM products online using a credit card?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
-              <b-collapse id="accordion-16" accordion="my-accordion" role="tabpanel">
+              <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </b-card-body>
@@ -198,9 +320,16 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-17 variant="info">Do you ship Everywhere?</b-button>
+                <b-button block v-b-toggle.accordion-3 variant="info" class="d-flex justify-between">
+                  Do you ship Everywhere?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
-              <b-collapse id="accordion-17" accordion="my-accordion" role="tabpanel">
+              <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </b-card-body>
@@ -208,9 +337,16 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-18 variant="info">How much do shipping and customs charges for my order cost?</b-button>
+                <b-button block v-b-toggle.accordion-4 variant="info" class="d-flex justify-between">
+                  How much do shipping and customs charges for my order cost?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
-              <b-collapse id="accordion-18" accordion="my-accordion" role="tabpanel">
+              <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </b-card-body>
@@ -218,9 +354,16 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-19 variant="info">How do I Track my order?</b-button>
+                <b-button block v-b-toggle.accordion-5 variant="info" class="d-flex justify-between">
+                  How do I Track my order?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
-              <b-collapse id="accordion-19" accordion="my-accordion" role="tabpanel">
+              <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </b-card-body>
@@ -228,9 +371,16 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-20 variant="info">What payment options?</b-button>
+                <b-button block v-b-toggle.accordion-6 variant="info" class="d-flex justify-between">
+                  What payment options?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
-              <b-collapse id="accordion-20" accordion="my-accordion" role="tabpanel">
+              <b-collapse id="accordion-6" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </b-card-body>
@@ -238,9 +388,16 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-21 variant="info">Can I pay using PayPal?</b-button>
+                <b-button block v-b-toggle.accordion-7 variant="info" class="d-flex justify-between">
+                  Can I pay using PayPal?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
-              <b-collapse id="accordion-21" accordion="my-accordion" role="tabpanel">
+              <b-collapse id="accordion-7" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </b-card-body>
@@ -248,19 +405,43 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-22 variant="info">When will my order be shipped?</b-button>
+                <b-button block v-b-toggle.accordion-8 variant="info" class="d-flex justify-between">
+                  When will my order be shipped?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
-              <b-collapse id="accordion-22" accordion="my-accordion" role="tabpanel">
+              <b-collapse id="accordion-8" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </b-card-body>
               </b-collapse>
             </div>
           </div>
-          <div class="accordion faq" v-if="selectedFAQ === 2 ">
+        </b-col>
+      </b-row>
+      <b-row class="mt-2">
+        <b-col cols="5" class="mt-2">
+          <div class="faq-category">
+            <div class="title fs-1h fw-300">Product <br><span class="fw-400">Question</span></div>
+          </div>
+        </b-col>
+        <b-col cols="7">
+          <!-- desc accordion -->
+          <div class="accordion faq" >
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-23 variant="info">How do I create an account?</b-button>
+                <b-button block v-b-toggle.accordion-23 variant="info" class="d-flex justify-between">
+                  How do I create an account?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-23" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -270,7 +451,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-24 variant="info">Has my order been shipped yet?</b-button>
+                <b-button block v-b-toggle.accordion-24 variant="info" class="d-flex justify-between">
+                  Has my order been shipped yet?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-24" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -280,7 +468,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-25 variant="info">How do I change quantities or items of my order?</b-button>
+                <b-button block v-b-toggle.accordion-25 variant="info" class="d-flex justify-between">
+                  How do I change quantities or items of my order?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-25" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -290,7 +485,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-26 variant="info">How do I track my order?</b-button>
+                <b-button block v-b-toggle.accordion-26 variant="info" class="d-flex justify-between">
+                  How do I track my order?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-26" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -300,7 +502,14 @@
             </div>
             <div no-body class="mb-1">
               <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-27 variant="info">How Do I Return or Exchange an Order?</b-button>
+                <b-button block v-b-toggle.accordion-27 variant="info" class="d-flex justify-between">
+                  How Do I Return or Exchange an Order?
+                  <img
+                    src="/plus.png"
+                    alt="image"
+                    height="12"
+                  />
+                </b-button>
               </b-card-header>
               <b-collapse id="accordion-27" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
@@ -312,6 +521,7 @@
         </b-col>
       </b-row>
     </section>
+
     <!-- footer -->
     <Footer />
   </div>

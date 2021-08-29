@@ -40,24 +40,28 @@
         <p>They have built a traditional Kodi house as a Headquarters, giving the youngest workers an occasion to be trained following their ancestral traditions (which are threatened by modernity, like their unique crafts, horses game, etc.); likewise, teaching waste management is a part of ticket to the moon continuous effort to avoid pollution in West Sumba.</p>
         <p>On the other hand, they have been supporting the existing schools in th Mandorak area.</p>
         <b-row class="mt-2">
-          <b-col cols="6" class="foundation-scroll">
+          <b-col cols="6">
             <div class="subtitle fw-600 mb-1">
               Kodi &amp; Sumba culture
             </div>
-            <p>After a great initial success at many European music festivals, Charly realizes that his hammock could be something more than just a way to cover the costs of his travels.</p>
-            <p>After a great initial success at many European music festivals, Charly realizes that his hammock could be something more than just a way to cover the costs of his travels…</p>
-            <p>After a great initial success at many European music festivals, Charly realizes that his hammock could be something more than just a way to cover the costs of his travels…</p>
-            <p>After a great initial success at many European music festivals, Charly realizes that his hammock could be something more than just a way to cover the costs of his travels…</p>
+            <div class="foundation-scroll">
+              <p>After a great initial success at many European music festivals, Charly realizes that his hammock could be something more than just a way to cover the costs of his travels.</p>
+              <p>After a great initial success at many European music festivals, Charly realizes that his hammock could be something more than just a way to cover the costs of his travels…</p>
+              <p>After a great initial success at many European music festivals, Charly realizes that his hammock could be something more than just a way to cover the costs of his travels…</p>
+              <p>After a great initial success at many European music festivals, Charly realizes that his hammock could be something more than just a way to cover the costs of his travels…</p>
+            </div>
           </b-col>
-          <b-col cols="6" class="foundation-scroll">
+          <b-col cols="6">
             <div class="subtitle fw-600 mb-1">
               EDUCATION FOR THE POPULATION
             </div>
-            <p>While the Kodi people speak their own dialect, the future of their children is depends on their chance to communicate in Bahasa Indonesia, spoken by 200 million people in Southern Asia (4th spoken language worldwide).</p>
-            <p>The Ticket To The Moon team has been working on two levels; on the one hand, they opened a primary school in 2007 to allow children from the Mandorak County to be taught both in their language and in Bahasa Indonesia. On the other hand, they have been supporting the existing schools in Mandorak area.</p>
-            <p>Indeed, the few schools in West Sumba are poorly staffed and furnished, whereas they represent a unique opportunity for the Kodi children to know a better life than their parents.</p>
-            <p>A financial and material support is much needed to improve their facilities and provide the pupils with tuition material (pencils, books, sports equipments, etc.).</p>
-            <p>In 2014 the school burned down; in 2015, the support of Ticket To The Moon Foundation is vital for the kids to go back to school.</p>
+            <div class="foundation-scroll">
+              <p>While the Kodi people speak their own dialect, the future of their children is depends on their chance to communicate in Bahasa Indonesia, spoken by 200 million people in Southern Asia (4th spoken language worldwide).</p>
+              <p>The Ticket To The Moon team has been working on two levels; on the one hand, they opened a primary school in 2007 to allow children from the Mandorak County to be taught both in their language and in Bahasa Indonesia. On the other hand, they have been supporting the existing schools in Mandorak area.</p>
+              <p>Indeed, the few schools in West Sumba are poorly staffed and furnished, whereas they represent a unique opportunity for the Kodi children to know a better life than their parents.</p>
+              <p>A financial and material support is much needed to improve their facilities and provide the pupils with tuition material (pencils, books, sports equipments, etc.).</p>
+              <p>In 2014 the school burned down; in 2015, the support of Ticket To The Moon Foundation is vital for the kids to go back to school.</p>
+            </div>
           </b-col>
         </b-row>
         <hr>
