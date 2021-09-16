@@ -10,14 +10,11 @@
     <div class="static-info">
       <!-- carousel -->
       <div class="position-relative">
-        <b-carousel
+        <b-carousel v-bind="mainCarousel"
           id="carousel-1"
           v-model="slide"
           :interval="4000"
           indicators
-          background="#ababab"
-          img-width="1024"
-          img-height="700"
           @sliding-start="onSlideStart"
           @sliding-end="onSlideEnd"
         >
@@ -93,7 +90,7 @@
           <div class="title mb-1">BUNDLES</div>
           <p>Our hammock sets are the perfect choice for starters or seasoned adventurers looking to upgrade their existing equipment.</p>
           <b-row>
-            <b-col cols="6">
+            <b-col cols="12" lg="6">
               <div class="info bc-yellow text-center mb-2">
                 <div class="title">Lightest Hammock <br />BUNDLE</div>
                 <p class="mb-1">I was blown away by the tiny packing size and the very thin and light material. It certainly lightest hammock I have ever come across.</p>
@@ -107,7 +104,7 @@
                 </b-button>
               </div>
             </b-col>
-            <b-col cols="6">
+            <b-col cols="12" lg="6">
               <div class="info backpacks text-center mb-2">
                 <div class="title">Hammock <br />Tent Set</div>
                 <p class="mb-1">I was blown away by the tiny packing size and the very thin and light material. It certainly lightest hammock I have ever come across.</p>
@@ -156,7 +153,11 @@ export default {
       return {
         slide: 0,
         sliding: null,
-        isHidden: false
+        isHidden: false,
+        mainCarousel: {
+          indicators: true,
+          background: "#e2ecf3",
+        }
       }
     },
     methods: {

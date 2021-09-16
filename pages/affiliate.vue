@@ -21,7 +21,7 @@
         <p>By being a TICKETTOTHEMOON ambassador, you will receive a promotional code that you can share. Customers who buy on our website with your code will get 10% off their order! What about you? As soon as the total amount of orders made with your code exceeds 250€, you have the choice: Spend the amount earned on our website or receive a bank transfer from us. If you use this amount to purchase new TICKETTOTHEMOON products on our site, your amount to be spent will be equal to 20% of the total purchase of your community. If you choose the bank transfer, it will be equal to 10% of the total purchases. </p>
         <p>Become an ambassador by filling out the form below: why are you the ideal person, the one we are looking for? Qualified candidates will be contacted by members of our tribe and you will have the privilege of receiving a discount code that you can pass on to your followers. It will allow you to increase your rewards as people use it.</p>
         <b-row class="mt-2">
-          <b-col cols="6">
+          <b-col cols="12" lg="6">
             <div class="fw-600 mb-2">PERSONAL DETAILS :</div>
             <b-form class="mb-1">
               <label>First name :</label>
@@ -40,19 +40,19 @@
               <b-form-input type="text" id="for-phone" placeholder="Phone" class="rounded-radius"/>
             </b-form>
             <b-row>
-              <b-col cols="3">
+              <b-col cols="12" lg="3">
                 <b-form class="mb-1">
                   <label>Age :</label>
                   <b-form-input type="number" id="for-phone" placeholder="Age" class="rounded-radius"/>
                 </b-form>
               </b-col>
-              <b-col cols="5">
+              <b-col cols="12" lg="5">
                 <b-form class="mb-1">
                   <label>Nationality :</label>
                   <b-form-input type="number" id="for-phone" placeholder="Nationality" class="rounded-radius"/>
                 </b-form>
               </b-col>
-              <b-col cols="4">
+              <b-col cols="12" lg="4">
                 <b-form-group class="d-flex justify-content-between">
                   <label>Sex :</label>
                   <div class="d-flex w-100 mt-0h">
@@ -63,9 +63,9 @@
               </b-col>
             </b-row>
           </b-col>
-          <b-col cols="6">
+          <b-col cols="12" lg="6">
             <div class="fw-600 mb-2">Occupation / Field of Interest :</div>
-            <b-form-group class="d-flex justify-content-between">
+            <b-form-group class="d-flex justify-content-between mobile">
               <label>Occupation / Field of Interest :</label>
               <div class="d-flex w-100 mt-0h">
                 <b-form-radio name="some-radios" value="A" class="mr-1">Blogger</b-form-radio>

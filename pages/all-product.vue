@@ -10,7 +10,7 @@
       <b-container>
         <!-- 1 -->
         <b-row class="acc-product">
-          <b-col cols="6" class="hammock left">
+          <b-col cols="12" lg="6" class="hammock left">
             <div class="title">HAMMOCKS</div>
             <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. </p>
             <b-button variant="secondary" class="mt-1 w-100 rounded-radius" v-on:click="isHidden1 = !isHidden1">
@@ -22,7 +22,7 @@
                 class="ml-1" />
             </b-button>
           </b-col>
-          <b-col cols="6" class="right pl-0">
+          <b-col cols="12" lg="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
             src="/image-19.png"
@@ -32,7 +32,7 @@
           </b-col>
         </b-row>
         <b-row class="collapse-acc-product d-flex align-items-center" v-if="isHidden1">
-          <b-col cols="6 mb-2">
+          <b-col cols="12" lg="6" class="mb-2">
             <div class="our-products">
               <img
               class="d-block img-fluid w-100 img-card-product"
@@ -60,7 +60,7 @@
               </b-button>
             </div>
           </b-col>
-          <b-col cols="6 mb-2">
+          <b-col cols="12" lg="6" class="mb-2">
             <div class="our-products">
               <img
               class="d-block img-fluid w-100 img-card-product"
@@ -88,7 +88,7 @@
               </b-button>
             </div>
           </b-col>
-          <b-col cols="6 mb-2">
+          <b-col cols="12" lg="6" class="mb-2">
             <div class="our-products">
               <img
               class="d-block img-fluid w-100 img-card-product"
@@ -116,7 +116,7 @@
               </b-button>
             </div>
           </b-col>
-          <b-col cols="6 mb-2">
+          <b-col cols="12" lg="6" class="mb-2">
             <div class="text-center">
               <b-link @click="$router.push('/detail-product')">
               See Hammock Details
@@ -131,7 +131,7 @@
         </b-row>
         <!-- 2 -->
         <b-row class="acc-product">
-          <b-col cols="6" class="chairs left">
+          <b-col cols="12" lg="6" class="chairs left">
             <div class="title">HAMMOCKS CHAIRS</div>
             <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. </p>
             <b-button variant="secondary" class="mt-1 w-100 rounded-radius">
@@ -143,7 +143,7 @@
                 class="ml-1" />
             </b-button>
           </b-col>
-          <b-col cols="6" class="right pl-0">
+          <b-col cols="12" lg="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
             src="/image-32.png"
@@ -153,7 +153,7 @@
           </b-col>
         </b-row>
         <b-row class="acc-product">
-          <b-col cols="6" class="backpacks left">
+          <b-col cols="12" lg="6" class="backpacks left">
             <div class="title">ECO BACKPACKS</div>
             <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. </p>
             <b-button variant="secondary" class="mt-1 w-100 rounded-radius">
@@ -165,7 +165,7 @@
                 class="ml-1" />
             </b-button>
           </b-col>
-          <b-col cols="6" class="right pl-0">
+          <b-col cols="12" lg="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
             src="/image-33.png"
@@ -175,7 +175,7 @@
           </b-col>
         </b-row>
         <b-row class="acc-product">
-          <b-col cols="6" class="bags left">
+          <b-col cols="12" lg="6" class="bags left">
             <div class="title">ECOBAGS</div>
             <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. </p>
             <b-button variant="secondary" class="mt-1 w-100 rounded-radius">
@@ -187,7 +187,7 @@
                 class="ml-1" />
             </b-button>
           </b-col>
-          <b-col cols="6" class="right pl-0">
+          <b-col cols="12" lg="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
             src="/image-34.png"
@@ -197,7 +197,7 @@
           </b-col>
         </b-row>
         <b-row class="acc-product">
-          <b-col cols="6" class="accessories left">
+          <b-col cols="12" lg="6" class="accessories left">
             <div class="title">HAMMOCK ACCESSORIES</div>
             <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. </p>
             <b-button variant="secondary" class="mt-1 w-100 rounded-radius">
@@ -209,7 +209,7 @@
                 class="ml-1" />
             </b-button>
           </b-col>
-          <b-col cols="6" class="right pl-0">
+          <b-col cols="12" lg="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
             src="/image-35.png"
@@ -219,7 +219,7 @@
           </b-col>
         </b-row>
         <b-row class="acc-product">
-          <b-col cols="6" class="suspension left">
+          <b-col cols="12" lg="6" class="suspension left">
             <div class="title">HAMMOCK SUSPENSION</div>
             <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. </p>
             <b-button variant="secondary" class="mt-1 w-100 rounded-radius">
@@ -231,7 +231,7 @@
                 class="ml-1" />
             </b-button>
           </b-col>
-          <b-col cols="6" class="right pl-0">
+          <b-col cols="12" lg="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
             src="/image-36.png"
@@ -241,7 +241,7 @@
           </b-col>
         </b-row>
         <b-row class="acc-product">
-          <b-col cols="6" class="tools left">
+          <b-col cols="12" lg="6" class="tools left">
             <div class="title">TOOLS</div>
             <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. </p>
             <b-button variant="secondary" class="mt-1 w-100 rounded-radius">
@@ -253,7 +253,7 @@
                 class="ml-1" />
             </b-button>
           </b-col>
-          <b-col cols="6" class="right pl-0">
+          <b-col cols="12" lg="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
             src="/image-37.png"
@@ -263,7 +263,7 @@
           </b-col>
         </b-row>
         <b-row class="acc-product">
-          <b-col cols="6" class="others left">
+          <b-col cols="12" lg="6" class="others left">
             <div class="title">OTHERS</div>
             <p>I was blown away by the tiny packing size and the very thin and light material. It certainly is the lightest hammock I have ever come across. </p>
             <b-button variant="secondary" class="mt-1 w-100 rounded-radius">
@@ -275,7 +275,7 @@
                 class="ml-1" />
             </b-button>
           </b-col>
-          <b-col cols="6" class="right pl-0">
+          <b-col cols="12" lg="6" class="right pl-0">
             <img
             class="d-block img-fluid w-100"
             src="/image-38.png"

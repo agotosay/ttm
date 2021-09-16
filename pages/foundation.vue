@@ -40,7 +40,7 @@
         <p>They have built a traditional Kodi house as a Headquarters, giving the youngest workers an occasion to be trained following their ancestral traditions (which are threatened by modernity, like their unique crafts, horses game, etc.); likewise, teaching waste management is a part of ticket to the moon continuous effort to avoid pollution in West Sumba.</p>
         <p>On the other hand, they have been supporting the existing schools in th Mandorak area.</p>
         <b-row class="mt-2">
-          <b-col cols="6">
+          <b-col cols="12" lg="6">
             <div class="subtitle fw-600 mb-1">
               Kodi &amp; Sumba culture
             </div>
@@ -51,7 +51,7 @@
               <p>After a great initial success at many European music festivals, Charly realizes that his hammock could be something more than just a way to cover the costs of his travels…</p>
             </div>
           </b-col>
-          <b-col cols="6">
+          <b-col cols="12" lg="6">
             <div class="subtitle fw-600 mb-1">
               EDUCATION FOR THE POPULATION
             </div>
@@ -71,7 +71,7 @@
         alt="image"
         />
         <b-row class="foundation-scroll">
-          <b-col cols="6" offset="2" class="milestone">
+          <b-col cols="12" lg="6" offset="2" class="milestone">
             <div class="list">START OF THE SUMBA, KODI, AND MANDORAK ADVENTURE</div>
             <div class="list">FIRST PRIMARY SCHOOL IN MANDORAK</div>
             <div class="list">DUG THE FIRST WELL TO HAVE SOME CLEAR WATER IN THE COUNTY</div>
@@ -87,12 +87,12 @@
           </b-col>
         </b-row>
         <b-row>
-          <b-col cols="8" offset="2" class="mt-2">
+          <b-col cols="12" lg="8" offset="2" class="mt-2 future-dev">
             <div class="title mt-2">FUTURE DEVELOPMENT OF THE TICKET TO THE MOON FOUNDATION</div>
           </b-col>
         </b-row>
         <b-row class="foundation-scroll mt-2">
-          <b-col cols="8" offset="2">
+          <b-col cols="12" lg="8" offset="2">
             <p>The Ticket to the Moon Foundation’s ambition is to help the Kodi people find economic balance. Mandorak County is likely to welcome a promising type of industry: eco-tourism.</p>
             <p>The idea is to open the Kodi villages to visitors who would agree to share their daily life, respect their rhythm and natural environment, while enjoying a large choice of activities (snorkeling, hiking, horse-riding, etc).</p>
             <p>While discovering Mandorak County’s shores, lagoon and landscapes, these eco-friendly tourists will get introduced to the Kodi culture thanks to an organic farm offering local food and traditional Sumbanese meals, let alone organized horse games, tribal music or a visit to the handicraft shop.</p>
@@ -108,7 +108,7 @@
     <section>
       <b-container>
         <b-row>
-          <b-col cols="6" class="pr-0">
+          <b-col cols="12" lg="6" class="pr-0">
             <div class="join-instagram">
               <div class="title">
                 EVERYBODY <br />
@@ -127,15 +127,15 @@
               </b-button>
             </div>
           </b-col>
-          <b-col cols="6" class="pl-0">
+          <b-col cols="12" lg="6" class="pl-0 join-the-tribe">
             <div class="d-flex">
               <img
-              class="d-block img-fluid w-100"
+              class="d-block img-fluid w-100 img-1"
               src="/image-12.png"
               alt="image"
               />  
               <img
-              class="d-block img-fluid w-100"
+              class="d-block img-fluid w-100 img-1"
               src="/image-13.png"
               alt="image"
               />  
@@ -149,12 +149,12 @@
             </div>
             <div class="d-flex">
               <img
-              class="d-block img-fluid w-100"
+              class="d-block img-fluid w-100 img-1"
               src="/image-15.png"
               alt="image"
               />  
               <img
-              class="d-block img-fluid w-100"
+              class="d-block img-fluid w-100 img-1"
               src="/image-16.png"
               alt="image"
               />  

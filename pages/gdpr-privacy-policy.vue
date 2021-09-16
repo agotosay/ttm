@@ -42,7 +42,7 @@
         </ul>
         <div class="mt-3">
           <b-row>
-            <b-col cols="6">
+            <b-col cols="12" lg="6">
               <ul class="pl-1 left-tab">
                 <li>Principles for processing personal data</li>
                 <li>What personal data we collcet and process</li>
@@ -51,7 +51,7 @@
                 <li>Retention of personal data</li>
               </ul>
             </b-col>
-            <b-col cols="6">
+            <b-col cols="12" lg="6">
               <div class="fw-500 mb-1">Our priciples for processing personal data are:</div>
               <ul class="pl-1">
                 <li>Fairness and lawfulness.</li>

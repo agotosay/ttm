@@ -7,11 +7,11 @@
     <Navbar />
 
     <!-- info -->
-    <section>
+    <section class="contact-us">
       <b-container>
         <div class="title mb-2">Send a message</div>
         <b-row>
-          <b-col cols="4">
+          <b-col cols="12" lg="4">
             <b-form-group>
               <b-form-input
                 id="name"
@@ -52,8 +52,8 @@
               </b-button>
             </b-form-group>
           </b-col>
-          <b-col cols="1"></b-col>
-          <b-col cols="7">
+          <b-col cols="12" lg="1"></b-col>
+          <b-col cols="12" lg="7">
             <div class="info-contact">
               <div class="title text-yellow mb-2">GET IN TOUCH</div>
               <p>Jalan Batu Sangian VI No.10 Kuta Utara, Bali 80361 INDONESIA</p>

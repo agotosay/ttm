@@ -13,7 +13,7 @@
         Join the tribe
       </div>
       <b-row class="mt-2">
-        <b-col cols="6">
+        <b-col cols="12" lg="6">
           <b-form class="mb-1">
             <label>Full name :</label>
             <b-form-input type="text" id="full-name" placeholder="Full name" class="rounded-radius"/>
@@ -38,7 +38,7 @@
             </div>
           </b-form-group>
         </b-col>
-        <b-col cols="6">
+        <b-col cols="12" lg="6">
           <b-form class="mb-1">
             <label>Email :</label>
             <b-form-input type="email" id="for-email" placeholder="Email" class="rounded-radius"/>

@@ -400,9 +400,9 @@
         TRACKING ORDER
       </div>
       <p>To track your order please select your Couriers and enter your Tracking Code in the box and press the "Track Order" button. You can find your Tracking Code and Couriers in the shipping confirmation email that was emailed to you.</p>
-      <b-row>
-        <b-col cols="9" offset="1">
-          <div class="d-flex align-items-center justify-content-center">
+      <b-row class="tracking-order">
+        <b-col cols="12" lg="9" offset="1">
+          <div class="d-flex align-items-center justify-content-center wrapper-tracking">
             <div class="w-100">
               <b-form class="mb-1 tracking-input">
                 <label>Expedition :</label>

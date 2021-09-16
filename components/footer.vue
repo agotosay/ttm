@@ -2,37 +2,37 @@
   <section class="footer">
     <b-container>
       <b-row>
-      <b-col cols="5">
+      <b-col cols="12" lg="5">
         <img
-        class="d-block img-auto"
+        class="d-block img-auto img-logo-footer"
         height="20"
         src="/white-logo.svg"
         alt="image"
         />
       </b-col>
-      <b-col cols="7">
+      <b-col cols="12" lg="7">
         <b-row>
-          <b-col cols="5">
+          <b-col cols="6" lg="5">
             <img
-            class="d-block img-fluid"
+            class="d-block img-fluid img-stay"
             src="/stay-connected.svg"
             alt="image"
             />
           </b-col>
-          <b-col cols="7" class="pl-1 d-flex align-items-center">
+          <b-col cols="12" lg="7" class="pl-1 d-flex align-items-center">
             <b-form-input
               id="search-1"
               class="form-subscribe"
               type="text"
               placeholder="enter email here"
             ></b-form-input>
-            <b-button variant="primary" class="rounded-radius ml-1">SUBSCRIBE</b-button>
+            <b-button variant="primary" class="rounded-radius ml-1 btn-subsc">SUBSCRIBE</b-button>
           </b-col>
         </b-row>
       </b-col>
       </b-row>
       <b-row class="mt-2">
-        <b-col cols="5">
+        <b-col cols="12" lg="5">
           <p>Jalan Batu Sangian VI No.10 Kuta Utara,<br /> Bali 80361 INDONESIA <br /><br />Phone: +62 361 419 288</p>
           <div class="sosmed mt-2">
             <img
@@ -61,7 +61,7 @@
             />
           </div>
         </b-col>
-        <b-col cols="2">
+        <b-col cols="4" lg="2">
           <div class="title-link">
             TTTM
           </div>
@@ -83,7 +83,7 @@
             </li>
           </ul>
         </b-col>
-        <b-col cols="2">
+        <b-col cols="4" lg="2">
           <div class="title-link">
             INFO
           </div>
@@ -108,7 +108,7 @@
             </li>
           </ul>
         </b-col>
-        <b-col cols="2">
+        <b-col cols="4" lg="2">
           <div class="title-link">
             SERVICE
           </div>
@@ -129,12 +129,12 @@
         </b-col>
       </b-row>
       <b-row class="mt-2">
-        <b-col cols="6">
+        <b-col cols="12" lg="6">
           <div class="copyright">&copy; 2021 Ticket To The Moon. All Rights Reserved. Design &amp; Development by Hi Folks Agency</div>
         </b-col>
-        <b-col cols="6">
+        <b-col cols="12" lg="6">
           <img
-          class="d-block img-fluid"
+          class="d-block img-fluid img-payment"
           src="/payment.svg"
           alt="image"
           />

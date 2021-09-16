@@ -8,12 +8,10 @@
 
     <!-- carousel -->
     <div class="position-relative">
-      <b-carousel
+      <b-carousel v-bind="mainCarousel"
         id="carousel-1"
         v-model="slide"
         :interval="4000"
-        indicators
-        background="#ababab"
         img-width="1024"
         img-height="700"
         @sliding-start="onSlideStart"
@@ -181,7 +179,7 @@
     <section>
       <b-container class="benefit">
         <b-row>
-          <b-col cols="4" class="text-center">
+          <b-col cols="12" lg="4" class="text-center">
           <img
           class="d-block img-auto img-margin"
           height="60"
@@ -193,7 +191,7 @@
           </div>
           <div class="benefit-subtitle">ON ALL ITEMS</div>
           </b-col>
-          <b-col cols="4" class="text-center">
+          <b-col cols="12" lg="4" class="text-center">
           <img
           class="d-block img-auto img-margin"
           height="60"
@@ -205,7 +203,7 @@
           </div>
           <div class="benefit-subtitle">WITH SSL ENCRYPTION</div>
           </b-col>
-          <b-col cols="4" class="text-center">
+          <b-col cols="12" lg="4" class="text-center">
           <img
           class="d-block img-auto img-margin"
           height="60"
@@ -288,8 +286,8 @@
     <!-- others -->
     <section>
       <b-container>
-        <b-row>
-          <b-col cols="6" class="pr-0">
+        <b-row class="join-the-tribe">
+          <b-col cols="12" lg="6" class="pr-0">
             <div class="join-tribe">
               <div class="title">
                 JOIN THE <br />
@@ -312,34 +310,34 @@
             alt="image"
             /> 
           </b-col>
-          <b-col cols="6" class="pl-0">
+          <b-col cols="12" lg="6" class="pl-0">
             <div class="d-flex">
               <img
-              class="d-block img-fluid w-100"
+              class="d-block img-fluid w-100 img-1"
               src="/image-12.png"
               alt="image"
               />  
               <img
-              class="d-block img-fluid w-100"
+              class="d-block img-fluid w-100 img-1"
               src="/image-13.png"
               alt="image"
               />  
             </div>
             <div>
               <img
-              class="d-block img-fluid w-100"
+              class="d-block img-fluid w-100 img-3"
               src="/image-14.png"
               alt="image"
               />  
             </div>
             <div class="d-flex">
               <img
-              class="d-block img-fluid w-100"
+              class="d-block img-fluid w-100 img-1"
               src="/image-15.png"
               alt="image"
               />  
               <img
-              class="d-block img-fluid w-100"
+              class="d-block img-fluid w-100 img-1"
               src="/image-16.png"
               alt="image"
               />  
@@ -432,12 +430,66 @@ export default {
           centerPadding: '60px',
           slidesToShow: 3,
           autoplay: false,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
         },
         reviews: {
           centerMode: true,
           centerPadding: '60px',
           slidesToShow: 2,
           arrows: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        },
+        mainCarousel: {
+          indicators: true,
+          background: "#e2ecf3",
         }
       }
     },

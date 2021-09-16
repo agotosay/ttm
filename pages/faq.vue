@@ -19,19 +19,19 @@
     </div>
 
     <section class="pad-side">
-      <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center justify-content-between section-faq">
         <div class="title">FAQ - FIND AN ANSWER</div>
         <div class="input-group search">
           <input type="text" class="form-control pl-1" placeholder="Search in questions…" aria-label="" aria-describedby="basic-addon1">
         </div>
       </div>
       <b-row class="mt-2">
-        <b-col cols="5" class="mt-2">
+        <b-col cols="12" lg="5" class="mt-2">
           <div class="faq-category">
             <div class="title fs-1h fw-300">Product <br><span class="fw-400">Question</span></div>
           </div>
         </b-col>
-        <b-col cols="7">
+        <b-col cols="12" lg="7">
           <!-- desc accordion -->
           <div class="accordion faq">
             <div no-body class="mb-1">
@@ -276,12 +276,12 @@
         </b-col>
       </b-row>
       <b-row class="mt-2">
-        <b-col cols="5" class="mt-2">
+        <b-col cols="12" lg="5" class="mt-2">
           <div class="faq-category">
             <div class="title fs-1h fw-300">Product <br><span class="fw-400">Question</span></div>
           </div>
         </b-col>
-        <b-col cols="7">
+        <b-col cols="12" lg="7">
           <!-- desc accordion -->
           <div class="accordion faq">
             <div no-body class="mb-1">
@@ -424,12 +424,12 @@
         </b-col>
       </b-row>
       <b-row class="mt-2">
-        <b-col cols="5" class="mt-2">
+        <b-col cols="12" lg="5" class="mt-2">
           <div class="faq-category">
             <div class="title fs-1h fw-300">Product <br><span class="fw-400">Question</span></div>
           </div>
         </b-col>
-        <b-col cols="7">
+        <b-col cols="12" lg="7">
           <!-- desc accordion -->
           <div class="accordion faq" >
             <div no-body class="mb-1">
