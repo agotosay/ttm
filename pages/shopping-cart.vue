@@ -7,12 +7,12 @@
     <Navbar />
 
     <!-- info -->
-    <section class="pad-side">
+    <section class="pad-side wrapper-shopping">
       <b-container>
         <div class="d-flex align-items-center justify-content-between">
           <div class="title">SHOPPING CART</div>
         </div>
-        <table class="table shopping-cart mt-3">
+        <table class="table table-responsive shopping-cart mt-3">
           <thead>
             <tr>
               <th scope="col">PRODUCT</th>
@@ -63,7 +63,7 @@
             </tr>
           </tbody>
         </table>
-        <div class="text-right">
+        <div class="text-right proced-checkout">
           <b-button variant="primary" class="mt-2" @click="$router.push('/shopping-cart-detail')">
             PROCED TO CHECKOUT
           </b-button>
