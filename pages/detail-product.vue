@@ -461,7 +461,7 @@
         Related Products
       </div>
       <b-row class="mt-2">
-        <b-col cols="12" lg="3">
+        <b-col cols="12" md="6" lg="3">
           <div class="our-products">
             <img
             class="d-block img-fluid w-100 img-card-product"
@@ -489,7 +489,7 @@
             </b-button>
           </div>
         </b-col>
-        <b-col cols="12" lg="3">
+        <b-col cols="12" md="6" lg="3">
           <div class="our-products">
             <img
             class="d-block img-fluid w-100 img-card-product"
@@ -517,7 +517,7 @@
             </b-button>
           </div>
         </b-col>
-        <b-col cols="12" lg="3">
+        <b-col cols="12" md="6" lg="3">
           <div class="our-products">
             <img
             class="d-block img-fluid w-100 img-card-product"
@@ -545,7 +545,7 @@
             </b-button>
           </div>
         </b-col>
-        <b-col cols="12" lg="3">
+        <b-col cols="12" md="6" lg="3">
           <div class="our-products">
             <img
             class="d-block img-fluid w-100 img-card-product"
@@ -836,8 +836,8 @@ export default {
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToShow: 1,
+              slidesToScroll: 1,
               infinite: true,
               dots: true
             }
@@ -854,7 +854,7 @@ export default {
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              centerPadding: '10px',
+              centerPadding: '0',
               arrows: false
             }
           }

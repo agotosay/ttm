@@ -8,7 +8,7 @@
         alt="image"
         />
       </b-col>
-      <b-col cols="12" lg="5" class="pr-0 pl-0 signIn">
+      <b-col cols="12" md="12" lg="5" class="pr-0 pl-0 signIn">
         <div class="box">
           <img
             class="d-block img-margin"
@@ -37,7 +37,7 @@
               class="mt-1 rounded-radius"></b-form-input>
           </b-form-group>
           <b-row>
-            <b-col cols="12" lg="8" offset="2">
+            <b-col cols="12" md="12" lg="8" offset="2">
               <div class="button-login">
                 <b-button variant="primary" class="d-block">Login</b-button>
                 <b-button variant="primary2" class="d-block mt-1">register</b-button>

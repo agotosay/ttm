@@ -12,7 +12,7 @@
         history of ticket to the moon
       </div>
       <b-row class="mb-4 mr-0">
-        <b-col cols="12" lg="4" offset="4">
+        <b-col cols="12" md="6" lg="4" offset="4">
           <div class="info-contact text-center">
             <div class="title mb-2">{{selectedStep}}</div>
             <p>After a great initial success at many European music festivals, Charly realizes that his hammock could be something more than just a way to cover the costs of his travels…</p>

@@ -9,7 +9,7 @@
     <!-- info -->
     <div class="static-info">
       <img
-      class="d-block img-margin mt-2 mb-2"
+      class="d-block img-margin mt-2 mb-2 img-title"
       src="/title-foundation.svg"
       alt="image"
       />
@@ -66,12 +66,12 @@
         </b-row>
         <hr>
         <img
-        class="d-block img-margin mt-2 mb-2"
+        class="d-block img-margin mt-2 mb-2 img-title"
         src="/title-foundation2.svg"
         alt="image"
         />
         <b-row class="foundation-scroll">
-          <b-col cols="12" lg="6" offset="2" class="milestone">
+          <b-col cols="12" md="12" lg="6" offset="2" class="milestone">
             <div class="list">START OF THE SUMBA, KODI, AND MANDORAK ADVENTURE</div>
             <div class="list">FIRST PRIMARY SCHOOL IN MANDORAK</div>
             <div class="list">DUG THE FIRST WELL TO HAVE SOME CLEAR WATER IN THE COUNTY</div>
@@ -87,7 +87,7 @@
           </b-col>
         </b-row>
         <b-row>
-          <b-col cols="12" lg="8" offset="2" class="mt-2 future-dev">
+          <b-col cols="12" md="12" lg="8" offset="2" class="mt-2 future-dev">
             <div class="title mt-2">FUTURE DEVELOPMENT OF THE TICKET TO THE MOON FOUNDATION</div>
           </b-col>
         </b-row>

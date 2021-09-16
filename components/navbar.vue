@@ -79,53 +79,13 @@
             </li>
           </ul>
         </div>
-        <!-- <b-nav pills class="navbar-right">
-          <b-nav-item-dropdown
-            id="my-nav-dropdown"
-            text="EN"
-            toggle-class="nav-link-custom"
-            right
-          >
-            <b-dropdown-item>One</b-dropdown-item>
-            <b-dropdown-item>Two</b-dropdown-item>
-            <b-dropdown-divider></b-dropdown-divider>
-            <b-dropdown-item>Three</b-dropdown-item>
-          </b-nav-item-dropdown>
-          <b-nav-item-dropdown
-            id="my-nav-dropdown"
-            text="EUR"
-            toggle-class="nav-link-custom"
-            right
-          >
-            <b-dropdown-item>One</b-dropdown-item>
-            <b-dropdown-item>Two</b-dropdown-item>
-            <b-dropdown-divider></b-dropdown-divider>
-            <b-dropdown-item>Three</b-dropdown-item>
-          </b-nav-item-dropdown>
-          <b-nav-item @click="$router.push('/shopping-cart')">
-            <img
-            class="d-block img-margin"
-            height="14"
-            src="/cart.png"
-            alt="image"
-            />
-          </b-nav-item>
-          <b-nav-item class="user" @click="$router.push('/signIn')">
-            <img
-            class="d-block img-margin"
-            height="14"
-            src="/user.svg"
-            alt="image"
-            />
-          </b-nav-item>
-        </b-nav> -->
       </b-collapse>
     </b-navbar>
 
     <div class="mega-menu" v-if="isHidden">
       <b-container>
         <b-row>
-          <b-col cols="3">
+          <b-col cols="12" lg="3">
             <div class="title">Hammock</div>
             <ul>
               <li>
@@ -163,7 +123,7 @@
               </li>
             </ul>
           </b-col>
-          <b-col cols="3">
+          <b-col cols="12" lg="3">
             <div class="title">Hammock Chair</div>
             <ul>
               <li>
@@ -190,7 +150,7 @@
               </li>
             </ul>
           </b-col>
-          <b-col cols="3">
+          <b-col cols="12" lg="3">
             <div class="title">Eco Backpack</div>
             <ul>
               <li>
@@ -217,7 +177,7 @@
               </li>
             </ul>
           </b-col>
-          <b-col cols="3">
+          <b-col cols="12" lg="3">
             <div class="title">Eco Shopping Bag</div>
             <ul>
               <li>
@@ -235,7 +195,7 @@
           </b-col>
         </b-row>
         <b-row class="mt-2">
-          <b-col cols="3">
+          <b-col cols="12" lg="3">
             <div class="title">Hammock Accessories</div>
             <ul>
               <li>
@@ -306,7 +266,7 @@
               </li>
             </ul>
           </b-col>
-          <b-col cols="3">
+          <b-col cols="12" lg="3">
             <div class="title">Hammock Suspension</div>
             <ul>
               <li>
@@ -344,7 +304,7 @@
               </li>
             </ul>
           </b-col>
-          <b-col cols="3">
+          <b-col cols="12" lg="3">
             <div class="title">Tools</div>
             <ul>
               <li>
@@ -393,7 +353,7 @@
               </li>
             </ul>
           </b-col>
-          <b-col cols="3">
+          <b-col cols="12" lg="3">
             <div class="title">OTHERS</div>
             <ul>
               <li>
@@ -432,6 +392,13 @@
             </ul>
           </b-col>
         </b-row>
+        <div class="close-menu" @click="closeMegamenu">
+          <img
+            class="d-block img-fluid"
+            src="/cancel.svg"
+            alt="image"
+          />
+        </div>
       </b-container>
     </div>
   </div>
@@ -448,6 +415,9 @@ export default {
   methods: {
     dropDown() {
       this.showDropdown = !this.showDropdown
+    },
+    closeMegamenu() {
+      this.isHidden = false
     }
   }
 }

@@ -32,7 +32,7 @@
                 <div class="slide-wording position-absolute text-center mt-2">
                   <h1>INTRODUCING: <span class="fw-900">THE PRO HAMMOCK</span></h1>
                   <b-row>
-                    <b-col cols="10" offset="1">
+                    <b-col cols="12" lg="10" offset="1">
                         <p>I was blown away by the tiny packing size and the very thin and light material. It certainly lightest hammock I have ever come across. The material feels like very fine silk.</p>
                     </b-col>
                   </b-row>
@@ -62,7 +62,7 @@
                 <div class="slide-wording position-absolute text-center mt-2">
                   <h1>INTRODUCING: <span class="fw-900">THE PRO HAMMOCK</span></h1>
                   <b-row>
-                    <b-col cols="10" offset="1">
+                    <b-col cols="12" lg="10" offset="1">
                         <p>I was blown away by the tiny packing size and the very thin and light material. It certainly lightest hammock I have ever come across. The material feels like very fine silk.</p>
                     </b-col>
                   </b-row>

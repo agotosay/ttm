@@ -23,12 +23,12 @@
         <div class="title">Privacy Policy</div>
       </div>
       <b-row class="mt-2">
-        <b-col cols="12" lg="5" class="mt-2">
+        <b-col cols="12" md="5" lg="5" class="mt-2">
           <div class="faq-category" v-for="(item, index) in categoryFAQ" :key="index">
             <div class="category" :class="{'active' : index === selectedFAQ}" @click="onSelectFAQ(index)">{{item.name}}</div>
           </div>
         </b-col>
-        <b-col cols="12" lg="7">
+        <b-col cols="12" md="7" lg="7">
           <!-- desc accordion -->
           <div class="accordion faq" v-if="selectedFAQ === 0">
             <p>We (PT. Ayunan Bulan International) collect information when you register on our website. We ask for your name, email address and shipping/billing information. You may, however, visit our website anonymously.</p>

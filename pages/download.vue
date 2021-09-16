@@ -13,7 +13,7 @@
           DOWNLOAD
         </div>
         <b-row>
-          <b-col cols="12" lg="6" class="mb-2">
+          <b-col cols="12" md="6" lg="6" class="mb-2">
             <div class="download">
               <img
               class="d-block img-fluid w-100"
@@ -25,7 +25,7 @@
               </b-button>
             </div>
           </b-col>
-          <b-col cols="12" lg="6" class="mb-2">
+          <b-col cols="12" md="6" lg="6" class="mb-2">
             <div class="download">
               <img
               class="d-block img-fluid w-100"
@@ -37,7 +37,7 @@
               </b-button>
             </div>
           </b-col>
-          <b-col cols="12" lg="6" class="mb-2">
+          <b-col cols="12" md="6" lg="6" class="mb-2">
             <div class="download">
               <img
               class="d-block img-fluid w-100"
