@@ -10,7 +10,7 @@
     <section class="position-relative">
       <b-container>
         <b-row>
-          <b-col cols="5" class="detail-product">
+          <b-col cols="12" lg="5" class="detail-product">
             <div class="sticky" style="position: sticky; top: 70px;">
               <img
                 class="d-block img-fluid w-100 pic"
@@ -58,7 +58,7 @@
               </div>
             </div>
           </b-col>
-          <b-col cols="7" class="spec-product">
+          <b-col cols="12" lg="7" class="spec-product">
             <div class="title text-center">
               moonstraps
             </div>
@@ -88,7 +88,7 @@
                     alt="image"
                     height="12"
                     />
-                    The most flexible suspension solution: reliable under all circumstances
+                    <span class="text-left">The most flexible suspension solution: reliable under all circumstances</span>
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
@@ -106,7 +106,7 @@
                     alt="image"
                     height="12"
                     />
-                   SPECS
+                   <span class="text-left">SPECS</span>
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
@@ -147,7 +147,7 @@
                     alt="image"
                     height="12"
                     />
-                    Includes
+                    <span class="text-left">Includes</span>
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
@@ -166,7 +166,7 @@
                     alt="image"
                     height="12"
                     />
-                    Features
+                    <span class="text-left">Features</span>
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
@@ -266,11 +266,11 @@
         <b-card class="card-pad">
           <div class="leave-review">
             <b-row>
-              <b-col cols="6">
+              <b-col cols="12" lg="6">
                 <div class="title mb-1">tell everyone about you experience</div>
                 <p>We’ll Be Grateful If You Can Let Us Know About Your Experience In Using Our Products. Please Leave Us Your Thoughts In The Form Of A Review. As Per Our System Requirement, The Review Section Is Moderated, So If You Haven’t Purchased Our Products, Your Identification Info Will Not Match Our Customer Records, And Your Review Couldn’t Be Processed.</p>
               </b-col>
-              <b-col cols="6">
+              <b-col cols="12" lg="6">
                 <div class="mb-1">
                   <small class="mr-1">Your Rate</small><i class="fas fa-star" v-for="indexRating in 5" :key="indexRating" :class="{'text-warning': indexRating <= 5}"></i>
                 </div>
@@ -310,7 +310,7 @@
         Related Products
       </div>
       <b-row class="mt-2">
-        <b-col cols="3">
+        <b-col cols="12" lg="3">
           <div class="our-products">
             <img
             class="d-block img-fluid w-100"
@@ -338,7 +338,7 @@
             </b-button>
           </div>
         </b-col>
-        <b-col cols="3">
+        <b-col cols="12" lg="3">
           <div class="our-products">
             <img
             class="d-block img-fluid w-100"
@@ -366,7 +366,7 @@
             </b-button>
           </div>
         </b-col>
-        <b-col cols="3">
+        <b-col cols="12" lg="3">
           <div class="our-products">
             <img
             class="d-block img-fluid w-100"
@@ -394,7 +394,7 @@
             </b-button>
           </div>
         </b-col>
-        <b-col cols="3">
+        <b-col cols="12" lg="3">
           <div class="our-products">
             <img
             class="d-block img-fluid w-100"
@@ -641,6 +641,33 @@ export default {
         centerPadding: '60px',
         slidesToShow: 2,
         arrows: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerPadding: '10px',
+              arrows: false
+            }
+          }
+        ]
       },
       modalShow: false
     }

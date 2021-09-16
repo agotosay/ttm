@@ -67,7 +67,7 @@
             <div class="fw-600 mb-2">Occupation / Field of Interest :</div>
             <b-form-group class="d-flex justify-content-between mobile">
               <label>Occupation / Field of Interest :</label>
-              <div class="d-flex w-100 mt-0h">
+              <div class="d-flex w-100 mt-0h mobile">
                 <b-form-radio name="some-radios" value="A" class="mr-1">Blogger</b-form-radio>
                 <b-form-radio name="some-radios" value="B" class="mr-1">Influencer</b-form-radio>
                 <b-form-radio name="some-radios" value="C" class="mr-1">Traveller</b-form-radio>

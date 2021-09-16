@@ -853,7 +853,9 @@ export default {
             breakpoint: 480,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              centerPadding: '10px',
+              arrows: false
             }
           }
         ]

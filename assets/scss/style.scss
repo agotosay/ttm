@@ -1685,6 +1685,9 @@ and (max-device-width : 480px) {
     .offset-1{
       margin-left: 0;
     }
+    .offset-2{
+      margin-left: 0;
+    }
   }
   .join-the-tribe{
     .img-1{
@@ -1727,6 +1730,9 @@ and (max-device-width : 480px) {
           border-radius: 20px;
         }
       }
+    }
+    .btn{
+      width: 100%;
     }
   }
   .contact-us{
@@ -1906,6 +1912,31 @@ and (max-device-width : 480px) {
           .btn{
             width: 100%;
           }
+        }
+      }
+    }
+  }
+  .box-desc{
+    .btn{
+      width: 100%;
+    }
+  }
+  .img-signIn{
+    display: none;
+  }
+  .box-signIn{
+    padding-top: 2rem;
+  }
+  .signIn{
+    display: block;
+    padding-left: 15px;
+    .box{
+      width: 100%;
+      .button-login{
+        margin-top: 2rem;
+        .btn{
+          width: 100%;
+          margin: 0 auto;
         }
       }
     }

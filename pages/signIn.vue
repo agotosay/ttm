@@ -1,14 +1,14 @@
 <template>
-  <div>
-    <b-row>
-      <b-col cols="7" class="pr-0 pl-0">
+  <b-container>
+    <b-row class="box-signIn">
+      <b-col cols="12" lg="7" class="pr-0 pl-0 img-signIn">
         <img
         class="d-block w-100 img-signIn"
         src="/img-signin.png"
         alt="image"
         />
       </b-col>
-      <b-col cols="5" class="pr-0 pl-0 signIn">
+      <b-col cols="12" lg="5" class="pr-0 pl-0 signIn">
         <div class="box">
           <img
             class="d-block img-margin"
@@ -37,7 +37,7 @@
               class="mt-1 rounded-radius"></b-form-input>
           </b-form-group>
           <b-row>
-            <b-col cols="8" offset="2">
+            <b-col cols="12" lg="8" offset="2">
               <div class="button-login">
                 <b-button variant="primary" class="d-block">Login</b-button>
                 <b-button variant="primary2" class="d-block mt-1">register</b-button>
@@ -51,7 +51,7 @@
         </div>
       </b-col>
     </b-row>
-  </div>
+  </b-container>
 </template>
 
 <style>
