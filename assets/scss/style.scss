@@ -1801,4 +1801,61 @@ and (max-device-width : 480px) {
   .collapse-acc-product{
     padding-left: 0;
   }
+  .price-total{
+    .additional{
+      justify-content: space-between;
+      width: 100%;
+      font-size: .75rem;
+    }
+    .d-price{
+      display: flex !important;
+      align-items: center;
+      margin-top: 1rem;
+      .price{
+        display: flex;
+        font-size: 24px;
+        padding-right: 1rem;
+      }
+    }
+  }
+  .spec-product{
+    padding: 1rem;
+    .card-body{
+      padding: 1rem;
+      .option{
+        font-size: 14px;
+        div{
+          &:first-child{
+            text-align: left;
+          }
+          &:last-child{
+            white-space: nowrap;
+          }
+        }
+      }
+      .main-color{
+        left: 0;
+      }
+      .title{
+        line-height: 20px;
+      }
+    }
+  }
+  .suggest-product{
+    display: none;
+  }
+  .modal-cart{
+    display: block !important;
+    .pic{
+      margin-bottom: 1rem;
+    }
+    .desc{
+      margin-bottom: 1rem;
+      margin-left: 0 !important;
+      max-width: unset;
+    }
+    .btn{
+      width: 100%;
+    }
+  }
 }
