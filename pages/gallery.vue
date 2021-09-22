@@ -9,6 +9,13 @@
     <!-- info -->
    <section>
       <b-container class="gallery">
+        <div class="text-right">
+          <b-dropdown id="dropdown-1" text="Travel Hammock" class="m-md-2">
+            <b-dropdown-item>First Action</b-dropdown-item>
+            <b-dropdown-item>Second Action</b-dropdown-item>
+            <b-dropdown-item>Third Action</b-dropdown-item>
+          </b-dropdown>
+        </div>
         <div class="title text-center mb-2">
           Gallery
         </div>

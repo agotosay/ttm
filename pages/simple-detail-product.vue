@@ -12,6 +12,19 @@
         <b-row>
           <b-col cols="12" lg="5" class="detail-product">
             <div class="sticky" style="position: sticky; top: 70px;">
+              <div class="text-center my-3">
+                <a id="popover-target-1" class="pointer">
+                  <img
+                    src="/info.svg"
+                    alt="image"
+                    height="20"
+                  />
+                </a>
+                <b-popover target="popover-target-1" triggers="hover" placement="top">
+                  <template #title></template>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </b-popover>
+              </div>
               <img
                 class="d-block img-fluid w-100 pic"
                 src="/image-20.jpg"

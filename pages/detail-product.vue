@@ -12,6 +12,19 @@
         <b-row>
           <b-col cols="12" lg="7" class="detail-product">
             <div class="sticky" style="position: sticky; top: 70px;">
+              <div class="text-center my-3">
+                <a id="popover-target-1" class="pointer">
+                  <img
+                    src="/info.svg"
+                    alt="image"
+                    height="20"
+                  />
+                </a>
+                <b-popover target="popover-target-1" triggers="hover" placement="top">
+                  <template #title></template>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </b-popover>
+              </div>
               <img
                 class="d-block img-fluid w-100 pic"
                 src="/image-20.jpg"
@@ -133,7 +146,22 @@
             </b-card>
             <!-- sleeve-->
             <b-card class="text-center mb-1">
-              <div class="title">SLEEVE</div>
+              <div class="title pos-relative">
+                SLEEVE
+                <div class="text-center pos-absolute pos-right-top">
+                  <a id="popover-target-2" class="pointer">
+                    <img
+                      src="/info.svg"
+                      alt="image"
+                      height="20"
+                    />
+                  </a>
+                  <b-popover target="popover-target-2" triggers="hover" placement="top">
+                    <template #title></template>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </b-popover>
+                </div>
+              </div>
               <img
               class="d-block img-fluid w-100 pic"
               src="/image-26.jpg"
@@ -173,7 +201,22 @@
             <b-row>
               <b-col cols="6">
                 <b-card class="text-center mb-1">
-                  <div class="title">HOOK</div>
+                  <div class="title pos-relative">
+                    HOOK
+                    <div class="text-center pos-absolute pos-right-top">
+                      <a id="popover-target-3" class="pointer">
+                        <img
+                          src="/info.svg"
+                          alt="image"
+                          height="20"
+                        />
+                      </a>
+                      <b-popover target="popover-target-3" triggers="hover" placement="top">
+                        <template #title></template>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </b-popover>
+                    </div>
+                  </div>
                   <img
                   class="d-block img-fluid w-100 accessories"
                   src="/image-27.png"
@@ -186,7 +229,22 @@
               </b-col>
               <b-col cols="6">
                 <b-card class="text-center mb-1">
-                  <div class="title">CARABINER</div>
+                  <div class="title pos-relative">
+                    CARABINER
+                    <div class="text-center pos-absolute pos-right-top">
+                      <a id="popover-target-3" class="pointer">
+                        <img
+                          src="/info.svg"
+                          alt="image"
+                          height="20"
+                        />
+                      </a>
+                      <b-popover target="popover-target-3" triggers="hover" placement="top">
+                        <template #title></template>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </b-popover>
+                    </div>
+                  </div>
                   <img
                   class="d-block img-fluid w-100 accessories"
                   src="/image-28.png"
@@ -203,7 +261,22 @@
             <b-row>
               <b-col cols="6">
                 <b-card class="text-center mb-1">
-                  <div class="title">NAUTICAL ROPE</div>
+                  <div class="title pos-relative">
+                    NAUTICAL <br />ROPE
+                    <div class="text-center pos-absolute pos-right-top">
+                      <a id="popover-target-4" class="pointer">
+                        <img
+                          src="/info.svg"
+                          alt="image"
+                          height="20"
+                        />
+                      </a>
+                      <b-popover target="popover-target-4" triggers="hover" placement="top">
+                        <template #title></template>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </b-popover>
+                    </div>
+                  </div>
                   <img
                   class="d-block img-fluid w-100 accessories"
                   src="/image-29.png"
@@ -216,7 +289,22 @@
               </b-col>
               <b-col cols="6">
                 <b-card class="text-center mb-1">
-                  <div class="title">MOONSTRAP</div>
+                  <div class="title pos-relative">
+                    MOONSTRAP
+                    <div class="text-center pos-absolute pos-right-top">
+                      <a id="popover-target-5" class="pointer">
+                        <img
+                          src="/info.svg"
+                          alt="image"
+                          height="20"
+                        />
+                      </a>
+                      <b-popover target="popover-target-5" triggers="hover" placement="top">
+                        <template #title></template>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </b-popover>
+                    </div>
+                  </div>
                   <img
                   class="d-block img-fluid w-100 accessories"
                   src="/image-30.png"
